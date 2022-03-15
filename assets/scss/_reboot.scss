@@ -164,22 +164,18 @@ address {
 // Lists
 
 ol,
-ul {
-  padding-left: 2rem;
-}
-
-ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 dt {

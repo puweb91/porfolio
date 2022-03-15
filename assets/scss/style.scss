@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@function em($val, $std:16) {
+  @return ($val/$std)*1em;
+}
+
+.main {
+  padding: em(100) 0 em(1000);
+}
+
+.portfolio {
+  .item {
+    position: sticky;
+    top: 32px;
+    
+    & + .item {
+      margin-top: em(32);
+    }
+    
+    .link {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      
+      &::after {
+        content: '';
+        display: block;
+        padding-bottom: 50%;
+      }
+    }
+    
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        .link {
+          background-color: lighten(#000, $i*10);
+        }
+      }
+    }
+  }
+}

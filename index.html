@@ -1,14 +1,82 @@
 <!doctype html>
 <html lang=ko>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Puweb</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container"></div>
+    </header>
+    
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <ul class="portfolio">
+            <li class="item">
+              <a href="" class="link"></a>
+            </li>
+            <li class="item">
+              <a href="" class="link"></a>
+            </li>
+            <li class="item">
+              <a href="" class="link"></a>
+            </li>
+            <li class="item">
+              <a href="" class="link"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   
-  <title>Puweb</title>
-</head>
-<body>
-
-</body>
+    <footer id="footer" class="footer">
+      <div class="container"></div>
+    </footer>
+  
+    <script>
+      var pTop = 100;
+      var pItem = document.querySelectorAll('.item');
+      var pItemTop = [];
+      
+      window.addEventListener('scroll', function(e){
+        var scrTop = parseInt(e.target.scrollingElement.scrollTop) + 32;
+  
+        for (var i=0; i<pItem.length; i++) {
+          if ( i === 0 ) {
+            pItemTop[i] = 100;
+          } else {
+            pItemTop[i] = 100 + (pItem[i].clientHeight * i)/2;
+          }
+        }
+  
+        for (var i=0; i<pItemTop.length; i++) {
+          if ( i+1 < pItemTop.length )  {
+            if ( scrTop > pItemTop[i] && scrTop < pItemTop[i+1] ) {
+              var scaleSize = 1 - ((scrTop - pItemTop[i])/1000)/2;
+              var min = 1 - (0.2/(i+1));
+    
+              scaleSize = scaleSize < min ? min : scaleSize;
+    
+              pItem[i].style.cssText= 'transform: translateY('+ (i * 32) +'px) scale('+ scaleSize +');';
+            }
+          } else {
+            var scaleSize = 1 - ((scrTop - pItemTop[i])/1000)/2;
+            var min = 1 - (0.2/(i+1));
+  
+            scaleSize = scaleSize < min ? min : scaleSize;
+  
+            pItem[i].style.cssText= 'transform: translateY('+ (i * 32) +'px) scale('+ scaleSize +');';
+          }
+        }
+      });
+    </script>
+  </body>
 </html>

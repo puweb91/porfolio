@@ -1,0 +1,33 @@
+.main {
+  padding: 6.25em 0 62.5em;
+}
+
+.portfolio .item {
+  position: sticky;
+  top: 32px;
+}
+.portfolio .item + .item {
+  margin-top: 2em;
+}
+.portfolio .item .link {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.portfolio .item .link::after {
+  content: "";
+  display: block;
+  padding-bottom: 50%;
+}
+.portfolio .item:nth-child(1) .link {
+  background-color: #1a1a1a;
+}
+.portfolio .item:nth-child(2) .link {
+  background-color: #333333;
+}
+.portfolio .item:nth-child(3) .link {
+  background-color: #4d4d4d;
+}
+.portfolio .item:nth-child(4) .link {
+  background-color: #666666;
+}
