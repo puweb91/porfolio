@@ -6,8 +6,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     
     <title>Puweb</title>
   </head>
@@ -19,18 +18,64 @@
     <main class="main">
       <section class="section">
         <div class="container">
+          <h1 class="section-title">Portfolio</h1>
+          
           <ul class="portfolio">
             <li class="item">
-              <a href="" class="link"></a>
+              <div class="inner"></div>
+              
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
             </li>
             <li class="item">
-              <a href="" class="link"></a>
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
             </li>
             <li class="item">
-              <a href="" class="link"></a>
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
             </li>
             <li class="item">
-              <a href="" class="link"></a>
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
+            </li>
+            <li class="item">
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
+            </li>
+            <li class="item">
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
+            </li>
+            <li class="item">
+              <div class="inner"></div>
+  
+              <div class="btn-group">
+                <a href="" target="_blank" class="btn btn-primary px-5">새 창으로 열기</a>
+                <button type="button" class="btn btn-dark px-5">사이트 설명</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -40,43 +85,12 @@
     <footer id="footer" class="footer">
       <div class="container"></div>
     </footer>
-  
-    <script>
-      var pTop = 100;
-      var pItem = document.querySelectorAll('.item');
-      var pItemTop = [];
-      
-      window.addEventListener('scroll', function(e){
-        var scrTop = parseInt(e.target.scrollingElement.scrollTop) + 32;
-  
-        for (var i=0; i<pItem.length; i++) {
-          if ( i === 0 ) {
-            pItemTop[i] = 100;
-          } else {
-            pItemTop[i] = 100 + (pItem[i].clientHeight * i)/2;
-          }
-        }
-  
-        for (var i=0; i<pItemTop.length; i++) {
-          if ( i+1 < pItemTop.length )  {
-            if ( scrTop > pItemTop[i] && scrTop < pItemTop[i+1] ) {
-              var scaleSize = 1 - ((scrTop - pItemTop[i])/1000)/2;
-              var min = 1 - (0.2/(i+1));
     
-              scaleSize = scaleSize < min ? min : scaleSize;
+    <div class="modal-group">
     
-              pItem[i].style.cssText= 'transform: translateY('+ (i * 32) +'px) scale('+ scaleSize +');';
-            }
-          } else {
-            var scaleSize = 1 - ((scrTop - pItemTop[i])/1000)/2;
-            var min = 1 - (0.2/(i+1));
+    </div>
   
-            scaleSize = scaleSize < min ? min : scaleSize;
-  
-            pItem[i].style.cssText= 'transform: translateY('+ (i * 32) +'px) scale('+ scaleSize +');';
-          }
-        }
-      });
-    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
