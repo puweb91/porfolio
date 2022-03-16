@@ -42,7 +42,7 @@ html {
     }
     
     .title {
-      color: #333;
+      color: #fff;
       font-size: em(24);
       font-weight: 700;
       text-align: center;
@@ -92,7 +92,7 @@ html {
       bottom: 0;
       right: 0;
       padding: rem(32);
-      background-color: rgba(#fff, 0.7);
+      background-color: rgba(#000, 0.3);
       border-top-left-radius: 3rem;
       z-index: 1;
     }
