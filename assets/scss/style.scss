@@ -90,8 +90,8 @@ html {
     }
     
     .desc {
+      background-color: #000;
       padding: rem(32);
-      background-color: rgba(#000, 0.7);
       text-align: center;
       z-index: 1;
       
@@ -100,13 +100,13 @@ html {
         bottom: 0;
         right: 0;
         border-top-left-radius: 3rem;
+        background-color: rgba(#000, 0.7);
       }
     }
   
     .btn-group {
       .btn {
-        padding-left: em(20);
-        padding-right: em(20);
+        padding: em(12) em(40);
         word-break: keep-all;
         
         &:first-child {
@@ -118,8 +118,8 @@ html {
         }
         
         @media screen and (min-width: 1024px) {
-          padding-left: em(40);
-          padding-right: em(40);
+          padding-left: em(52);
+          padding-right: em(52);
         }
       }
     }
