@@ -41,6 +41,14 @@ html {
       margin-top: rem(64);
     }
     
+    .title {
+      color: #333;
+      font-size: em(24);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: em(12,24);
+    }
+    
     .inner {
       display: block;
       transition: all .3s ease-in-out;
@@ -79,7 +87,7 @@ html {
       }
     }
     
-    .btn-group {
+    .desc {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -87,7 +95,9 @@ html {
       background-color: rgba(#fff, 0.7);
       border-top-left-radius: 3rem;
       z-index: 1;
-      
+    }
+  
+    .btn-group {
       .btn {
         &:first-child {
           border-radius: 2rem 0 0 2rem;
