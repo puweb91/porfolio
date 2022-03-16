@@ -620,7 +620,6 @@ progress {
 
 .container,
 .container-fluid,
-.container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -650,11 +649,6 @@ progress {
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
   }
 }
 .row {
@@ -4431,8 +4425,7 @@ textarea.form-control-lg {
 .navbar > .container-sm,
 .navbar > .container-md,
 .navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .container-xl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12514,7 +12507,7 @@ textarea.form-control-lg {
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .portfolio .item + .item {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .portfolio .item .inner {
   display: block;
