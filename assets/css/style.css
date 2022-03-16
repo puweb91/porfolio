@@ -12478,9 +12478,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media screen and (max-width: 1024px) {
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 1025px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -12566,13 +12569,18 @@ textarea.form-control-lg {
   background-color: #666666;
 }
 .portfolio .item .desc {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.7);
-  border-top-left-radius: 3rem;
+  text-align: center;
   z-index: 1;
+}
+@media screen and (min-width: 1025px) {
+  .portfolio .item .desc {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 3rem;
+  }
 }
 .portfolio .item .btn-group .btn:first-child {
   border-radius: 2rem 0 0 2rem;
