@@ -105,12 +105,21 @@ html {
   
     .btn-group {
       .btn {
+        padding-left: em(20);
+        padding-right: em(20);
+        word-break: keep-all;
+        
         &:first-child {
           border-radius: 2rem 0 0 2rem;
         }
         
         &:last-child {
           border-radius: 0 2rem 2rem 0;
+        }
+        
+        @media screen and (min-width: 1024px) {
+          padding-left: em(40);
+          padding-right: em(40);
         }
       }
     }

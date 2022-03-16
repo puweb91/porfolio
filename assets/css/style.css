@@ -12582,9 +12582,20 @@ html {
     border-top-left-radius: 3rem;
   }
 }
+.portfolio .item .btn-group .btn {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  word-break: keep-all;
+}
 .portfolio .item .btn-group .btn:first-child {
   border-radius: 2rem 0 0 2rem;
 }
 .portfolio .item .btn-group .btn:last-child {
   border-radius: 0 2rem 2rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .portfolio .item .btn-group .btn {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
 }
