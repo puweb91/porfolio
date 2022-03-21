@@ -18,6 +18,15 @@ html {
   }
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: em(20) 0;
+  z-index: 1;
+}
+
 .main {
   padding: rem(100) 0 rem(1000);
 }
@@ -124,4 +133,10 @@ html {
       }
     }
   }
+}
+
+.footer {
+  padding-top: em(100);
+  padding-bottom: em(100);
+  background-color: tint-color($primary, 60%);
 }

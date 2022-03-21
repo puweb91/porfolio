@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/icon/admin/style.css?m181107v4">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/noto-sans-cjk/noto_sans_cjk.css?m181012">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery.scrollbar.css?m181012">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/ipInput.min.css?u181016">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/swiper.css?u181123">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pangx2-admin.css?m181226v7">
+    
+    <!-- JS -->
+    <script type="text/javascript" src="./assets/js/common/jquery.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery.easing.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery.scrollbar.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/ipInput.js?u181016"></script>
+    <script type="text/javascript" src="./assets/js/common/swiper.js?u181123"></script>
+    <script type="text/javascript" src="./assets/js/pangx2-admin.js?u181012m181107v3"></script>
+    
+    <title>팡팡 웹호스팅 솔루션</title>
+  </head>
+  <body>
+    <header class="header on">
+      <div class="top">
+        <a href="#" class="logo"><img src="./assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션"></a>
+        <div class="hamburg-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global">
+        <div class="global-head">
+          <a href="#" class="logo"><img src="./assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션"></a>
+          <div class="hamburg-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="global-list list-icon">
+          <li class="global-list-item">
+            <div class="user-info dropdown">
+              <div class="user-info-box"><img src="./assets/images/admin/user.svg" alt="">홍길동님</div>
+              <div class="dropdown-list">
+                <div class="dropdown-item"><a href="./admin/v3/mypage/apply/index.php">서비스 신청</a></div>
+                <div class="dropdown-item"><a href="./admin/v3/mypage/extend/index.php">서비스 연장</a></div>
+                <div class="dropdown-item"><a href="./admin/v3/mypage/paymentHistory/index.php">결제내역</a></div>
+                <div class="dropdown-item"><a href="./admin/v3/mypage/myinfo/index.php">회원정보 수정</a></div>
+                <div class="dropdown-item">로그아웃</div>
+              </div>
+            </div>
+          </li>
+          <li class="global-list-item"><a href="#" data-layer-target="aComment"><span
+            class="icon-comment icon-hover new"><div class="marker-new"></div></span></a></li>
+          <li class="global-list-item"><a href="#" data-layer-target="aLog"><span class="icon-log icon-hover new"><div
+            class="marker-new"></div></span></a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <nav class="nav on">
+        <div class="nav-list service-title">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="/pangx2/v3/grid.html">웹호스팅솔루션</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list on">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-group"></span>
+                <span class="text">서비스관리</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item active"><a href="./grid.html"><span>사용자설정</span></a></div>
+            <div class="nav-list-item"><a href="./domain.html">서비스 도메인 설정</a></div>
+            <div class="nav-list-item"><a href="./nameserver/domain.html">네임서버 설정</a></div>
+            <div class="nav-list-item"><a href="./settings/domain.html">환경설정</a></div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-monitoring"></span>
+                <span class="text">모니터링</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item"><a href="./monitoring/traffic.html"><span>트래픽</span></a></div>
+            <div class="nav-list-item"><a href="./monitoring/cpu.html"><span>CPU</span></a></div>
+            <div class="nav-list-item"><a href="#none"><span>메모리</span></a></div>
+            <div class="nav-list-item"><a href="#none"><span>환경설정</span></a></div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="./admin/v3/log/index.php">
+                <span class="icon-log"></span>
+                <span class="text">로그관리</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-cs"></span>
+                <span class="text">고객센터</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item"><a href="./inquiry/list.html"><span>1:1 문의</span></a></div>
+            <div class="nav-list-item"><a href="./notice/list.html">공지사항</a></div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT <span class="icon-copyright"></span></p>
+          <p>2018 Pangpang. lnc. ALL RIGHTS RESERVED</p>
+        </div>
+      </nav>
+      
+      <div class="contents scrollbar-inner" data-scrollelement>
+  
+        <div class="container-fluid">
+          <div class="page-navigation-blank"></div>
+          <div class="page-navigation">
+            <ul class="path">
+              <li class="path-item">HOME</li>
+              <li class="path-item">서비스관리</li>
+              <li class="path-item">사용자설정</li>
+              <li class="path-item"><a href="./admin/v3/serviceMgt/user/detail.php">상세정보</a></li>
+            </ul>
+            <div class="toolbar">
+              <ul class="global-quick">
+                <li class="global-quick-item"><a href="#none"><span class="icon-log icon-hover"
+                  data-pageinfo="log"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-warning">
+          <div class="page-warning-item on page-warning-setting">
+            <p>서버에 세팅중입니다. 잠시만 기다려주세요</p>
+            <div class="page-warning-badge">세팅확인</div>
+            <div class="page-warning-delete"><span class="icon-close"></span></div>
+          </div>
+          <div class="page-warning-item on page-warning-connect">
+            <p>"https://도메인.com" 접속이 원활하지 않습니다.</p>
+            <div class="page-warning-badge">접속확인</div>
+            <div class="page-warning-delete"><span class="icon-close"></span></div>
+          </div>
+          <div class="page-warning-item on page-warning-expand">
+            <p>서비스가 만료되어 연장이 필요합니다.</p>
+            <div class="page-warning-badge">서비스연장</div>
+            <div class="page-warning-delete"><span class="icon-close"></span></div>
+          </div>
+          <div class="page-warning-item on page-warning-inquiry">
+            <p>서버 접속상태가 원활하지 않습니다.</p>
+            <div class="page-warning-badge">서비스문의</div>
+            <div class="page-warning-delete"><span class="icon-close"></span></div>
+          </div>
+        </div>
+        <div class="contents-inner container">
+          <div class="detail-layout">
+            <div class="detail-layout-group">
+              <div class="left-layout">
+                <div class="content-box user-usage">
+                  <div class="box-title">
+                    <h1 class="box-title-text">용량관리</h1>
+                  </div>
+                  <div class="box-contents">
+                    <div class="progress active" data-progress="true" data-progress-type="bar"
+                      data-progress-legend="true" data-progress-total="100000" data-progress-size="240">
+                      <div class="progress-caption" style="font-size: 240px;">
+                        <div class="progress-title">트래픽 <span class="icon-reset progress-reset"
+                          data-layer-target="traffic-reset"></span></div>
+                        <div class="progress-total">
+                          <div class="progress-total-value">100GB</div>
+                          <div class="progress-modify">
+                            <span class="icon-setting progress-modify-open"></span>
+                            <div class="progress-modify-box">
+                              <div class="input-box">
+                                <input type="text" class="form-control">
+                              </div>
+                              <button type="button" name="button"
+                                class="btn btn-primary btn-rounded-sm progress-modify-apply ml-1"
+                                data-progress-layer-target="traffic-change">변경
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-bar" style="font-size: 240px;">
+                        <div class="progress-item traffic" data-progress-value="60000" data-progress-name="트래픽"
+                          style="z-index: 1; flex-basis: 60%;"></div>
+                      </div>
+                      <div class="progress-legend" style="font-size: 240px;">
+                        <div class="progress-legend-list">
+                          <div class="progress-legend-item">
+                            <div class="progress-legend-icon traffic"></div>
+                            <div class="progress-legend-amount">트래픽 60GB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="progress active" data-progress="true" data-progress-type="bar"
+                      data-progress-legend="true" data-progress-total="100000" data-progress-size="240">
+                      <div class="progress-caption" style="font-size: 240px;">
+                        <div class="progress-title">하드</div>
+                        <div class="progress-total">
+                          <div class="progress-total-value">100GB</div>
+                          <div class="progress-modify">
+                            <span class="icon-setting progress-modify-open"></span>
+                            <div class="progress-modify-box">
+                              <div class="input-box">
+                                <input type="text" class="form-control">
+                              </div>
+                              <button type="button" name="button"
+                                class="btn btn-primary btn-rounded-sm progress-modify-apply ml-1"
+                                data-progress-layer-target="hard-change">변경
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-bar" style="font-size: 240px;">
+                        <div class="progress-item hard" data-progress-value="60000" data-progress-name="하드"
+                          style="z-index: 1; flex-basis: 60%;"></div>
+                      </div>
+                      <div class="progress-legend" style="font-size: 240px;">
+                        <div class="progress-legend-list">
+                          <div class="progress-legend-item">
+                            <div class="progress-legend-icon hard"></div>
+                            <div class="progress-legend-amount">하드 60GB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box user-domain">
+                  <div class="box-title">
+                    <h1 class="box-title-text">도메인관리</h1>
+                    <a href="#none" class="badge badge-outline-secondary">SSL 인증서 등록</a>
+                  </div>
+                  <div class="box-contents">
+                    <div class="connect-domain">
+                      <div class="connect-domain-header">
+                        <ul class="option-list">
+                          <li class="option-list-item">
+                            <label class="custom-checkbox custom-checkbox-lg"><input type="checkbox" id="" checked=""><span></span>
+                              <p>HTTP</p>
+                            </label>
+                          </li>
+                          <li class="option-list-item">
+                            <label class="custom-checkbox custom-checkbox-lg https"><input type="checkbox" id=""
+                              checked=""><span></span>
+                              <p>HTTPS</p>
+                            </label>
+                            <i class="icon-question"><span class="tooltip-box">HTTPS는 HTTP의 보안이 강화된 버전입니다. SSl 인증서 등록을 통해 사용하실 수 있습니다.<br>이미 등록된 도메인의 경우 입력 시 자동으로 HTTPS가 활성화됩니다.</span></i>
+                          </li>
+                        </ul>
+                        <div class="slash">://</div>
+                        <div class="input-select-box">
+                          <input type="text" class="form-control mb-0 col">
+                          <select name="" id="" class="form-select mb-0 direct col-auto">
+                            <option value="직접입력">직접입력</option>
+                            <option value="0">pangx2.site</option>
+                            <option value="1">pangx2.info</option>
+                            <option value="2">테스트용 긴 도메인입니다.</option>
+                          </select>
+                        </div>
+                        <button type="button" name="button" class="btn btn-primary user-add-domain">연결</button>
+                      </div>
+                      <div class="scroll-wrapper connect-domain-body scrollbar-inner" style="position: relative;">
+                        <div class="connect-domain-body scrollbar-inner scroll-content scroll-scrolly_visible"
+                          style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 144px;">
+                          <ul class="user-setting-list">
+                            <li class="user-setting-list-item">
+                              <div class="user-setting-subject"><a href="http://axzwqdccxzcw223.pangx2.site"
+                                target="_blank"><span class="text-primary">https://</span>axzwqdccxzcw223.pangx2.site</a>
+                              </div>
+                              <div class="user-setting-date">2018-09-14, 04:39</div>
+                              <div class="user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-domain-delete"></span></div>
+                            </li>
+                            <li class="user-setting-list-item">
+                              <div class="user-setting-subject"><a href="http://axzwqdccxzcw223.pangx2.site"
+                                target="_blank">http://axzwqdccxzcw223.pangx2.site</a></div>
+                              <div class="user-setting-date">2018-09-14, 04:39</div>
+                              <div class="user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-domain-delete"></span></div>
+                            </li>
+                            <li class="user-setting-list-item">
+                              <div class="user-setting-subject"><a href="http://axzwqdccxzcw223.pangx2.site"
+                                target="_blank">http://axzwqdccxzcw223.pangx2.site</a></div>
+                              <div class="user-setting-date">2018-09-14, 04:39</div>
+                              <div class="user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-domain-delete"></span></div>
+                            </li>
+                            <li class="user-setting-list-item">
+                              <div class="user-setting-subject"><a href="http://axzwqdccxzcw223.pangx2.site"
+                                target="_blank">http://axzwqdccxzcw223.pangx2.site</a></div>
+                              <div class="user-setting-date">2018-09-14, 04:39</div>
+                              <div class="user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-domain-delete"></span></div>
+                            </li>
+                            <li class="user-setting-list-item">
+                              <div class="user-setting-subject"><a href="http://axzwqdccxzcw223.pangx2.site"
+                                target="_blank">http://axzwqdccxzcw223.pangx2.site</a></div>
+                              <div class="user-setting-date">2018-09-14, 04:39</div>
+                              <div class="user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-domain-delete"></span></div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="scroll-element scroll-x scroll-scrolly_visible">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar" style="width: 88px;"></div>
+                          </div>
+                        </div>
+                        <div class="scroll-element scroll-y scroll-scrolly_visible">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar" style="height: 92px; top: 0px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-layout">
+                <div class="content-box settings-user">
+                  <div class="box-title">
+                    <h1 class="box-title-text">사용자관리</h1>
+                    <div class="d-flex">
+                                <span class="icon-pw icon-hover context-menu">
+                                    <div class="context-menu-list">
+                                        <div class="context-menu-item"
+                                          data-layer-target="ssh-sftp-pwchange">SSH / SFTP 비밀번호</div>
+                                        <div class="context-menu-item"
+                                          data-layer-target="mysql-pwchange">MySQL 비밀번호</div>
+                                    </div>
+                                </span>
+                      <span class="icon-trash icon-hover" data-layer-target="remove-user"></span>
+                    </div>
+                  </div>
+                  <div class="box-contents">
+                    <ul class="form-list">
+                      <li class="form-list-item">
+                        <div class="form-title">이름</div>
+                        <div class="form-contens font-weight-bold">abcxcdwqwsssdw223</div>
+                      </li>
+                      <li class="form-list-item">
+                        <div class="form-title">이름</div>
+                        <div class="form-contens">
+                          <div class="edit-control"><input type="text" class="form-control" value="맥도날드"
+                            disabled=""><span class="icon-edit edit-modify"></span></div>
+                        </div>
+                      </li>
+                      <li class="form-list-item">
+                        <div class="form-title">연락처</div>
+                        <div class="form-contens">
+                          <div class="edit-control"><input type="text" class="form-control" value="맥도날드"
+                            disabled=""><span class="icon-edit edit-modify"></span></div>
+                        </div>
+                      </li>
+                      <li class="form-list-item">
+                        <div class="form-title">이메일</div>
+                        <div class="form-contens">
+                          <div class="edit-control"><input type="text" class="form-control" value="맥도날드"
+                            disabled=""><span class="icon-edit edit-modify"></span></div>
+                        </div>
+                      </li>
+                      <li class="form-list-item">
+                        <div class="form-title">생성일</div>
+                        <div class="form-contens">2018-10-01</div>
+                      </li>
+                      <li class="form-list-item">
+                        <div class="form-title">만료일</div>
+                        <div class="form-contens">
+                          <div class="form-contens">
+                            <div class="edit-control"><input type="text" class="form-control datepicker hasDatepicker"
+                              id="dp1647699210252"><span class="icon-close edit-delete"></span></div>
+                          </div>
+                          <label class="custom-checkbox"><input type="checkbox" id="" checked=""><span></span>
+                            <p>만료일 경과 후 WEB 접속 차단</p>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="text-center">
+                      <button type="button" name="button" class="btn btn-primary" data-layer-target="user-save">저장</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-layout-group">
+              <div class="left-layout">
+                <div class="content-box user-connect-setting">
+                  <div class="box-title">
+                    <h1 class="box-title-text">접속 관리</h1>
+                  </div>
+                  <div class="tab-group">
+                    <div class="tab-header">
+                      <div class="tab-header-item selected">WEB</div>
+                      <div class="tab-header-item">SSH / SFTP</div>
+                      <div class="tab-header-item">MySQL</div>
+                    </div>
+                    <div class="tab-body">
+                      <div class="tab-contents web-connect on">
+                        <div class="tab-contents-header cnt-input-group">
+                          <div class="switch-group">
+                            <div class="switch-title">접속 설정</div>
+                            <div class="switch-box">
+                              <label><input type="checkbox" class="cnt-setting" checked=""><span></span></label>
+                            </div>
+                          </div>
+                          <div class="switch-group">
+                            <div class="switch-title">접속 IP 설정</div>
+                            <div class="switch-box">
+                              <label><input type="checkbox" class="cnt-ip-setting" disabled=""><span></span></label>
+                            </div>
+                          </div>
+                          <div class="form-inline col justify-content-end">
+                            <div class="ip-input disabled">
+                              <div class="ip-input-container"><input type="text" class="ip-input-item" value=""
+                                disabled=""><i class="ip-input-dot"></i><input type="text" class="ip-input-item"
+                                value="" disabled=""><i class="ip-input-dot"></i><input type="text"
+                                class="ip-input-item" value="" disabled=""><i class="ip-input-dot"></i><input
+                                type="text" class="ip-input-item" value="" disabled=""></div>
+                            </div>
+                            <button class="btn btn-primary user-add-ip">IP 추가</button>
+                          </div>
+                        </div>
+                        <div class="scroll-wrapper tab-contents-body scrollbar-inner" style="position: relative;">
+                          <div class="tab-contents-body scrollbar-inner scroll-content scroll-scrolly_visible"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 190px;">
+                            <div class="user-setting-list">
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="web-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="web-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="web-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="web-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="web-ip-delete"></span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x scroll-scrolly_visible">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar" style="width: 88px;"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y scroll-scrolly_visible">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar" style="height: 161px; top: 0px;"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-contents ssh-sftp-connect">
+                        <div class="tab-contents-header cnt-input-group">
+                          <div class="switch-group">
+                            <div class="switch-title">접속 설정</div>
+                            <div class="switch-box">
+                              <label><input type="checkbox" class="cnt-setting" checked=""><span></span></label>
+                            </div>
+                          </div>
+                          <div class="switch-group">
+                            <div class="switch-title">접속 IP 설정</div>
+                            <div class="switch-box">
+                              <label><input type="checkbox" class="cnt-ip-setting" disabled=""><span></span></label>
+                            </div>
+                          </div>
+                          <div class="form-inline col justify-content-end">
+                            <div class="ip-input disabled">
+                              <div class="ip-input-container"><input type="text" class="ip-input-item" value=""
+                                disabled=""><i class="ip-input-dot"></i><input type="text" class="ip-input-item"
+                                value="" disabled=""><i class="ip-input-dot"></i><input type="text"
+                                class="ip-input-item" value="" disabled=""><i class="ip-input-dot"></i><input
+                                type="text" class="ip-input-item" value="" disabled=""></div>
+                            </div>
+                            <button class="btn-square user-add-ip">IP 추가</button>
+                          </div>
+                        </div>
+                        <div class="scroll-wrapper tab-contents-body scrollbar-inner" style="position: relative;">
+                          <div class="tab-contents-body scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="user-setting-list">
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="ssh-sftp-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="ssh-sftp-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="ssh-sftp-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="ssh-sftp-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="ssh-sftp-ip-delete"></span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-contents ssh-sftp-connect">
+                        <div class="tab-contents-header cnt-input-group">
+                          <div class="switch-group">
+                            <div class="switch-title">원격 접속 설정</div>
+                            <div class="switch-box">
+                              <label><input type="checkbox" class="cnt-ip-setting"><span></span></label>
+                            </div>
+                          </div>
+                          <div class="form-inline col justify-content-end">
+                            <div class="ip-input disabled">
+                              <div class="ip-input-container"><input type="text" class="ip-input-item" value=""
+                                disabled=""><i class="ip-input-dot"></i><input type="text" class="ip-input-item"
+                                value="" disabled=""><i class="ip-input-dot"></i><input type="text"
+                                class="ip-input-item" value="" disabled=""><i class="ip-input-dot"></i><input
+                                type="text" class="ip-input-item" value="" disabled=""></div>
+                            </div>
+                            <button class="btn-square user-add-ip">IP 추가</button>
+                          </div>
+                        </div>
+                        <div class="scroll-wrapper tab-contents-body scrollbar-inner" style="position: relative;">
+                          <div class="tab-contents-body scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="user-setting-list">
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="mysql-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="mysql-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="mysql-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="mysql-ip-delete"></span></div>
+                              </div>
+                              <div class="user-setting-list-item">
+                                <div class="user-setting-subject">123.123.123.12</div>
+                                <div class="user-setting-date">2018-09-14, 04:39</div>
+                                <div class="user-setting-delete"><span class="icon-trash"
+                                  data-layer-target="mysql-ip-delete"></span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-layout">
+                <div class="content-box detail-comment">
+                  <div class="box-title">
+                    <h1 class="box-title-text">코멘트</h1>
+                  </div>
+                  <div class="box-contents">
+                    <div class="cmt-box">
+                      <div class="cmt-box-header">
+                        <label class="cmt-important"><input type="checkbox"><span
+                          class="icon-exclamation"></span></label>
+                        <input type="text" class="form-control mb-0">
+                        <button type="button" class="btn btn-primary user-add-comment">등록</button>
+                      </div>
+                      <div class="scroll-wrapper cmt-box-body scrollbar-inner" style="position: relative;">
+                        <div class="cmt-box-body scrollbar-inner scroll-content scroll-scrolly_visible"
+                          style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 250px;">
+                          <div class="cmt-list user-setting-list">
+                            <div class="cmt-list-item user-setting-list-item">
+                              <div class="cmt-marker"><span class="icon-exclamation"></span></div>
+                              <div class="cmt-content">8월 17일 홈페이지 점검하기로 했음</div>
+                              <div class="cmt-date">2018-09-17 , 06:12</div>
+                              <div class="cmt-delete user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-comment-delete"></span></div>
+                            </div>
+                            <div class="cmt-list-item user-setting-list-item">
+                              <div class="cmt-marker important"><span class="icon-exclamation"></span></div>
+                              <div class="cmt-content">8월 17일 홈페이지 점검하기로 했음</div>
+                              <div class="cmt-date">2018-09-17 , 06:12</div>
+                              <div class="cmt-delete user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-comment-delete"></span></div>
+                            </div>
+                            <div class="cmt-list-item user-setting-list-item">
+                              <div class="cmt-marker"><span class="icon-exclamation"></span></div>
+                              <div class="cmt-content">8월 17일 홈페이지 점검하기로 했음</div>
+                              <div class="cmt-date">2018-09-17 , 06:12</div>
+                              <div class="cmt-delete user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-comment-delete"></span></div>
+                            </div>
+                            <div class="cmt-list-item user-setting-list-item">
+                              <div class="cmt-marker"><span class="icon-exclamation"></span></div>
+                              <div class="cmt-content">8월 17일 홈페이지 점검하기로 했음</div>
+                              <div class="cmt-date">2018-09-17 , 06:12</div>
+                              <div class="cmt-delete user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-comment-delete"></span></div>
+                            </div>
+                            <div class="cmt-list-item user-setting-list-item">
+                              <div class="cmt-marker"><span class="icon-exclamation"></span></div>
+                              <div class="cmt-content">8월 17일 홈페이지 점검하기로 했음</div>
+                              <div class="cmt-date">2018-09-17 , 06:12</div>
+                              <div class="cmt-delete user-setting-delete"><span class="icon-trash"
+                                data-layer-target="user-comment-delete"></span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="scroll-element scroll-x scroll-scrolly_visible">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar" style="width: 88px;"></div>
+                          </div>
+                        </div>
+                        <div class="scroll-element scroll-y scroll-scrolly_visible">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar" style="height: 184px; top: 0px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" name="button" class="btn btn-rounded-lg btn-dark mb-5"
+              onclick="window.history.go(-1)">목록으로
+            </button>
+          </div>
+        </div>
+        <div class="layer-bg"></div>
+        <div class="layer-pop" data-layer="remove-user">
+          <div class="layer-pop-header">사용자 삭제</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="form-title">하드 사용량</div>
+                <p>1GB 할당 중 530MB 사용</p>
+              </div>
+              <div class="form-list-item">
+                <div class="form-title">연결도메인</div>
+                <p>http://www.domain.com</p>
+                <p>https://sub.domain.com</p>
+                <p>https://www.domain2.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="layer-msgBox">
+            <p>삭제된 사용자의 WEB, SSH, FTP 접속은 즉시 차단됩니다.<br>삭제된 사용자 데이터는 휴지통에 보관되며<br>보관된 파일은 휴지통에서 복원할 수 있습니다.<br><br>사용자를 삭제 하시겠습니까?
+            </p>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="traffic-reset">
+          <div class="layer-pop-header">트래픽 초기화</div>
+          <div class="layer-pop-body">트래픽을 초기화하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="ssh-sftp-pwchange">
+          <div class="layer-pop-header">SSH / SFTP 비밀번호 변경</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호</div>
+                <input type="text" class="form-control mb-0">
+              </div>
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호 확인</div>
+                <input type="text" class="form-control mb-0">
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="mysql-pwchange">
+          <div class="layer-pop-header">MySQL 비밀번호 변경</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호</div>
+                <input type="text" class="form-control mb-0">
+              </div>
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호 확인</div>
+                <input type="text" class="form-control mb-0">
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="user-domain-delete">
+          <div class="layer-pop-header">도메인 해제</div>
+          <div class="layer-pop-body">사용자에 연결된 도메인을 해제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="web-ip-delete">
+          <div class="layer-pop-header">WEB 접속 IP 해제</div>
+          <div class="layer-pop-body">접속 허용된 IP를 해제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="ssh-sftp-ip-delete">
+          <div class="layer-pop-header">SSH / SFTP 접속 IP 해제</div>
+          <div class="layer-pop-body">접속 허용된 IP를 해제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="mysql-ip-delete">
+          <div class="layer-pop-header">MySQL 원격 접속 IP 해제</div>
+          <div class="layer-pop-body">접속 허용된 IP를 해제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="user-comment-delete">
+          <div class="layer-pop-header">코멘트 삭제</div>
+          <div class="layer-pop-body">코멘트를 삭제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="traffic-change">
+          <div class="layer-pop-header">트래픽 용량 변경</div>
+          <div class="layer-pop-body">
+            <div class="current-usage">현재용량 : <span></span></div>
+            <div class="change-usage">변경용량 : <span></span></div>
+            <p class="mt-2">트래픽 용량을 변경하시겠습니까?</p>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="hard-change">
+          <div class="layer-pop-header">하드 용량 변경</div>
+          <div class="layer-pop-body">
+            <div class="current-usage">현재용량 : <span></span></div>
+            <div class="change-usage">변경용량 : <span></span></div>
+            <p class="mt-2">하드 용량을 변경하시겠습니까?</p>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="usage-error_1">
+          <div class="layer-pop-header">사용량 변경 오류</div>
+          <div class="layer-pop-body">입력하신 값이 올바르지 않습니다.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="usage-error_2">
+          <div class="layer-pop-header">사용량 변경 오류</div>
+          <div class="layer-pop-body">입력하신 값이 현재값과 동일합니다.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="domain-error">
+          <div class="layer-pop-header">도메인 입력 오류</div>
+          <div class="layer-pop-body">도메인을 입력해주세요.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="user-save">
+          <div class="layer-pop-header">사용자정보 저장</div>
+          <div class="layer-pop-body">저장이 완료되었습니다.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="ip-error">
+          <div class="layer-pop-header">IP 입력 오류</div>
+          <div class="layer-pop-body">올바른 IP를 입력해주세요.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+        <div class="layer-pop" data-layer="comment-error">
+          <div class="layer-pop-header">코멘트 입력 오류</div>
+          <div class="layer-pop-body">코멘트를 입력해주세요.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-primary layer-confirm">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close"><span class="icon-close"></span></div>
+        </div>
+      </div>
+      
+      <div class="page-info scrollbar-inner">
+  
+        <div class="page-info-item page-log">
+          <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+            <div class="scrollbar-inner scroll-content"
+              style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+              <div class="page-info-title">
+                <p>사용자 설정 로그</p>
+                <div class="btn-x page-close"></div>
+              </div>
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-list-button">사용자설정</div>
+                  <p>사용자 <span class="text-primary">맥도날드</span>를(을) <span class="text-primary">새폴더1</span>에서 <span
+                    class="text-primary">새폴더2</span>(으)로 이동
+                  </p>
+                  <div class="info-list-date">2018-09-17, 06:12</div>
+                </li>
+              </ul>
+            </div>
+            <div class="scroll-element scroll-x">
+              <div class="scroll-element_outer">
+                <div class="scroll-element_size"></div>
+                <div class="scroll-element_track"></div>
+                <div class="scroll-bar"></div>
+              </div>
+            </div>
+            <div class="scroll-element scroll-y">
+              <div class="scroll-element_outer">
+                <div class="scroll-element_size"></div>
+                <div class="scroll-element_track"></div>
+                <div class="scroll-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script type="text/javascript">
+        var ipInput = $('.ip-input').ipInput();
+        
+        pageWarning();
+        cntInputGroup();
+        deleteUserListItem();
+        domainInputGroup();
+        userAddComment();
+        
+        function pageWarning() {
+          $('.page-warning-item .icon-close').on('click', function () {
+            $(this).parents('.page-warning-item').removeClass('on');
+          });
+        }
+        
+        function userAddComment() {
+          $('.user-add-comment').on('click', function () {
+            var comment = $(this).parents('.cmt-box-header').find('.form-control').val(),
+              importCheck = $(this).parents('.cmt-box-header').find('.cmt-important input').prop('checked') ? 'important' : '',
+              $list = $(this).parents('.cmt-box').find('.user-setting-list'),
+              date = new Date(),
+              year = date.getFullYear(),
+              month = (((date.getMonth() + 1) % 12) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1)),
+              day = ((date.getDate() / 10) == 1 || (date.getDate() / 10) > 1) ? date.getDate() : '0' + date.getDate(),
+              hours = ((date.getHours() / 10) == 1 || (date.getHours() / 10) > 1) ? date.getHours() : '0' + date.getHours(),
+              minute = ((date.getMinutes() / 10) == 1 || (date.getMinutes() / 10) > 1) ? date.getMinutes() : '0' + date.getMinutes(),
+              list = '';
+            
+            if (comment.length > 0) {
+              list += '<div class="cmt-list-item user-setting-list-item">'
+              list += '<div class="cmt-marker ' + importCheck + '"><span class="icon-exclamation"></span></div>'
+              list += '<div class="cmt-content">' + comment + '</div>'
+              list += '<div class="cmt-date">' + year + '-' + month + '-' + day + ', ' + hours + ':' + minute + '</div>'
+              list += '<div class="cmt-delete user-setting-delete"><span class="icon-trash" data-layer-target="user-comment-delete"></span></div>'
+              list += '</div>'
+              
+              $list.prepend(list);
+              
+              deleteUserListItem();
+              layerActive();
+            } else {
+              $('.layer-bg').fadeIn();
+              $('[data-layer="comment-error"]').fadeIn();
+            }
+          });
+        }
+        
+        function deleteUserListItem() {
+          var $list, idx;
+          
+          $('.user-setting-delete .icon-trash').off('click').on('click', function (e) {
+            $list = $(this).parents('.user-setting-list');
+            idx = $(this).parents('.user-setting-list-item').index();
+          });
+          
+          $('[data-layer*="-delete"] .layer-confirm').off('click').on('click', function () {
+            $list.children().eq(idx).remove();
+          });
+        }
+        
+        function domainInputGroup() {
+          $('.user-add-domain').on('click', function () {
+            var $list = $(this).parents('.connect-domain').find('.user-setting-list'),
+              httpCheck = $('.connect-domain-header .option-list .option-list-item input'),
+              https = httpCheck.eq(1).prop('checked') ? '<span class="text-primary">https</span>://' : 'http://',
+              domainName = $('.connect-domain-header .input-select-box .form-control').val(),
+              topLevelDomain = '',
+              date = new Date(),
+              year = date.getFullYear(),
+              month = (((date.getMonth() + 1) % 12) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1)),
+              day = ((date.getDate() / 10) == 1 || (date.getDate() / 10) > 1) ? date.getDate() : '0' + date.getDate(),
+              hours = ((date.getHours() / 10) == 1 || (date.getHours() / 10) > 1) ? date.getHours() : '0' + date.getHours(),
+              minute = ((date.getMinutes() / 10) == 1 || (date.getMinutes() / 10) > 1) ? date.getMinutes() : '0' + date.getMinutes(),
+              list = '';
+            
+            if ($('.connect-domain-header .input-select-box .form-select').val() != '직접입력') {
+              topLevelDomain = '.' + $('.connect-domain-header .input-select-box .form-select option:selected').text();
+            }
+            
+            if (domainName != '' || domainName != undefined || isNaN(domainName)) {
+              
+              list += '<li class="user-setting-list-item">'
+              list += '<div class="user-setting-subject"><a href="' + domainName + '" target="_blank">' + https + domainName + topLevelDomain + '</a></div>'
+              list += '<div class="user-setting-date">' + year + '-' + month + '-' + day + ', ' + hours + ':' + minute + '</div>'
+              list += '<div class="user-setting-delete"><span class="icon-trash" data-layer-target="user-domain-delete"></span></div>'
+              list += '</li>'
+              
+              $list.prepend(list);
+              
+              deleteUserListItem();
+              layerActive();
+              
+            } else {
+              $('.layer-bg').fadeIn();
+              $('[data-layer="domain-error"]').fadeIn();
+            }
+          });
+        }
+        
+        function cntInputGroup() {
+          var $el = $('.cnt-input-group');
+          
+          for (var i = 0; i < $el.length; i++) {
+            var $this = $el.eq(i),
+              $cnt_setting = $this.find('.cnt-setting'),
+              $cnt_ip_setting = $this.find('.cnt-ip-setting'),
+              $cnt_add_ip = $this.find('.user-add-ip');
+            
+            $cnt_add_ip.on('click', function () {
+              var $list = $(this).parents('.tab-contents').find('.user-setting-list'),
+                ipInput = $(this).parents('.cnt-input-group').find('.ip-input'),
+                ipValue = ipInput.getIp(),
+                date = new Date(),
+                year = date.getFullYear(),
+                month = (((date.getMonth() + 1) % 12) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1)),
+                day = ((date.getDate() / 10) == 1 || (date.getDate() / 10) > 1) ? date.getDate() : '0' + date.getDate(),
+                hours = ((date.getHours() / 10) == 1 || (date.getHours() / 10) > 1) ? date.getHours() : '0' + date.getHours(),
+                minute = ((date.getMinutes() / 10) == 1 || (date.getMinutes() / 10) > 1) ? date.getMinutes() : '0' + date.getMinutes(),
+                list = '';
+              
+              if (ipValue != undefined) {
+                list += '<div class="user-setting-list-item">'
+                list += '<div class="user-setting-subject">' + ipValue + '</div>'
+                list += '<div class="user-setting-date">' + year + '-' + month + '-' + day + ', ' + hours + ':' + minute + '</div>'
+                list += '<div class="user-setting-delete"><span class="icon-trash" data-layer-target="web-ip-delete"></span></div>'
+                list += '</div>'
+                
+                $list.prepend(list);
+                
+                deleteUserListItem();
+                layerActive();
+              } else {
+                $('.layer-bg').fadeIn();
+                $('[data-layer="ip-error"]').fadeIn();
+              }
+            });
+            
+            $cnt_setting.on('change', function () {
+              var state = $(this).prop('checked'),
+                $cnt_ip_setting = $(this).parents('.cnt-input-group').find('.cnt-ip-setting'),
+                $ip_input = $(this).parents('.cnt-input-group').find('.ip-input');
+              
+              if (state) {
+                $cnt_ip_setting.prop('disabled', true);
+                $ip_input.addClass('disabled').find('input').prop('disabled', true);
+              } else {
+                $cnt_ip_setting.prop('disabled', false);
+                
+                if ($cnt_ip_setting.prop('checked')) {
+                  $ip_input.removeClass('disabled').find('input').prop('disabled', false);
+                }
+              }
+            });
+            
+            $cnt_ip_setting.on('change', function () {
+              var state = $(this).prop('checked'),
+                $ip_input = $(this).parents('.cnt-input-group').find('.ip-input');
+              
+              if (state) {
+                $ip_input.removeClass('disabled').find('input').prop('disabled', false);
+              } else {
+                $ip_input.addClass('disabled').find('input').prop('disabled', true);
+              }
+            });
+          }
+        }
+        
+        // datepicker, 달력
+        $('.datepicker').datepicker({
+          dateFormat: "yy-mm-dd",
+          altFormat: "yy-mm-dd",
+          monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+          monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+          dayNames: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+          dayNamesShort: ["일", "월", "화", "수", "목", "금", "토"],
+          dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+          prevText: "&lt;",
+          nextText: "&gt;"
+        }).focus(function () {
+          // '년2018' -> '2018년' 배치순서변경
+          $('.ui-datepicker-title .ui-datepicker-year').after($('.ui-datepicker-title .ui-datepicker-month'));
+          $('.ui-datepicker-title .ui-datepicker-year').after('년 ');
+        });
+        
+        $('.input-select-box .form-select').on('change', function () {
+          var cv = $(this).val();
+          
+          if (cv == '직접입력') {
+            $(this).addClass('direct');
+          } else {
+            $(this).removeClass('direct');
+          }
+          
+          $(this).siblings('.form-control').focus();
+        });
+        
+        $('.edit-control .edit-modify').on('click', function () {
+          var $input = $(this).siblings('.form-control'),
+            prop = $input.prop('readonly');
+          
+          if (typeof prop !== typeof undefined && prop !== false) {
+            $input.removeAttr('readonly');
+            $input.focus();
+          }
+        }).siblings('.form-control').focusout(function () {
+          $(this).prop('readonly', true);
+        });
+        
+        $('.edit-control .edit-delete').on('click', function () {
+          var $input = $(this).siblings('.form-control');
+          $input.val('');
+        });
+      
+      
+      </script>
+    
+    </section>
+    <div id="ui-datepicker-div"
+      class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    <footer class="footer">
+      <div class="copyright">COPYRIGHT <span class="icon-copyright"></span> 2018 Pangpang. lnc. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    <div class="layer-box" data-layer="aLog">
+      <div class="layer-title">로그</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">사용자설정</button>
+          <p class="description">이름 <span class="point">맥도날드</span>의 할당 트래픽(을)를 <span
+            class="point">12000MB</span>(으)로 변경
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에 <span class="point">pangpang.pangx2.com</span>, <span
+            class="point">112.131.213.123</span> 추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에 <span class="point">pangpang.pangx2.com</span>, <span
+            class="point">112.131.213.123</span> 추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에 <span class="point">pangpang.pangx2.com</span>, <span
+            class="point">112.131.213.123</span> 추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    <div class="layer-box" data-layer="aComment">
+      <div class="layer-title">작업 코멘트</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">맥도날드</button>
+          <p class="description">8월 17일 홈페이지 점검하기로 했음</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    <div class="scroll-bottom"></div>
+    
+    
+    <div
+      style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+  </body>
+</html>

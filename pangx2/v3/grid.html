@@ -1,0 +1,2183 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/icon/admin/style.css?m181107v4">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/noto-sans-cjk/noto_sans_cjk.css?m181012">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery.scrollbar.css?m181012">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/ipInput.min.css?u181016">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common/swiper.css?u181123">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pangx2-admin.css?m181226v7">
+    
+    <!-- JS -->
+    <script type="text/javascript" src="./assets/js/common/jquery.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery.easing.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/jquery.scrollbar.js?u181012"></script>
+    <script type="text/javascript" src="./assets/js/common/ipInput.js?u181016"></script>
+    <script type="text/javascript" src="./assets/js/common/swiper.js?u181123"></script>
+    <script type="text/javascript" src="./assets/js/pangx2-admin.js?u181012m181107v3"></script>
+    
+    <title>팡팡 웹호스팅 솔루션</title>
+  </head>
+  <body>
+    <header class="header on">
+      <div class="top">
+        <a href="#" class="logo">
+          <img src="./assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션">
+        </a>
+        <div class="hamburg-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global">
+        <div class="global-head">
+          <a href="#" class="logo">
+            <img src="./assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션">
+          </a>
+          <div class="hamburg-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="global-list list-icon">
+          <li class="global-list-item">
+            <div class="user-info dropdown">
+              <div class="user-info-box">
+                <img src="./assets/images/admin/user.svg" alt="">
+                홍길동님
+              </div>
+              <div class="dropdown-list">
+                <div class="dropdown-item">
+                  <a href="./mypage/apply.html">서비스 신청</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="./mypage/extend.html">서비스 연장</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="./mypage/payment.html">결제내역</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="./mypage/myinfo.html">회원정보 수정</a>
+                </div>
+                <div class="dropdown-item">로그아웃</div>
+              </div>
+            </div>
+          </li>
+          <li class="global-list-item">
+            <a href="#" data-layer-target="aComment">
+              <span class="icon-comment icon-hover new"><span class="marker-new"></span></span>
+            </a>
+          </li>
+          <li class="global-list-item">
+            <a href="#" data-layer-target="aLog">
+              <span class="icon-log icon-hover new"><span class="marker-new"></span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <nav class="nav on">
+        <div class="nav-list service-title">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="/pangx2/v3/grid.html">웹호스팅솔루션</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list on">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-group"></span>
+                <span class="text">서비스관리</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item active">
+              <a href="./grid.html">
+                <span>사용자설정</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="./domain.html">서비스 도메인 설정</a>
+            </div>
+            <div class="nav-list-item">
+              <a href="./nameserver/domain.html">네임서버 설정</a>
+            </div>
+            <div class="nav-list-item">
+              <a href="./settings/domain.html">환경설정</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-monitoring"></span>
+                <span class="text">모니터링</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item">
+              <a href="./monitoring/traffic.html">
+                <span>트래픽</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="./monitoring/cpu.html">
+                <span>CPU</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="#none">
+                <span>메모리</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="#none">
+                <span>환경설정</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="./admin/v3/log/index.php">
+                <span class="icon-log"></span>
+                <span class="text">로그관리</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-cs"></span>
+                <span class="text">고객센터</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item">
+              <a href="./inquiry/list.html">
+                <span>1:1 문의</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="./notice/list.html">공지사항</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT
+            <span class="icon-copyright"></span>
+          </p>
+          <p>2018 Pangpang. lnc. ALL RIGHTS RESERVED</p>
+        </div>
+      </nav>
+      
+      <div class="contents scrollbar-inner" data-scrollelement>
+        
+        <div class="container-fluid">
+          <div class="page-navigation-blank"></div>
+          <div class="page-navigation">
+            <ul class="path">
+              <li class="path-item">HOME</li>
+              <li class="path-item">서비스관리</li>
+              <li class="path-item">
+                <a href="">사용자설정</a>
+              </li>
+            </ul>
+            <div class="toolbar">
+              <div class="search">
+                <input type="text">
+                <button type="button" class="btn-search">
+                  <span class="icon-search"></span>
+                </button>
+              </div>
+              
+              <ul class="page-quick">
+                <li class="page-quick-item">
+                  <a href="list.html">
+                    <span class="icon-list icon-hover"></span>
+                  </a>
+                </li>
+                <li class="page-quick-item">
+                  <a href="#none">
+                    <span class="icon-folder-add icon-hover" data-layer-target="add-folder"></span>
+                  </a>
+                </li>
+                <li class="page-quick-item">
+                  <a href="#none">
+                    <span class="icon-folder-move icon-hover" data-layer-target="move-folder"></span>
+                  </a>
+                </li>
+                <li class="page-quick-item">
+                  <a href="#none">
+                    <span class="icon-folder-setting icon-hover" data-layer-target="setting-folder"></span>
+                  </a>
+                </li>
+                <li class="page-quick-item">
+                  <a href="#none">
+                    <span class="icon-item-add icon-hover" data-layer-target="add-user"></span>
+                  </a>
+                </li>
+                <li class="page-quick-item">
+                  <a href="#none">
+                    <span class="icon-trash icon-hover" data-layer-target="remove-user"></span>
+                  </a>
+                </li>
+              </ul>
+              
+              <ul class="global-quick">
+                <li class="global-quick-item">
+                  <a href="#none">
+                    <span class="icon-log icon-hover" data-pageinfo="log"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-state user-setting">
+            <div class="container">
+              <div class="page-state-group">
+                <div class="page-state-box">
+                  <div class="page-state-title">사용자 현황</div>
+                  <div class="page-info-group">
+                    <div class="page-info-box type-center">
+                      <div class="page-info-title">
+                        <span class="icon-item"></span>
+                        사용자
+                      </div>
+                      <div class="page-info-count">59</div>
+                    </div>
+                    <div class="page-info-box type-center">
+                      <div class="page-info-title">
+                        <span class="icon-domain"></span>
+                        연결도메인
+                      </div>
+                      <div class="page-info-count">183</div>
+                    </div>
+                    <div class="page-info-box type-center">
+                      <div class="page-info-title">
+                        <span class="icon-folder"></span>
+                        새폴더1 사용자
+                      </div>
+                      <div class="page-info-count">30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-state-box">
+                  <div class="page-state-title mb-1">디스크 현황</div>
+                  <div class="progress" data-progress="true" data-progress-type="bar"
+                    data-progress-legend="true" data-progress-total="100000" data-progress-size="200">
+                    <div class="progress-caption">
+                      <div class="progress-title"></div>
+                      <div class="progress-total">100GB</div>
+                    </div>
+                    <div class="progress-bar" style="font-size: 200px;">
+                      <div class="progress-item quota" data-progress-value="60000" data-progress-name="할당량">
+                        <div class="progress-inner-item usage" data-progress-value="40000"
+                          data-progress-name="사용량"></div>
+                      </div>
+                      <div class="progress-item system" data-progress-value="10000" data-progress-name="시스템 로그"></div>
+                    </div>
+                    <div class="progress-legend">
+                      <div class="progress-legend-list">
+                        <div class="progress-legend-item">
+                          <div class="progress-legend-icon" style="background-color:rgb(60, 221, 195)"></div>
+                          <div class="progress-legend-amount">사용량 40GB</div>
+                        </div>
+                        <div class="progress-legend-item">
+                          <div class="progress-legend-icon" style="background-color:rgb(255, 129, 71)"></div>
+                          <div class="progress-legend-amount">할당량 60GB</div>
+                        </div>
+                        <div class="progress-legend-item">
+                          <div class="progress-legend-icon" style="background-color:rgb(71, 205, 255)"></div>
+                          <div class="progress-legend-amount">시스템 로그 10GB</div>
+                        </div>
+                      </div>
+                      <div class="progress-legend-remain">
+                        <div class="progress-legend-icon"></div>
+                        <div class="progress-legend-amount">여유공간 30GB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-state-box">
+                  <button type="button" class="btn btn-rounded-lg btn-primary"
+                    data-layer-target="add-user">새로운 사용자 추가
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contents-inner container">
+          <div class="contents-inner-title">
+            <div class="contents-inner-title-item col">
+              <div class="title-text">폴더목록</div>
+              <div class="folder-button-list">
+                <button type="button" class="btn selected">전체사용자</button>
+                <button type="button" class="btn">미분류사용자</button>
+              </div>
+            </div>
+            <div class="contents-inner-title-item col-auto">
+              <button type="button" class="btn-transparent" data-layer-target="add-folder"><span
+                class="icon-folder"></span>
+                폴더추가
+              </button>
+            </div>
+          </div>
+          <div class="folder">
+            <div class="folder-list">
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="folder-item">
+                <div class="folder-name ellipsis-tooltip tooltip-type-square">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                <div class="folder-manage">
+                  <div class="icon-setting context-menu">
+                    <div class="context-menu-list">
+                      <div class="context-menu-item" data-layer-target="setting-folder">폴더설정</div>
+                      <div class="context-menu-item" data-layer-target="remove-folder">폴더삭제</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-user-group" data-appendelement="">
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="context-menu-list-group scrollbar-inner">
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                          <div class="context-menu-item">
+                            <div class="context-folder-name">
+                              <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                            </div>
+                            <div>이동</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user expired">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-user">
+              <div class="card-user-top">
+                <div class="card-user-toolbar">
+                  <label class="custom-checkbox"><input type="checkbox" id="">
+                    <span></span>
+                    <div class="item-focus-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label>
+                  <div class="card-user-manage">
+                    <div class="card-user-state">
+                      <label class="connect-checkbox"><input type="checkbox" checked="">
+                        <span>WEB접속</span>
+                      </label>
+                      <label class="connect-checkbox"><input type="checkbox">
+                        <span>FTP접속</span>
+                      </label>
+                    </div>
+                    <a href="detail.html" class="card-user-setting icon-setting"></a>
+                  </div>
+                </div>
+                <div class="card-user-info">
+                  <div class="card-user-folder">
+                    <div class="icon-folder folder-icon context-menu">
+                      <div class="context-menu-list">
+                        <div class="scroll-wrapper context-menu-list-group scrollbar-inner"
+                          style="position: relative;">
+                          <div class="context-menu-list-group scrollbar-inner scroll-content"
+                            style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                            <div class="context-menu-item">
+                              <div class="context-folder-name">
+                                <div class="context-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                              </div>
+                              <div>이동</div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-x">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                          <div class="scroll-element scroll-y">
+                            <div class="scroll-element_outer">
+                              <div class="scroll-element_size"></div>
+                              <div class="scroll-element_track"></div>
+                              <div class="scroll-bar"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="folder-name ellipsis-tooltip">새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더새폴더</div>
+                  </div>
+                  <div class="card-user-ip">222.239.90.109</div>
+                </div>
+                <div class="card-user-title">
+                  <div class="card-user-name">맥도날드</div>
+                  <div class="card-user-dday">D-999</div>
+                </div>
+              </div>
+              <div class="card-user-body">
+                <div class="url">
+                  <a href="http://chlee0120.pangx2.site" target="_blank"
+                    class="link">http://chlee0120.pangx2.site
+                  </a>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="트래픽"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">트래픽</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item traffic" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress" data-progress="true" data-progress-total="1000" data-progress-title="하드"
+                  data-progress-size="60" data-progress-tooltip="true">
+                  <div class="progress-caption">
+                    <div class="progress-title">하드</div>
+                    <div class="progress-total">1GB</div>
+                  </div>
+                  <div class="progress-bar" style="font-size: 60px;">
+                    <div class="progress-item hard" data-progress-value="600">
+                      <div class="progress-tip">600MB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /serviceMgt/layer.php에 레이어 HTML 분리  // -->
+        <!-- 레이어 배경 -->
+        <div class="layer-bg"></div>
+        <!-- 폴더 설정 -->
+        <div class="layer-pop" data-layer="setting-folder">
+          <div class="layer-pop-header">폴더 설정</div>
+          <div class="layer-pop-body">
+            <ul class="form-list">
+              <li class="form-list-item">
+                <p class="form-title">폴더이름</p>
+                <input type="text" class="form-control">
+              </li>
+              <li class="form-list-item">
+                <p class="form-title">생성한 날짜</p>
+                <p>2018-10-01 12:30</p>
+              </li>
+              <li class="form-list-item">
+                <p class="form-title">사용자 수</p>
+                <p>30</p>
+              </li>
+            </ul>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- 폴더 추가 -->
+        <div class="layer-pop" data-layer="add-folder">
+          <div class="layer-pop-header">새로운 폴더 추가</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <p class="form-title">폴더명</p>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- 폴더 이동 -->
+        <div class="layer-pop" data-layer="move-folder">
+          <div class="layer-pop-header">폴더 이동</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="row">
+                  <div class="col-6 pr-1">
+                    <div class="form-title">아이디</div>
+                    <p>dnpqghtmxld1234</p>
+                    <p>dnpqghtmxld1234</p>
+                  </div>
+                  <div class="col-6 pl-1">
+                    <div class="form-title">현재폴더</div>
+                    <p>새폴더2</p>
+                    <p>새폴더2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-list">
+                <div class="form-list-item">
+                  <div class="form-title">이동할 폴더 선택</div>
+                  <select name="" id="" class="form-select w-100">
+                    <option value="0">미분류</option>
+                    <option value="1">새폴더1</option>
+                    <option value="2">새폴더2</option>
+                    <option value="3">새폴더3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- 폴더 삭제 -->
+        <div class="layer-pop" data-layer="remove-folder">
+          <div class="layer-pop-header">폴더 삭제</div>
+          <div class="layer-pop-body">새폴더2(을)를 삭제하시겠습니까?<br>폴더를 삭제하시면 폴더내의 사용자는 미분류 상태가 됩니다.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- 사용자 추가 -->
+        <div class="layer-pop" data-layer="add-user">
+          <div class="layer-pop-header">새로운 사용자 추가</div>
+          <div class="layer-pop-body">
+            <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
+              <div class="scrollbar-inner scroll-content"
+                style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+                <ul class="form-list">
+                  <li class="form-list-item">
+                    <div class="form-title">서버</div>
+                    <select id="" class="form-select w-100">
+                      <option value="222.123.456.23">222.123.456.23</option>
+                      <option value="pangx2.info">222.234.90.110</option>
+                    </select>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="form-title">아이디</div>
+                    <input type="text" class="form-control">
+                    <div class="validation-msg">
+                      <span class="icon-exclamation ico"></span>
+                      사용 불가능한 아이디입니다.
+                    </div>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="row">
+                      <div class="col-6 pr-1">
+                        <div class="form-title">하드</div>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-6 pl-1">
+                        <div class="form-title">트래픽</div>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="form-title">이름</div>
+                    <input type="text" class="form-control">
+                    <div class="validation-msg">
+                      <span class="icon-exclamation ico"></span>
+                      이름을 입력해 주세요.
+                    </div>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="form-title">도메인</div>
+                    <div class="row">
+                      <div class="col-6 pr-1">
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-6 pl-1">
+                        <select id="" class="form-select">
+                          <option value="직접입력">직접입력</option>
+                          <option value="pangx2.site">pangx2.site</option>
+                          <option value="pangx2.info">pangx2.info</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="validation-msg">
+                      <span class="icon-exclamation ico"></span>
+                      현재 사용중인 도메인입니다.
+                    </div>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="form-title">FTP/SSH/DB 비밀번호</div>
+                    <input type="password" placeholder="비밀번호 입력" class="form-control">
+                    <input type="password" placeholder="비밀번호 확인" class="form-control">
+                    <div class="validation-msg">
+                      <span class="icon-exclamation ico"></span>
+                      비밀번호는 4자 이상 입력해주세요.
+                    </div>
+                  </li>
+                  <li class="form-list-item">
+                    <div class="form-title">폴더</div>
+                    <select id="" class="form-select w-100">
+                      <option value="0">새폴더1</option>
+                      <option value="1">새폴더2</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <div class="scroll-element scroll-x">
+                <div class="scroll-element_outer">
+                  <div class="scroll-element_size"></div>
+                  <div class="scroll-element_track"></div>
+                  <div class="scroll-bar"></div>
+                </div>
+              </div>
+              <div class="scroll-element scroll-y">
+                <div class="scroll-element_outer">
+                  <div class="scroll-element_size"></div>
+                  <div class="scroll-element_track"></div>
+                  <div class="scroll-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- 사용자 삭제 -->
+        <div class="layer-pop" data-layer="remove-user">
+          <div class="layer-pop-header">사용자 삭제</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="form-title">하드 사용량</div>
+                <p>1GB 할당 중 530MB 사용</p>
+              </div>
+              <div class="form-list-item">
+                <div class="form-title">연결도메인</div>
+                <p>http://www.domain.com</p>
+                <p>https://sub.domain.com</p>
+                <p>https://www.domain2.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="layer-msgBox">
+            <p>삭제된 사용자의 WEB, SSH, FTP 접속은 즉시 차단됩니다.<br>삭제된 사용자 데이터는 휴지통에 보관되며<br>보관된 파일은 휴지통에서 복원할 수 있습니다.<br><br>사용자를 삭제 하시겠습니까?
+            </p>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-rounded-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-rounded-sm btn-primary">확인</button>
+          </div>
+          <div class="layer-close-btn layer-close">
+            <span class="icon-close"></span>
+          </div>
+        </div>
+        <!-- // -->
+      </div>
+      
+      <!-- 사용자설정 로그 -->
+      <div class="page-info">
+        <div class="page-info-item page-log">
+          <div class="scrollbar-inner">
+            
+            <div class="page-info-title">
+              <p>사용자 설정 로그</p>
+              <div class="btn-x page-close"></div>
+            </div>
+            <ul class="info-list">
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span
+                    class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="copyright">COPYRIGHT
+        <span class="icon-copyright"></span>
+        2018 Pangpang. lnc. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    
+    <div class="layer-box" data-layer="aLog">
+      <div class="layer-title">로그</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">사용자설정</button>
+          <p class="description">이름
+            <span class="point">맥도날드</span>
+            의 할당 트래픽(을)를
+            <span
+              class="point">12000MB</span>
+            (으)로 변경
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span
+              class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span
+              class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span
+              class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    
+    <div class="layer-box" data-layer="aComment">
+      <div class="layer-title">작업 코멘트</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">맥도날드</button>
+          <p class="description">8월 17일 홈페이지 점검하기로 했음</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    <div class="scroll-bottom"></div>
+  </body>
+</html>
