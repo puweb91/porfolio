@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/icon/admin/style.css?m181107v4">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/noto-sans-cjk/noto_sans_cjk.css?m181012">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css?m181012">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/ipInput.min.css?u181016">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/swiper.css?u181123">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pangx2-admin.css?m181226v7">
+    
+    <!-- JS -->
+    <script type="text/javascript" src="../assets/js/common/jquery.js?u181012"></script>
+    <script type="text/javascript" src="../assets/js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../assets/js/common/jquery.easing.js?u181012"></script>
+    <script type="text/javascript" src="../assets/js/common/jquery.scrollbar.js?u181012"></script>
+    <script type="text/javascript" src="../assets/js/common/ipInput.js?u181016"></script>
+    <script type="text/javascript" src="../assets/js/common/swiper.js?u181123"></script>
+    <script type="text/javascript" src="../assets/js/pangx2-admin.js?u181012m181107v3"></script>
+    
+    <title>팡팡 웹호스팅 솔루션</title>
+  </head>
+  <body>
+    <header class="header on">
+      <div class="top">
+        <a href="#" class="logo">
+          <img src="../assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션">
+        </a>
+        <div class="hamburg-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="global">
+        <div class="global-head">
+          <a href="#" class="logo">
+            <img src="../assets/images/admin/logo.svg" alt="팡팡 웹호스팅 솔루션">
+          </a>
+          <div class="hamburg-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="global-list list-icon">
+          <li class="global-list-item">
+            <div class="user-info dropdown">
+              <div class="user-info-box">
+                <img src="../assets/images/admin/user.svg" alt="">
+                홍길동님
+              </div>
+              <div class="dropdown-list">
+                <div class="dropdown-item">
+                  <a href="../mypage/apply.html">서비스 신청</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="../mypage/extend.html">서비스 연장</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="../mypage/payment.html">결제내역</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="../mypage/myinfo.html">회원정보 수정</a>
+                </div>
+                <div class="dropdown-item">로그아웃</div>
+              </div>
+            </div>
+          </li>
+          <li class="global-list-item">
+            <a href="#" data-layer-target="aComment">
+              <span class="icon-comment icon-hover new"><div class="marker-new"></div></span>
+            </a>
+          </li>
+          <li class="global-list-item">
+            <a href="#" data-layer-target="aLog">
+              <span class="icon-log icon-hover new"><div class="marker-new"></div></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <nav class="nav on">
+        <div class="nav-list service-title">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="/pangx2/v3/grid.html">웹호스팅솔루션</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-group"></span>
+                <span class="text">서비스관리</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item">
+              <a href="../grid.html">
+                <span>사용자설정</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="../domain.html">서비스 도메인 설정</a>
+            </div>
+            <div class="nav-list-item">
+              <a href="../nameserver/domain.html">네임서버 설정</a>
+            </div>
+            <div class="nav-list-item">
+              <a href="../settings/domain.html">환경설정</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-monitoring"></span>
+                <span class="text">모니터링</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item">
+              <a href="../monitoring/traffic.html">
+                <span>트래픽</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="../monitoring/cpu.html">
+                <span>CPU</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="#none">
+                <span>메모리</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="#none">
+                <span>환경설정</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-log"></span>
+                <span class="text">로그관리</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-main">
+            <div class="nav-list-item">
+              <a href="#none">
+                <span class="icon-cs"></span>
+                <span class="text">고객센터</span>
+                <span class="arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-list-sub">
+            <div class="nav-list-item">
+              <a href="../inquiry/list.html">
+                <span>1:1 문의</span>
+              </a>
+            </div>
+            <div class="nav-list-item">
+              <a href="../notice/list.html">공지사항</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT
+            <span class="icon-copyright"></span>
+          </p>
+          <p>2018 Pangpang. lnc. ALL RIGHTS RESERVED</p>
+        </div>
+      </nav>
+  
+      <div class="contents scrollbar-inner" data-scrollelement="">
+        <div class="container-fluid">
+          <div class="page-navigation-blank"></div>
+          <div class="page-navigation">
+            <ul class="path">
+              <li class="path-item">HOME</li>
+              <li class="path-item">홍길동님</li>
+              <li class="path-item"><a href="/pangx2.com/admin/v3/mypage/myinfo/index.php">회원정보수정</a></li>
+            </ul>
+            <div class="toolbar">
+              <ul class="global-quick">
+                <li class="global-quick-item"><a href="#none"><span class="icon-log icon-hover" data-pageinfo="log"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contents-inner container myinfo">
+          <div class="panel-group">
+            <div class="panel-wrap required-info">
+              <div class="panel-title">회원 필수 정보</div>
+              <div class="panel">
+                <div class="form-list">
+                  <div class="form-list-item">
+                    <div class="form-title">이메일</div>
+                    <p>manager@pangx2.com</p>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">이름</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="맥도날드" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">휴대폰번호</div>
+                    <div class="edit-control"><input type="tel" class="form-control mb-0" value="010-1111-2222" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item mb-0">
+                    <div class="checkbox-group">
+                      <label class="custom-checkbox"><input type="checkbox" id=""><span></span><p>메일수신동의</p></label>
+                      <label class="custom-checkbox"><input type="checkbox" id=""><span></span><p>SMS / 알림톡 수신동의</p></label>
+                    </div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="info-box info-box-sm">서비스관련 메일은 수신동의와 상관없이 발송됩니다</div>
+                  </div>
+                  <div class="form-list-item">
+                    <button type="button" class="btn btn-primary w-100" data-layer-target="pswd-change-step1">비밀번호 변경</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-wrap detail-info">
+              <div class="panel-title">상세정보 (선택사항)</div>
+              <div class="panel">
+                <div class="form-list">
+                  <div class="form-list-item">
+                    <div class="form-title">회사명</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="맥도날드" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">우편번호</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="08389" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">주소</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="서울시 구로구 디지털로30길 28 마리오타워 10층" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">상세주소</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="1010호" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">연락처</div>
+                    <div class="edit-control"><input type="tel" class="form-control mb-0" value="010-1234-5678" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-wrap agent-info">
+              <div class="panel-title">요금담당자 정보(선택사항)</div>
+              <div class="panel">
+                <div class="form-list">
+                  <div class="form-list-item">
+                    <div class="form-title">이름</div>
+                    <div class="edit-control"><input type="text" class="form-control mb-0" value="맥도날드" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">휴대폰번호</div>
+                    <div class="edit-control"><input type="tel" class="form-control mb-0" value="010-1234-1234" disabled=""><span class="icon-edit edit-modify"></span></div>
+                  </div>
+                  <div class="form-list-item">
+                    <div class="form-title">이메일주소</div>
+                    <div class="email-form">
+                      <input type="email" class="form-control mb-0" value="manager@pangx2.com">
+                      <button type="button" name="button" class="btn btn-primary py-1">추가</button>
+                    </div>
+                  </div>
+                  <div class="scroll-wrapper list-group scrollbar-inner" style="position: relative;"><div class="list-group scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 146px;">
+                    <div class="list-group-item">
+                      <div class="col">manager2345@pangx2.commanager2345@pangx2.commanager2345@pangx2.commanager2345@pangx2.commanager2345@pangx2.com</div>
+                      <div class="col-auto"><span class="icon-trash px-3" data-layer-target="agent-email-delete"></span></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="col">manager2345@pangx2.commanager2345@pangx2.commanager2345@pangx2.com</div>
+                      <div class="col-auto"><span class="icon-trash px-3" data-layer-target="agent-email-delete"></span></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="col">manager2345@pangx2.com</div>
+                      <div class="col-auto"><span class="icon-trash px-3" data-layer-target="agent-email-delete"></span></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="col">manager2345@pangx2.com</div>
+                      <div class="col-auto"><span class="icon-trash px-3" data-layer-target="agent-email-delete"></span></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="col">manager2345@pangx2.com</div>
+                      <div class="col-auto"><span class="icon-trash px-3" data-layer-target="agent-email-delete"></span></div>
+                    </div>
+                  </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 87px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 82px; top: 0px;"></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="button" name="button" class="btn btn-rounded-lg btn-primary" data-layer-target="myinfo-save">저장하기</button>
+          </div>
+        </div>
+        <div class="layer-bg"></div>
+        <div class="layer-pop" data-layer="pswd-change-step1">
+          <div class="layer-pop-header">비밀번호 변경</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item mb-0">
+                <div class="form-title">현재 비밀번호</div>
+                <input type="password" class="form-control mb-0">
+                <div class="validation-msg"><span class="icon-exclamation"></span>입력하신 비밀번호가 올바르지 않습니다.</div>
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-sm btn-primary" data-layer-target="pswd-change-step2">다음</button>
+          </div>
+        </div>
+        <div class="layer-pop" data-layer="pswd-change-step2">
+          <div class="layer-pop-header">비밀번호 변경</div>
+          <div class="layer-pop-body">
+            <div class="form-list">
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호</div>
+                <input type="password" class="form-control mb-0">
+                <div class="validation-msg"><span class="icon-exclamation"></span>영문 + 숫자를 사용하여 8자~20자로 입력해 주세요.<br>특수문자 이용이 가능합니다.</div>
+              </div>
+              <div class="form-list-item">
+                <div class="form-title">새 비밀번호 확인</div>
+                <input type="password" class="form-control mb-0">
+                <div class="validation-msg"><span class="icon-exclamation"></span>입력한 비밀번호가 일치하지 않습니다.</div>
+              </div>
+            </div>
+          </div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-sm btn-primary layer-confirm">확인</button>
+          </div>
+        </div>
+        <div class="layer-pop" data-layer="myinfo-save">
+          <div class="layer-pop-header">회원정보수정 저장</div>
+          <div class="layer-pop-body">고객님의 회원정보 저장이 완료되었습니다.</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-sm btn-primary layer-confirm">확인</button>
+          </div>
+        </div>
+        <div class="layer-pop" data-layer="agent-email-delete">
+          <div class="layer-pop-header">요금담당자 이메일 삭제</div>
+          <div class="layer-pop-body">담당자 이메일을 삭제하시겠습니까?</div>
+          <div class="layer-pop-footer justify-content-center">
+            <button type="button" class="btn btn-sm btn-secondary layer-close">취소</button>
+            <button type="button" class="btn btn-sm btn-primary layer-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="page-info scrollbar-inner">
+        <div class="page-info-item page-log">
+          <div class="scrollbar-inner">
+            <div class="page-info-title">
+              <p>메일 호스트 로그</p>
+              <div class="btn-x page-close"></div>
+            </div>
+            <ul class="info-list">
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+              <li class="info-list-item">
+                <div class="info-list-button">사용자설정</div>
+                <p>사용자
+                  <span class="text-primary">맥도날드</span>
+                  를(을)
+                  <span class="text-primary">새폴더1</span>
+                  에서
+                  <span class="text-primary">새폴더2</span>
+                  (으)로 이동
+                </p>
+                <div class="info-list-date">2018-09-17, 06:12</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $('.edit-control .edit-modify').on('click', function(){
+          var $input = $(this).siblings('.form-control'),
+            prop = $input.prop('disabled');
+      
+          if (typeof prop !== typeof undefined && prop !== false) {
+            $input.removeAttr('disabled');
+            $input.focus();
+          }
+        }).siblings('.form-control').focusout(function(){
+          $(this).prop('disabled',true);
+        });
+    
+        $('.edit-control .edit-delete').on('click', function(){
+          var $input = $(this).siblings('.form-control');
+          $input.val('');
+        });
+      </script>
+    </section>
+    
+    <footer class="footer">
+      <div class="copyright">COPYRIGHT
+        <span class="icon-copyright"></span>
+        2018 Pangpang. lnc. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    <div class="layer-box" data-layer="aLog">
+      <div class="layer-title">로그</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">사용자설정</button>
+          <p class="description">이름
+            <span class="point">맥도날드</span>
+            의 할당 트래픽(을)를
+            <span class="point">12000MB</span>
+            (으)로 변경
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">네임서버 설정</button>
+          <p class="description">서브도메인(A레코드)에
+            <span class="point">pangpang.pangx2.com</span>
+            ,
+            <span class="point">112.131.213.123</span>
+            추가
+          </p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    <div class="layer-box" data-layer="aComment">
+      <div class="layer-title">작업 코멘트</div>
+      <ul class="layer-list">
+        <li class="layer-list-item">
+          <button class="layer-btn">맥도날드</button>
+          <p class="description">8월 17일 홈페이지 점검하기로 했음</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+        <li class="layer-list-item">
+          <button class="layer-btn">웨일즈소프트</button>
+          <p class="description">8월 12일 트래픽리셋 3회 적용하고 FTP/SSH 비밀번호 리셋 관련하여 30일 미팅</p>
+          <p class="date">2018-09-17 , 06:12</p>
+        </li>
+      </ul>
+      <div class="btn-close layer-close"></div>
+    </div>
+    <div class="scroll-bottom"></div>
+  </body>
+</html>

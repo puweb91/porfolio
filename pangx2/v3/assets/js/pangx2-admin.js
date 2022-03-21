@@ -34,6 +34,7 @@ $(document).ready(function () {
   textTooltip();
   tabGroup();
   dropdown();
+  attachFileSingle();
 
   // pageNavigation();
   //
@@ -270,8 +271,6 @@ $(document).ready(function () {
         for (lastIndex; lastIndex < list.length; lastIndex++) {
           $folderList.append(list[lastIndex]);
         }
-
-        ellipsisTooltip();
       });
     }
 
@@ -295,8 +294,6 @@ $(document).ready(function () {
       var scrTop = scrollElement.scrollTop(),
           docHgt = scrollElement.innerHeight(),
           scrHgt = scrollElement[0].scrollHeight;
-
-      console.log('aaa');
 
       if (scrTop + docHgt >= scrHgt) {
         appendElement();
@@ -426,7 +423,6 @@ function progressBar() {
   // jQuery 선언 확인
   if (typeof jQuery == 'undefined') {
     console.log('<!-- jQuery is not defined -->');
-
     return;
   } else {
     var $ELEMENT = $('[data-progress="true"]').not('.active');
@@ -455,7 +451,6 @@ function progressBar() {
       $THIS.children().css({
         'font-size': SIZE + 'px'
       });
-
       for (var i = 0; i < $CHILD_ITEM.length; i++) {
         var $innerItem = $CHILD_ITEM.eq(i).children(),
             childValue = $CHILD_ITEM.eq(i).data('progress-value');
@@ -791,4 +786,18 @@ function tabGroup() {
     $(this).addClass('selected').siblings('.tab-header-item').removeClass('selected');
     $('.tab-group .tab-body .tab-contents').eq(idx).addClass('on').siblings('.tab-contents').removeClass('on');
   });
+}
+
+function attachFileSingle(){
+  var $input = $('.custom-file-single').children('.input-file');
+
+  for (var i = 0; i < $input.length; i++) {
+    var $this = $input.eq(i);
+
+    $this.on('change', function(){
+      var value = $(this).val().replace(/^.*\\/, "");
+
+      $(this).siblings('.form-control').val(value);
+    });
+  }
 }

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" type="text/css" href="./assets/css/common/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common/jquery.scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common/colorpicker.css">
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/font-awesome/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-pangx2.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-pangx2-widget.css">
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/noto-sans-cjk/noto_sans_cjk.css">
+  
+  <script type="text/javascript" src="./assets/js/common/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/common/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/common/jquery.easing.js"></script>
+  <script type="text/javascript" src="./assets/js/common/popper.js"></script>
+  <script type="text/javascript" src="./assets/js/common/bootstrap.js"></script>
+  <script type="text/javascript" src="./assets/js/common/jquery.scrollbar.js"></script>
+  <script type="text/javascript" src="./assets/js/common/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="./assets/js/common/swiper.min.js"></script>
+  <script type="text/javascript" src="./assets/js/common/colorpicker.js"></script>
+  
+  <title>팡팡 위젯</title>
+</head>
+  
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="index.html"><img src="./assets/images/service_logo_w.png" alt="팡팡 웹서비스"></a></h1>
+      <div class="gnb d-flex">
+        <div class="lang text-light mr-3 mr-md-5 cursor-pointer position-relative"><a href="#none" class="text-light d-flex align-items-center"><img src="./assets/images/lang-kor.png" alt="" class="pr-2"> 한국어 <img src="./assets/images/lang-arrow.png" alt="" class="pl-2 pl-md-3"></a>
+          <ul>
+            <li class="d-flex align-items-center justify-content-center bg-light text-black"><a href="/pangx2.com/widget" class="d-flex align-items-center"><img src="./assets/images/lang-kor.png" alt="" class="pr-2"> 한국어</a></li>
+            <li class="d-flex align-items-center justify-content-center bg-light text-black"><a href="/pangx2.com/widget/en" class="d-flex align-items-center"><img src="./assets/images/lang-eng.png" alt="" class="pr-2"> ENGLISH</a></li>
+          </ul>
+        </div>
+        <a href="#none" class="login btn-widget btn-outline-light mr-2">LOGIN</a>
+        <a href="#none" class="logout btn-widget btn-outline-light mr-2">LOGOUT</a>
+        <a href="campaign.html" class="admin btn-widget btn-primary">ADMIN</a>
+      </div>
+    </header>
+    <style>
+      body {
+        background: #f1f1f1;
+      }
+      
+      .copyright {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    
+    </style>
+    <main class="main">
+      <div class="container pt-5">
+        <div class="text-right mb-3">
+          <a href="/pangx2.com/widget" class="btn btn-primary text-white">위젯 생성하기</a>
+        </div>
+        <div class="bg-table campaign-list">
+          <table>
+            <colgroup>
+              <col width="10%">
+              <col width="15%">
+              <col width="20%">
+              <col width="15%">
+              <col width="20%">
+              <col width="10%">
+              <col width="10%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>설치</th>
+                <th>설명</th>
+                <th>서비스</th>
+                <th>타입</th>
+                <th>생성일</th>
+                <th>코드</th>
+                <th>설정</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="state on"></span></td>
+                <td>빅뱅</td>
+                <td>Facebook</td>
+                <td>Grid</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon" data-popup="true" data-popname="modify"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>트와이스</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+              <tr>
+                <td><span class="state off"></span></td>
+                <td>블랙핑크</td>
+                <td>Instagram</td>
+                <td>SlideShow</td>
+                <td>2018.07.11</td>
+                <td><i class="fas fa-code icon" data-popup="true" data-popname="sourceCopy"></i></td>
+                <td><i class="fas fa-cog icon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- s : 소스코드 확인 팝업 -->
+    <div class="pop-box pop-code" data-popname="sourceCopy">
+      <div class="pop-body">
+        <h4 class="mb-4">아래 소스코드를 복사하여 원하는 곳에 추가해주세요!</h4>
+        <div class="source-code"><div class="scroll-wrapper source scrollbar-inner scroll-textarea" style="position: relative;"><div class="scroll-content" style="height: 100px; margin-bottom: 0px; margin-right: 0px; max-height: none;"><textarea class="source scrollbar-inner" readonly="">&lt;!-- SnapWidget --&gt;&lt;br&gt;&lt;iframe src="https://snapwidget.com/embed/568462" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:390px"&gt;&lt;/iframe&gt;</textarea></div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div></div>
+        <div class="text-right">
+          <a href="#none" class="btn-widget btn-primary"><i class="far fa-copy"></i> 복사</a>
+        </div>
+        <div class="box infobox infobox-ws icon mb-3">
+          <h3 class="title">회원정보 안내</h3>
+          <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>무료로 생성하신 위젯을 설치하시면 팡팡위젯 사이트에 등록됩니다.</p>
+          <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>생성하신 위젯은 <a href="http://admin.pangx2.com" class="link" target="_blank">http://admin.pangx2.com</a>에서 수정하실 수 있습니다.</p>
+        </div>
+        <div class="text-right">
+          <button type="button" class="btn-widget btn-secondary btn-close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- e : 소스코드 확인 팝업 -->
+    <!-- s : 수정하기 팝업 -->
+    <div class="pop-box modify-widget px-4 py-5" data-popname="modify">
+      <div class="pop-body">
+        <div class="scroll-wrapper scrollbar-inner" style="position: relative;"><div class="scrollbar-inner scroll-content" style="height: 743.2px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+          <main class="main mt-0 pl-1">
+            <h4 class="mb-4">수정 후 완료버튼을 누르시면 하단에 소스코드가 출력됩니다.</h4>
+            <div class="settings contents">
+              <div class="option-wrap">
+                <form action="">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <p class="mb-2">사용자 계정</p>
+                      <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text">@</span></div><input type="text" class="form-control account" onfocus="accountPop()">
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <p class="mb-2">캠페인 설명</p><input type="text" class="form-control"></li>
+                    <li class="option-item">
+                      <p class="mb-2">사진 크기</p>
+                      <div class="input-group"><input type="text" class="form-control" value="170">
+                        <div class="input-group-append"><span class="input-group-text">px</span></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <p class="mb-2">사진 여백</p>
+                      <div class="input-group"><input type="text" class="form-control" value="170">
+                        <div class="input-group-append"><span class="input-group-text">px</span></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <p class="mb-2">레이아웃</p>
+                      <div class="d-flex">
+                        <div class="input-group" style="flex: 1 0 40%">
+                          <div class="input-group-prepend"><span class="input-group-text"><small>가로</small></span></div><input type="text" class="form-control" value="3"></div>
+                        <div class="times">X</div>
+                        <div class="input-group" style="flex: 1 0 40%">
+                          <div class="input-group-prepend"><span class="input-group-text"><small>세로</small></span></div><input type="text" class="form-control" value="2"></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <p class="mb-2">배경색</p>
+                      <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text">#</span></div>
+                        <input type="text" class="form-control" id="bgPicker" value="#ffffff">
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <p class="mb-2">이미지 효과</p>
+                      <select name="" id="" class="form-control" style="height:40px">
+                        <option value="none" selected="">None</option>
+                        <option value="fadein">Fade In</option>
+                        <option value="fadeout">Fade Out</option>
+                        <option value="zoom">Zoom In</option>
+                      </select>
+                    </li>
+                    <li class="option-item">
+                      <div class="row mx-0">
+                        <div class="col-7 px-0">
+                          <p>사진 테두리</p>
+                        </div>
+                        <div class="col-5 px-0 text-right"><input type="checkbox" id="border" class="check-switch"><label for="border"></label></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <div class="row mx-0">
+                        <div class="col-7 px-0">
+                          <p>공유 버튼</p>
+                        </div>
+                        <div class="col-5 px-0 text-right"><input type="checkbox" id="share" class="check-switch"><label for="share"></label></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <div class="row mx-0">
+                        <div class="col-7 px-0">
+                          <p>반응형</p>
+                        </div>
+                        <div class="col-5 px-0 text-right"><input type="checkbox" id="responsive" class="check-switch"><label for="responsive"></label></div>
+                      </div>
+                    </li>
+                    <li class="option-item">
+                      <div class="row mx-0">
+                        <div class="col-7 px-0">
+                          <p>좋아요&amp;댓글</p>
+                        </div>
+                        <div class="col-5 px-0 text-right"><input type="checkbox" id="likesComments" class="check-switch"><label for="likesComments"></label></div>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+                <div class="option-button mt-5 d-flex justify-content-end">
+                  <a href="#none" class="btn-widget btn-primary btn-complete">완료</a>
+                </div>
+              </div>
+              <div class="preview-wrap d-flex align-items-center">
+                <div class="preview">
+                  <div class="widget-list-wrap">
+                    <ul class="widget-list">
+                      <li class="widget-item">
+                        <div class="widget-item-inner">
+                          <figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a></figure>
+                          <div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div>
+                        </div>
+                      </li>
+                      <li class="widget-item fadein">
+                        <div class="widget-list-item-inner widget-item-inner">
+                          <figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-2.jpg" alt="샘플이미지2" class="thumb-img"></a></figure>
+                        </div>
+                      </li>
+                      <li class="widget-item fadeout">
+                        <div class="widget-list-item-inner widget-item-inner">
+                          <figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-3.jpg" alt="샘플이미지3" class="thumb-img"></a></figure>
+                        </div>
+                      </li>
+                      <li class="widget-item zoomin">
+                        <div class="widget-list-item-inner widget-item-inner">
+                          <figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-4.jpg" alt="샘플이미지4" class="thumb-img"></a></figure>
+                        </div>
+                      </li>
+                      <li class="widget-item">
+                        <div class="widget-list-item-inner widget-item-inner">
+                          <figure class="thumbnail like-comments"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-5.jpg" alt="샘플이미지5" class="thumb-img"></a></figure>
+                          <div class="like-comments-wrap">
+                            <div class="likes"><a href="#none"><span><i class="fas fa-heart"></i> 5</span></a></div>
+                            <div class="comments"><a href="#none"><span><i class="fas fa-comment"></i> 6</span></a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="widget-item">
+                        <div class="widget-list-item-inner widget-item-inner">
+                          <figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-6.jpg" alt="샘플이미지6" class="thumb-img"></a></figure>
+                          <div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="mb-4">아래 소스코드를 복사하여 원하는 곳에 추가해주세요!</h4>
+            <div class="contents">
+              <div class="source-code"><div class="scroll-wrapper source scrollbar-inner scroll-textarea" style="position: relative;"><div class="scroll-content" style="height: 100px; margin-bottom: 0px; margin-right: 0px; max-height: none;"><textarea class="source scrollbar-inner" readonly="">&lt;!-- SnapWidget --&gt;&lt;br&gt;&lt;iframe src="https://snapwidget.com/embed/568462" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:390px"&gt;&lt;/iframe&gt;</textarea></div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div></div>
+              <div class="text-right">
+                <a href="#none" class="btn-widget btn-primary"><i class="far fa-copy"></i> 복사</a>
+              </div>
+              <div class="box infobox infobox-ws icon mb-3">
+                <h3 class="title">회원정보 안내</h3>
+                <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>무료로 생성하신 위젯을 설치하시면 팡팡위젯 사이트에 등록됩니다.</p>
+                <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>생성하신 위젯은 <a href="http://admin.pangx2.com" class="link" target="_blank">http://admin.pangx2.com</a>에서 수정하실 수 있습니다.</p>
+              </div>
+            </div>
+          </main>
+        </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div>
+      </div>
+      <div class="btn-close btn-pop-close" onclick="popupClose(this)"><i class="fas fa-times"></i></div>
+    </div>
+    <!-- e : 수정하기 팝업 -->
+    <!-- s : 링크 클릭시 팝업 -->
+    <div class="pop-box extend" data-popname="resultPop">
+      <div class="pop-body">
+        <div class="row mx-0">
+          <div class="col-7 px-0">
+            <div class="pop-contents-view">
+              <figure><img src="./assets/images/widget-sample-1.jpg" alt="">
+                <figcaption>
+                  <div class="cont-wrap">
+                    <div class="profile-thumb"><img src="./assets/images/man-sample.jpg" alt=""></div>
+                    <div class="profile-name">
+                      <h5>Hong Gil-Dong</h5>
+                      <p>Seoul, South Korea</p>
+                    </div>
+                    <div class="desc px-0">
+                      <p>어쩌구 저쩌구..한밤중에 장식장으로쓰는 책장정리!!있으라는 책은없고 기념품만...😅</p>
+                    </div>
+                  </div>
+                  <div class="info text-right">
+                    <div class="clearfix">
+                      <div class="d-inline-block text-center likes"><i class="far fa-heart icon liked d-block mb-1"></i>
+                        <p class="d-block">좋아요</p>
+                      </div>
+                      <div class="d-inline-block text-center comments"><i class="far fa-comment icon comment d-block mb-1"></i>
+                        <p class="d-block">12개</p>
+                      </div>
+                    </div>
+                    <p><small>2시간 전</small></p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-5 px-4">
+            <h4 class="font-weight-bold">"Hong Gil-Dong"님의 다른 사진들</h4>
+            <ul class="row mx-0 my-3">
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-1.jpg" alt="" class="w-100"></li>
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-2.jpg" alt="" class="w-100"></li>
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-3.jpg" alt="" class="w-100"></li>
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-4.jpg" alt="" class="w-100"></li>
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-5.jpg" alt="" class="w-100"></li>
+              <li class="col-4 px-1 mb-2"><img src="./assets/images/widget-sample-6.jpg" alt="" class="w-100"></li>
+            </ul>
+            <div class="tag-list">
+              <a href="#none" class="d-inline-block pr-2">#태그네임</a><a href="#none" class="d-inline-block pr-2">#태그네임</a><a href="#none" class="d-inline-block pr-2">#태그네임</a><a href="#none" class="d-inline-block pr-2">#태그네임</a><a href="#none" class="d-inline-block pr-2">#태그네임</a>
+            </div>
+            <img src="./assets/images/google-ad-sample.png" alt="" class="w-100">
+          </div>
+        </div>
+      </div>
+      <div class="pop-logo"><img src="./assets/images/service_logo.png" alt=""></div>
+      <div class="btn-pop-close"><i class="fas fa-times"></i></div>
+    </div>
+    <!-- e : 링크 클릭시 팝업 -->
+    
+    <!-- s : SNS 계정 팝업 -->
+    <div class="pop-box extend p-5 account-list">
+      <div class="pop-body">
+        <div class="scroll-wrapper scrollbar-inner" style="position: relative;"><div class="scrollbar-inner scroll-content" style="height: 100px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+          <h4 class="mb-4 pl-2">본인의 SNS 아이디를 연결해주세요</h4>
+          <div class="sns-setting">
+            <ul>
+              <li class="instagram">
+                <div class="setting-item">
+                  <div class="thumbnail"><img src="./assets/images/man-sample.jpg" alt=""></div>
+                  <h5>Hong Gil-Dong</h5>
+                  <p><a href="#none">Instagram</a></p>
+                </div>
+              </li>
+              <li class="facebook">
+                <div class="setting-item">
+                  <div class="thumbnail"><img src="./assets/images/man-sample.jpg" alt=""></div>
+                  <h5>Hong Gil-Dong</h5>
+                  <p><a href="#none">Facebook</a></p>
+                </div>
+              </li>
+              <li class="youtube">
+                <div class="setting-item">
+                  <div class="thumbnail"><img src="./assets/images/man-sample.jpg" alt=""></div>
+                  <h5>Hong Gil-Dong</h5>
+                  <p><a href="#none">Youtube</a></p>
+                </div>
+              </li>
+              <li class="add">
+                <div class="setting-item">
+                  <i class="fas fa-plus icon"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <p class="text-secondary">* 다른 아이디를 추가로 연결하려면 계정을 로그아웃 한 뒤에 연결하셔야합니다.</p>
+        </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div>
+      </div>
+      <div class="btn-pop-close"><i class="fas fa-times"></i></div>
+    </div>
+    <!-- s : SNS 계정 팝업 -->
+    
+    <script type="text/javascript">
+      /* Layout Object */
+      var layoutObject = {
+        grid: {
+          description: '가장 많이 사용되는 Grid Layout 입니다. 왼쪽, 오른쪽, 가운데등 모두 다양하게 사용됩니다. 이 Layout은 무료버전과 유료버전이 함께 있으며, 유료버전에는 다양한 Layout과 통계 등의 기능이 있습니다.',
+          preview: '<div class="widget-list-wrap"><ul class="widget-list"><li class="widget-item"><div class="widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="widget-item fadein"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-2.jpg" alt="샘플이미지2" class="thumb-img"></a></figure></div></li><li class="widget-item fadeout"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-3.jpg" alt="샘플이미지3" class="thumb-img"></a></figure></div></li><li class="widget-item zoomin"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-4.jpg" alt="샘플이미지4" class="thumb-img"></a></figure></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail like-comments"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-5.jpg" alt="샘플이미지5" class="thumb-img"></a></figure><div class="like-comments-wrap"><div class="likes"><a href="#none"><span><i class="fas fa-heart"></i> 5</span></a></div><div class="comments"><a href="#none"><span><i class="fas fa-comment"></i> 6</span></a></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-6.jpg" alt="샘플이미지6" class="thumb-img"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li></ul></div>',
+          form: '<ul class="option-list"><li class="option-item"><p class="mb-2">사용자계정</p><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">@</span></div><input type="text" class="form-control account" onfocus="accountPop(this)"></div></li><li class="option-item"><p class="mb-2">캠페인 설명</p><input type="text" class="form-control"></li><li class="option-item"><p class="mb-2">사진 크기</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">사진 여백</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">레이아웃</p><div class="d-flex"><div class="input-group" style="flex: 1 0 40%"><div class="input-group-prepend"><span class="input-group-text"><small>가로</small></span></div><input type="text" class="form-control" value="3"></div><div class="times">X</div><div class="input-group" style="flex: 1 0 40%"><div class="input-group-prepend"><span class="input-group-text"><small>세로</small></span></div><input type="text" class="form-control" value="2"></div></div></li></ul>'
+        },
+        board: {
+          description: 'Board Layout은 Grid Layout 과 함께 많이 쓰이는 Layout으로 블로그, 기사와 같은 형태의 배열을 나타낼 때 사용됩니다. 이 Layout은 무료버전과 유료버전이 함께 있으며, 유료버전에는 더 다양한 Layout과 통계 등의 기능이 있습니다.',
+          preview: '<div class="widget-list-wrap"><ul class="widget-list"><li class="widget-item"><div class="widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="profile"><div class="thumb"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="rounded-circle overflow-hidden"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="rounded-circle overflow-hidden"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="rounded-circle overflow-hidden"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="rounded-circle overflow-hidden"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li><li class="widget-item"><div class="widget-list-item-inner widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure><div class="description"><div class="row mx-0 my-3"><div class="col-2 px-0"><div class="rounded-circle overflow-hidden"><img src="./assets/images/widget-sample-1.jpg" alt="" class="d-block"></div></div><div class="col-10 px-2"><p class="line-clamp">팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다. 팡팡 인스타그램입니다.</p></div></div></div></div></li></ul></div>',
+          form: '<ul class="option-list"><li class="option-item"><p class="mb-2">사용자계정</p><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">@</span></div><input type="text" class="form-control account" onfocus="accountPop(this)"></div></li><li class="option-item"><p class="mb-2">캠페인 설명</p><input type="text" class="form-control"></li><li class="option-item"><p class="mb-2">사진 크기</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">사진 여백</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">레이아웃</p><div class="d-flex"><div class="input-group" style="flex: 1 0 40%"><div class="input-group-prepend"><span class="input-group-text"><small>가로</small></span></div><input type="text" class="form-control" value="3"></div><div class="times">X</div><div class="input-group" style="flex: 1 0 40%"><div class="input-group-prepend"><span class="input-group-text"><small>세로</small></span></div><input type="text" class="form-control" value="2"></div></div></li></ul>'
+        },
+        slide: {
+          description: '특정 시간동안 보여주고 사라지는 SlideShow Layout입니다. 홈페이지의 어디든 붙여 넣어도 어울립니다. 이 Layout은 무료버전과 유료버전이 함께 있으며, 유료버전에는 더 다양한 Layout과 통계 등의 기능이 있습니다.',
+          preview: '<div class="preview-item preview-slide"><div class="widget-slide-wrap"><div class="swiper-container widget-slide"><ul class="swiper-wrapper"><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-2.jpg" alt="샘플이미지2"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-3.jpg" alt="샘플이미지3"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-4.jpg" alt="샘플이미지4"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-5.jpg" alt="샘플이미지5"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li><li class="swiper-slide widget-slide-item widget-item"><div class="widget-slide-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-6.jpg" alt="샘플이미지6"></a></figure><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></li></ul></div></div></div>',
+          form: '<ul class="option-list"><li class="option-item"><p class="mb-2">사용자계정</p><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">@</span></div><input type="text" class="form-control account" onfocus="accountPop(this)"></div></li><li class="option-item"><p class="mb-2">캠페인 설명</p><input type="text" class="form-control"></li><li class="option-item"><p class="mb-2">사진 크기</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">배경색</p><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">#</span></div><input type="text" class="form-control" id="bgPicker" value="#ffffff"></div></li><li class="option-item"><p class="mb-2">이미지 효과</p><select name="" id="" class="form-control"><option value="none" selected>None</option><option value="fadein">Fade In</option><option value="fadeout">Fade Out</option><option value="zoom">Zoom In</option></select></li></ul>'
+        },
+        scrolling: {
+          description: '설정한 수의 사진 많큼 보여주고 특정시간이 되면 이동하면서 다른사진을 보여주는 Scrolling Layout 입니다. 특정 라인을 차지하여 임팩트를 줄 수 있고 특히 상단과 하단에 많이 사용됩니다. 이 Layout은 무료버전과 유료버전이 함께 있으며, 유료버전에는 더 다양한 Layout과 통계 등의 기능이 있습니다.',
+          preview: '<div class="widget-scroll-wrap"><div class="swiper-container widget-scroll"><ul class="swiper-wrapper"><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-1.jpg" alt="샘플이미지1"></a></figure><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></div></li><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-2.jpg" alt="샘플이미지2"></a></figure><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></div></li><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-3.jpg" alt="샘플이미지3"></a></figure><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></div></li><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail share"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-4.jpg" alt="샘플이미지4"></a><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></figure></div></li><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-5.jpg" alt="샘플이미지5"></a></figure><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></div></li><li class="swiper-slide widget-item"><div class="widget-item-inner"><figure class="thumbnail"><a href="#none" data-popup="true" data-popname="resultPop"><img src="./assets/images/widget-sample-6.jpg" alt="샘플이미지6"></a></figure><div class="share-wrap"><div class="share-button"><a href="#none"><img src="./assets/images/share-facebook.png" alt=""></a></div></div></div></li></ul></div></div>',
+          form: '<ul class="option-list"><li class="option-item"><p class="mb-2">사용자계정</p><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">@</span></div><input type="text" class="form-control account" onfocus="accountPop(this)"></div></li><li class="option-item"><p class="mb-2">캠페인 설명</p><input type="text" class="form-control"></li><li class="option-item"><p class="mb-2">사진 크기</p><div class="input-group"><input type="text" class="form-control" value="170"><div class="input-group-append"><span class="input-group-text">px</span></div></div></li><li class="option-item"><p class="mb-2">사진 수</p><input type="text" class="form-control" value="3"></li><li class="option-item"><p class="mb-2">스크롤 스피드</p><div class="input-group"><input type="text" class="form-control" value="2000"><div class="input-group-append"><span class="input-group-text">m/s</span></div></div></li></ul>'
+        },
+        map: {
+          description: '선택된 레이아웃은 준비중입니다.',
+          preview: '선택된 레이아웃은 준비중입니다.',
+          form: '선택된 레이아웃은 준비중입니다.'
+        }
+      }
+      
+      var stepTop = new Array();
+      
+      /* popup fade in/out */
+      $('[data-popup="true"]').on('click', function() {
+        var popName = $(this).attr('data-popname');
+        $('.pop-box[data-popname="' + popName + '"]').fadeIn();
+        
+        /* Step Scroll Top */
+        $('.step-widget').each(function(idx, el) {
+          stepTop[idx] = $(this).offset().top;
+        });
+        
+        /* Scrollbar event trigger */
+        $('.scrollbar-inner').scrollbar();
+      });
+      
+      /* popup close&confirm button */
+      $('.btn-close, .btn-pop-close, .btn-pop-modify').on('click', function() {
+        $(this).parents('.pop-box').fadeOut();
+      });
+      
+      function popupClose(el) {
+        $(el).parents('.pop-box').fadeOut();
+      }
+      
+      $(document).ready(function() {
+        $('.scrollbar-inner').scrollbar();
+      });
+      
+      $('[data-toggle="tooltip"]').tooltip();
+      
+      /* background picker */
+      $('#bgPicker').ColorPicker({
+        color: '#ffffff',
+        onSubmit: function(hsb, hex, rgb, el) {
+          $(el).val(hex);
+          $(el).ColorPickerHide();
+        },
+        onChange: function(hsb, hex, rgb) {
+          $('.sns-list-wrap').css('backgroundColor', '#' + hex);
+        }
+      });
+      
+      /* account popup */
+      function accountPop() {
+        $('.pop-box.account-list').fadeIn();
+      }
+    
+    </script><div class="colorpicker" id="collorpicker_392"><div class="colorpicker_color" style="background-color: rgb(255, 0, 255);"><div><div style="left: 0px; top: 0px;"></div></div></div><div class="colorpicker_hue"><div style="top: 25px;"></div></div><div class="colorpicker_new_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_current_color" style="background-color: rgb(255, 255, 255);"></div><div class="colorpicker_hex"><input type="text" maxlength="6" size="6"></div><div class="colorpicker_rgb_r colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_g colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_rgb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_h colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_s colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_hsb_b colorpicker_field"><input type="text" maxlength="3" size="3"><span></span></div><div class="colorpicker_submit"></div></div>
+    <div class="copyright">COPYRIGHTⓒ 2018 Pangx2. ALL RIGHTS RESERVED.</div>
+    
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div></body></html>

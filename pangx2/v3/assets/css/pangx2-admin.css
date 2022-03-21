@@ -11023,6 +11023,26 @@ a.text-grayscale-3:focus {
 }
 
 /* cs/notice/list.php, 고객센터>공지사항>목록 */
+.notice-list .list-table .list-table-item .no {
+  flex-basis: 77px;
+  max-width: 77px;
+}
+
+.notice-list .list-table .list-table-item .category {
+  flex-basis: 229px;
+  max-width: 229px;
+}
+
+.notice-list .list-table .list-table-item .subject {
+  flex-basis: 561px;
+  max-width: 561px;
+}
+
+.notice-list .list-table .list-table-item .date {
+  flex-basis: 102px;
+  max-width: 102px;
+}
+
 .inquiry-list .list-table .list-table-item .no {
   flex-basis: 77px;
   max-width: 77px;
@@ -11034,13 +11054,27 @@ a.text-grayscale-3:focus {
 }
 
 .inquiry-list .list-table .list-table-item .subject {
-  flex-basis: 561px;
-  max-width: 561px;
+  flex-basis: 484px;
+  max-width: 484px;
 }
 
 .inquiry-list .list-table .list-table-item .date {
   flex-basis: 102px;
   max-width: 102px;
+}
+
+.inquiry-list .list-table .list-table-item .state {
+  flex-basis: 77px;
+  max-width: 77px;
+}
+
+.guideBox {
+  padding: 25px;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: -0.4px;
+  color: #fff;
+  background-color: #666;
 }
 
 /* read-box */
@@ -11118,6 +11152,33 @@ a.text-grayscale-3:focus {
   line-height: 1.5;
   -ms-word-break: keep-all;
   word-break: keep-all;
+}
+
+.write-box {
+  margin-bottom: 25px;
+  padding: 25px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.write-box .write-title {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.write-box .write-title .write-category {
+  flex-shrink: 1;
+  margin-right: 15px;
+}
+
+.write-box .write-title .write-subject {
+  flex-grow: 1;
+}
+
+.write-box .write-contents {
+  margin-bottom: 15px;
 }
 
 .file-upload {
