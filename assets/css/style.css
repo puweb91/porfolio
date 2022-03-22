@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12478,6 +12479,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #edab95;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darksalmon;
+}
+
 html {
   font-size: 14px;
 }

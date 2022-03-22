@@ -1,0 +1,132 @@
+.check-group li > i {
+  margin-right: 5px;
+}
+
+.trafficImg-location {
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+}
+
+/*layout admin*/
+.monitor-container {
+  padding: 0;
+}
+
+.monitor-container .admin-bg {
+  background: #f5f6f7;
+}
+
+.monitor-contents .search-option {
+  height: 40px;
+  top: 124px;
+  padding-top: 0;
+}
+
+.monitor-contents .list ul li img {
+  padding-bottom: 6px;
+}
+
+.monitor-contents .list .name {
+  font-size: 15px;
+}
+
+.monitor-contents .list .ip {
+  display: inline-block;
+  width: 120px;
+}
+
+.monitor-contents .list .alias {
+  font-size: 14px;
+}
+
+.monitor-contents .list ul li .server-contents :not(.type) {
+  padding-left: 0px;
+}
+
+.monitor-item {
+  border: 1px solid #15a26e;
+  background: #07a079;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0.55, #07a079), color-stop(1, #078ca0));
+  background-image: -moz-gradient(linear, left bottom, right top, color-stop(0.55, #07a079), color-stop(1, #078ca0));
+  background-image: gradient(linear, left bottom, right top, color-stop(0.55, #07a079), color-stop(1, #078ca0));
+}
+
+.monitor-item .title {
+  background: #07a079;
+  background: -moz-linear-gradient(45deg, #07a079 55%, #078ca0 100%);
+  background: -webkit-linear-gradient(45deg, #07a079 55%, #078ca0 100%);
+  background: linear-gradient(45deg, #07a079 55%, #078ca0 100%);
+}
+
+.monitor-item .list ul .list-size {
+  padding: 10px 10px;
+}
+
+.monitor-item .list ul li:hover {
+  background: #15a26e;
+  border-left: 0;
+  border-right: 0;
+  color: #fff;
+}
+
+.monitor-item .list ul li:hover .text-muted {
+  color: #fff !important;
+}
+
+.monitor-item .list .on {
+  background: rgba(7, 160, 121, 0.1);
+}
+
+.monitor-item .list .goods-name {
+  padding-top: 5px;
+}
+
+.monitor-item .list .on .date {
+  color: #fff !important;
+}
+
+/*contents*/
+.monitor-contents .list ul li .server-contents .menu-deco {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/*alert*/
+.alert-pangx2.full .alert-admin-pangx2 {
+  height: 300px;
+  background-size: 190px;
+  margin-top: -180px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+a.btn-alert:first-child {
+  opacity: unset;
+}
+
+
+/*memory switch*/
+.swap-tab {
+  float: right;
+  margin-top: 3px;
+  margin-right: 20px;
+  display: none;
+}
+
+/*switch text*/
+.swap-deco {
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.btn-add {
+  background-color: #15a26e;
+}
+
+/* server list legend */
+.monitor-item .legend {
+  padding: 10px 10px 5px 10px;
+  background: #ecedef;
+}

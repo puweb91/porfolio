@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/jquery.scrollbar.css">
     <link rel="stylesheet" href="./assets/css/style.min.css?220316v2">
   
     <!-- Font Awesome -->
@@ -138,6 +139,7 @@
     </footer>
     
     <div class="modal-group">
+      <!-- 성지라미텍 -->
       <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
@@ -145,7 +147,7 @@
               <h5 class="modal-title" class="fw-bold">성지라미텍</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body scrollbar-outer">
               <table class="table table-borderless">
                 <colgroup>
                   <col width="150px">
@@ -153,9 +155,21 @@
                 </colgroup>
                 <tbody>
                   <tr>
+                    <th>URL</th>
+                    <td>
+                      <a href="http://sjlmt.com" target="_blank">http://sjlmt.com</a>
+                    </td>
+                  </tr>
+                  <tr>
                     <th>담당업무</th>
                     <td>
                       퍼블리싱
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>타입</th>
+                    <td>
+                      반응형
                     </td>
                   </tr>
                   <tr>
@@ -176,9 +190,95 @@
                     <th>주요내용</th>
                     <td>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">'디자인트렌드 > SHOWROOM'<br>페이지 구성시 관리자에서 이미지 내 특정 영역에 제품 바로가기 링크 삽입 가능하도록 작업.</li>
-                        <li class="list-group-item">각 제품 상세페이지에서 줌기능 구현.</li>
-                        <li class="list-group-item">'고객지원 > 가상체험관'<br>제품 선택 시 각 공간에 맞게 이미지 적용<br>바닥재는 랜덤으로 배열 변경하여 노출<br>가오픈 상태이므로 경로 별도 기입<br>( <a href="http://sjlmt.com/cs/virtual__living.com" target="_blank">http://sjlmt.com/cs/virtual__living.com</a> )</li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">'디자인트렌드 > SHOWROOM'</span><br>
+                          페이지 구성시 관리자에서 이미지 내 특정 영역에 제품 바로가기 링크 삽입 가능하도록 작업.
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">'제품 상세페이지'</span><br>
+                          고객사 요구사항이 플러그인으로 구현이 불가능하여 별도 구현
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">'고객지원 > 가상체험관'</span><br>
+                          제품 선택 시 각 공간에 맞게 이미지 적용<br>
+                          바닥재는 랜덤으로 배열 변경하여 노출<br>
+                          가오픈 상태이므로 경로 별도 기입<br>
+                          ( <a href="http://sjlmt.freewebclub.com/cs/virtual__living.html" target="_blank">http://sjlmt.freewebclub.com/cs/virtual__living.html</a> )
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 셀리턴 -->
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" class="fw-bold">셀리턴</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body scrollbar-outer">
+              <table class="table table-borderless">
+                <colgroup>
+                  <col width="150px">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>URL</th>
+                    <td>
+                      브랜드 ( <a href="https://www.cellreturn.com/" target="_blank">https://www.cellreturn.com/</a> )<br>
+                      스토어 ( <a href="https://store.cellreturn.com/KR/" target="_blank">https://store.cellreturn.com/KR/</a> )
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>담당업무</th>
+                    <td>
+                      PL
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>타입</th>
+                    <td>
+                      반응형
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>사용언어</th>
+                    <td>
+                      HTML, SCSS, Javascript, jQuery, PHP
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>개발언어</th>
+                    <td>PHP 7.0</td>
+                  </tr>
+                  <tr>
+                    <th>작업기간</th>
+                    <td>약 3개월</td>
+                  </tr>
+                  <tr>
+                    <th>주요내용</th>
+                    <td>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="fw-bold">'일정관리 및 작업가능여부 협의'</span><br>
+                          PM과 일정 및 작업가능여부 협의<br>
+                          PM, 디자이너, 고객사의 요구사항 작업가능여부 검토 및 협의
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">'작업 전 조율'</span><br>
+                          외주 개발건으로 작업 전 개발사와 퍼블리싱 범위 조율
+                        </li>
                       </ul>
                     </td>
                   </tr>
@@ -194,6 +294,7 @@
     </div>
   
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.scrollbar.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
