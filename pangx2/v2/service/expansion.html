@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="format-detection" content="telephone=no">
+		<title>팡팡 관리자</title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabs.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabstyles.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tether.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/sumoselect.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/switchery.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.bxslider.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/pangx2-admin/pws.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome/fontawesome-all.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/icon/custom-ico.css">
+		<link rel="stylesheet" type="text/css" href="../assets/skins/default.css" id="clswitch">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		
+		<script type="text/javascript" src="../assets/js/common/cbpFWTabs.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easing.js"></script>
+		<script type="text/javascript" src="../assets/js/common/tether.js"></script>
+		<script type="text/javascript" src="../assets/js/common/popper.js"></script>
+		<script type="text/javascript" src="../assets/js/common/bootstrap.js"></script>
+		<script type="text/javascript" src="../assets/js/common/lc_switch.js"></script>
+		<script type="text/javascript" src="../assets/js/common/switchery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.scrollbar.js"></script>
+		<script type="text/javascript" src="../assets/js/common/peity.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easypiechart.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.matchHeight.js"></script>
+		<script type="text/javascript" src="../assets/js/common/loadingoverlay.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/common.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ElementQueries.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/member.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/setting.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/add_service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/monitoring.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/dashboard.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/all_guide.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- s : GNB -->
+			<div class="gnb gnb-bgcolor">
+				<a href="#none">
+					<div class="gnb-logo"></div>
+				</a>
+				<!-- s : 메뉴 -->
+				<div class="side-menu">
+					<!--<ul>
+						<li>
+							<a href="#none">
+								<i class="fa fa-desktop ico" aria-hidden="true"></i>대시보드<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>호스팅관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>도메인관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>웹빌더<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>
+								부가서비스
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>-->
+					<ul>
+						<!--<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>서비스신청<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>-->
+						<li>
+							<a href="../monitoring/monitoring.html">
+								<i class="fa fa-line-chart ico" aria-hidden="true"></i>
+								모니터링
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>
+								설정
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../setting/alarm.html">모니터링알람설정</a>
+								</li>
+								<li>
+									<a href="../setting/api.html">API 관리자</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								SSL 보안인증서
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../ssl/write.html">인증서신청</a>
+								</li>
+								<li>
+									<a href="../ssl/list.html">인증서목록</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								알림톡
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../bizmessage/apply.html">알림톡신청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-desktop"></i>
+								서비스관리
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../service/user.html">사용자설정</a>
+								</li>
+								<li>
+									<a href="../service/domain.html">서비스 도메인 설정</a>
+								</li>
+								<li>
+									<a href="../service/nameserver.html">네임서버 설정</a>
+								</li>
+								<li>
+									<a href="../service/setting.html">환경설정</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--<ul>
+						<li>
+							<a href="../admin_old/log/index.php">
+								<i class="far fa-list-alt"></i>
+								로그관리
+							</a>
+						</li>
+					</ul>-->
+				</div>
+				<script type="text/javascript">
+					$('.side-menu > ul > li').click(function () {
+						if ($(this).children('.depth-two').hasClass('on')) {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').removeClass('on').slideUp();
+							}
+						} else {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').addClass('on').slideDown();
+							}
+							$(this).siblings('li').children('.depth-two').removeClass('on').slideUp();
+						}
+					});
+				</script>
+				<!-- e : 메뉴 -->
+				<!-- s : 하단 퀵메뉴 -->
+				<div class="quick-btn">
+					<div class="row text-center">
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-gear2"><span>서비스관리</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2" aria-labelledby="dropdownMenuButton" style="top:-82px; left:5px;">
+								<a class="dropdown-item" href="#none">서비스현황</a>
+								<a class="dropdown-item" href="../admin_old/service/fee_mgt.php">요금관리</a>
+								<div class="dropdown-arrow bottom-left"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-add_service"><span>부가서비스</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="top:-46px; left:-63px;">
+								<a class="dropdown-item" href="../add_service/bizmessage.html">알림톡</a>
+								<div class="dropdown-arrow bottom-center"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-headphone"><span>고객센터</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="left:-128px;">
+								<a class="dropdown-item" href="#none">sub1</a>
+								<a class="dropdown-item" href="#none">sub2</a>
+								<a class="dropdown-item" href="#none">sub3</a>
+								<div class="dropdown-arrow bottom-right"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- e : 하단 퀵메뉴 -->
+			</div>
+			<!-- e : GNB -->
+			
+			<div class="header">
+				<div class="tabs tabs-style-fillup">
+					<nav class="color_switcher">
+						<ul>
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/default.css">
+									<span>대시보드</span>
+								</a>
+							</li>-->
+							<li>
+								<a href="../monitoring/monitoring.html" data-clswitch="../assets/skins/default.css">
+									<span>모니터링</span>
+								</a>
+							</li>
+							<!--<li>
+								<a href="../admin_old/pws/dashboard.php" data-clswitch="../assets/skins/blue.css">
+									<span>웹호스팅솔루션</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/purple.css">
+									<span>쇼핑몰</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="../ssl/write.html" data-clswitch="../assets/skins/default.css">
+									<span>부가서비스</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="">
+									<span>영구임대형</span>
+								</a>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+				<script type="text/javascript">
+					$('.color_switcher a').click(function () {
+						var change_css = $(this).attr('data-clswitch');
+						var loc_href = $(this).attr('href');
+						
+						$(this).parents('li').addClass('tab-current');
+						$(this).parents('li').siblings('li').removeClass('tab-current').removeClass('tab-current');
+						
+						$('#clswitch').attr('href', change_css);
+						$(location).attr('href', loc_href);
+					});
+				</script>
+				<div class="login-wrap float-right">
+					<div class="login-info dropdown">
+						<div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="clearfix">
+								<div class="float-left">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="float-left login-id">
+									<p class="name">팡팡관리자님</p>
+									<p class="email">manager@pangx2.com</p>
+								</div>
+								<div class="float-right text-center">
+									<button type="button" style="background:none;border:none;">
+										<i class="fa fa-angle-down"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-menu dropdown-menu-pangx2">
+							<a class="dropdown-item" href="../service/expansion.html">서비스연장</a>
+							<a class="dropdown-item" href="../mypage/modify.html">회원정보수정</a>
+							<a class="dropdown-item" href="../mypage/pw.html">비밀번호변경</a>
+							<a class="dropdown-item" href="#none">로그아웃</a>
+							<div class="dropdown-arrow top-left"></div>
+						</div>
+					</div>
+				</div>
+				<style>
+					.header-quick i {
+						font-size: 30px;
+						position: relative;
+						color: #454545;
+					}
+					
+					.header-quick i span {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 15px;
+						height: 15px;
+						border-radius: 100%;
+						font-size: 8px;
+						font-weight: 700;
+						text-align: center;
+						line-height: 15px;
+						color: #fff;
+						-webkit-transform: translate(50%, -50%);
+						-ms-transform: translate(50%, -50%);
+						-o-transform: translate(50%, -50%);
+						transform: translate(50%, -50%);
+					}
+					
+					.header-quick i span.no-count {
+						font-size: 0;
+						line-height: 0;
+						width: 8px;
+						height: 8px;
+					}
+				</style>
+				<div class="header-quick float-right h-100 mr-2">
+					<div class="d-table h-100">
+						<div class="d-table-cell align-middle">
+							<a href="#none">
+								<i class="far fa-bell mr-3">
+									<span class="bg-warning-pangx2">2</span>
+								</i>
+							</a>
+							<a href="#none">
+								<i class="far fa-comments">
+									<span class="bg-danger-pangx2 no-count"></span>
+								</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-pangx2">
+				<div class="contents-wrap scrollbar-inner">
+					<div id="contents_body" class="contents-body">
+						<div class="page-title clearfix">
+							<div class="inner-top clearfix">
+								<div class="page-nav">
+									<h2>서비스연장</h2>
+									<ul>
+										<li>
+											<a href="/"></a>
+										</li>
+										<li>서비스연장</li>
+									</ul>
+								</div>
+								<div class="search-area clearfix" style="width:640px"></div>
+							</div>
+							<div class="inner-bottom clearfix" style="width:1140px"></div>
+						</div>
+						<div class="expansion-wrap clearfix mb-0">
+							<div class="panel-group float-left">
+								<div class="expansion-server mb-2">
+									<div class="monitor-item mt-0">
+										<div class="monitor-box">
+											<div class="wrapper server_select serverList-position">
+												<div class="title clearfix">
+													<div class="d-table w-100 h-100">
+														<div class="d-table-cell align-middle">
+															<span class="icon-server mr-1"></span>
+															<span>서버</span>
+														</div>
+													</div>
+												</div>
+												<div class="legend clearfix">
+													<div class="d-inline-block mr-3" style="padding-left: 0px;">
+														<label class="checkbox-inline checkbox-pangx2">
+															<input type="checkbox" id="server_select_all" style="" onclick="selectServerAll()">
+															<span></span>
+															<span class="font-weight-bold f-em-09">전체</span>
+														</label>
+													</div>
+													<div class="d-inline-block h-100">
+                                <span class="mr-1">
+                            <span class="server-state success"></span> <span class="f-em-08">모니터링 정상</span>
+                                </span>
+														<span class="mr-1">
+                            <span class="server-state error"></span> <span class="f-em-08">모니터링 오류</span>
+                                </span>
+													</div>
+													<div class="d-inline-block plus float-right" style="margin-top:-2px">
+														<span id="server_modify_all" class="all-select btn btn-pangx2 btn-sm-pangx2 bg-default-pangx2" onclick="modifyServerAll('init')">수정</span>
+														<span id="server_modify_complete" class="all-select btn btn-pangx2 btn-sm-pangx2 bg-default-pangx2" onclick="modifyServerAll('proc')" style="display:none">완료</span>
+													</div>
+												</div>
+												<div class="rack-list-wrap py-2">
+													<div class="rack-list">
+														<li class="row mx-0 px-3" aria-hidden="true">
+															<span class="col-3 px-1 on"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">루나소프트 랙1</p></a><button type="button" class="bg-transparent border-0" data-popup="true" href=".rack-modify"><i class="far fa-edit p-1 bg-dark text-light rounded"></i></button></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">루나소프트 랙2</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">루나소프트 랙3</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">루나소프트 랙4</p></a></span>
+														</li>
+														<li class="row mx-0 px-3" aria-hidden="true">
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">비투링크</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">뽀로로파크</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">팡팡 PWS</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">팡팡 단독랙</p></a></span>
+														</li>
+														<li class="row mx-0 px-3" style="float: left; list-style: none; position: relative; width: 348px;" aria-hidden="true">
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">팡팡 사내랙</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">팡팡랙2</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">rack1</p></a></span>
+															<span class="col-3 px-1"><a href="#none" class="d-block py-1"><img src="../assets/images/rack-server.png" alt="" class="w-50 mx-auto pb-1"><p class="text-center">rack2</p></a></span>
+														</li>
+													</div>
+												</div>
+												<div class="scroll-wrapper list scrollbar-inner" style="position: relative;">
+													<div class="list scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 274px;">
+														<ul id="server_list">
+															<li class="list-server list-size on" id="server_19" data-no="1" data-ix="19" data-ip="210.107.94.18" data-date="2018-01-31" data-service="영구임대형 서버호스팅" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19" checked="checked">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.18</div>
+																			<div class="name text-right">Centos7</div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size on" id="server_8" data-no="2" data-ix="8" data-ip="210.107.94.19" data-date="2017-03-07" data-service="영구임대형 서버호스팅" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19" checked="checked">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.19</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">영구임대형 서버호스팅</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size" id="server_54" data-no="3" data-ix="54" data-ip="210.107.94.20" data-date="2018-02-07" data-service="영구임대형 서버호스팅" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state error tooltip-anchor" data-tooltip="error_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.20</div>
+																			<div class="name text-right">svn</div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">영구임대형 서버호스팅</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size" id="server_1" data-no="4" data-ix="1" data-ip="210.107.94.21" data-date="2016-02-11" data-service="웹호스팅솔루션" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.21</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size" id="server_1" data-no="4" data-ix="1" data-ip="210.107.94.21" data-date="2016-02-11" data-service="웹호스팅솔루션" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.21</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size on" id="server_1" data-no="4" data-ix="1" data-ip="210.107.94.21" data-date="2016-02-11" data-service="웹호스팅솔루션" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19" checked="checked">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.21</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size on" id="server_1" data-no="4" data-ix="1" data-ip="210.107.94.21" data-date="2016-02-11" data-service="웹호스팅솔루션" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19" checked="checked">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.21</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li class="list-server list-size on" id="server_1" data-no="4" data-ix="1" data-ip="210.107.94.21" data-date="2016-02-11" data-service="웹호스팅솔루션" data-connect="Y">
+																<div class="table">
+																	<div class="checked">
+																		<div class="d-table w-100 h-100">
+																			<div class="d-table-cell align-middle">
+																				<label class="checkbox-inline checkbox-pangx2 m-0">
+																					<input type="checkbox" name="server_select[]" value="19" checked="checked">
+																					<span></span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="server-state-wrap text-center">
+																		<span class="server-state success tooltip-anchor" data-tooltip="normal_diagnosis"></span>
+																	</div>
+																	<div class="info">
+																		<div class="table">
+																			<div class="ip">210.107.94.21</div>
+																			<div class="name text-right"></div>
+																		</div>
+																		<div class="table">
+																			<div class="goods-name">웹호스팅솔루션</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="scroll-element scroll-x scroll-scrolly_visible">
+														<div class="scroll-element_outer">
+															<div class="scroll-element_size"></div>
+															<div class="scroll-element_track"></div>
+															<div class="scroll-bar" style="width: 88px;"></div>
+														</div>
+													</div>
+													<div class="scroll-element scroll-y scroll-scrolly_visible">
+														<div class="scroll-element_outer">
+															<div class="scroll-element_size"></div>
+															<div class="scroll-element_track"></div>
+															<div class="scroll-bar" style="height: 180px; top: 0px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="expansion-price">
+									<div class="panel w-100 mb-0">
+										<div class="subtitle setting-title required clearfix">
+											<h3 class="float-left">
+												<i class="fa fa-check-circle"></i>
+												결제금액
+											</h3>
+										</div>
+										<div class="table-box th-text-center">
+											<table class="table">
+												<colgroup>
+													<col width="38%">
+													<col width="62%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>항목</th>
+														<th>금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<span class="title">총 서비스금액</span>
+															<div class="calc-icon">
+																<i class="fa fa-minus"></i>
+															</div>
+														</td>
+														<td>1,620,000원</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="title">할인금액</span>
+															<div class="calc-icon">
+																<i class="fa fa-plus"></i>
+															</div>
+														</td>
+														<td>
+															<span class="text-danger-pangx2" style="font-size:0.8em;">( 할인율 : 10% )</span>
+															<br>
+															<span>162,000원</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="title">부가세</span>
+															<div class="calc-icon f-em-1">
+																<i class="fa fa-pause rotate90"></i>
+															</div>
+														</td>
+														<td>145,800원</td>
+													</tr>
+													<tr>
+														<td>최종결제비용</td>
+														<td>
+															<strong class="text-danger-pangx2">1,603,800원</strong><br>(VAT 포함)
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-group-blank float-left"></div>
+							<div class="panel-group float-left mb-0">
+								<div class="expansion-list mb-2">
+									<div class="panel w-100 mb-0">
+										<div class="subtitle setting-title required clearfix">
+											<h3 class="float-left">
+												<i class="fa fa-check-circle"></i>
+												결제리스트
+											</h3>
+											<div class="float-right">
+												<button class="btn btn-pangx2 bg-default-pangx2 btn-xs-pangx2 test-button">테이블추가 테스트버튼</button>
+											</div>
+										</div>
+										<div class="table-box th-text-center th-align-middle title-table mb-1">
+											<table class="table">
+												<colgroup>
+													<col width="23%">
+													<col width="30%">
+													<col width="25%">
+													<col width="22%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th rowspan="2">서버사양</th>
+														<th>서비스명</th>
+														<th>
+															<p>연장기간</p>
+														</th>
+														<th rowspan="2">금액</th>
+													</tr>
+													<tr>
+														<th>사용기간</th>
+														<th style="border-right:1px solid #ddd;">연장 후 서비스기간</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+										<div class="table-pangx2 td-text-center td-align-middle mb-1">
+											<table class="table">
+												<colgroup>
+													<col width="23%">
+													<col width="30%">
+													<col width="25%">
+													<col width="22%">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td rowspan="2">
+															<p>
+																<span>서버이름</span>
+																<i class="fa fa-question-circle-o tooltip-anchor" data-tooltip="server-spec"></i>
+															</p>
+															<p>222.222.222.222</p>
+														</td>
+														<td>웹호스팅 솔루션</td>
+														<td>
+															<select class="align-middle" style="color: rgb(255, 68, 68);">
+																<option value="1개월" style="color: rgb(51, 51, 51); font-weight: 500;">1개월</option>
+																<option value="3개월" style="color: rgb(51, 51, 51); font-weight: 500;">3개월</option>
+																<option value="6개월" class="text-danger-pangx2" selected="" style="font-weight: 700;">6개월 (5%할인)</option>
+																<option value="12개월" class="text-danger-pangx2" style="font-weight: 500;">12개월 (10%할인)</option>
+																<option value="24개월" class="text-danger-pangx2" style="font-weight: 500;">24개월 (12%할인)</option>
+															</select>
+														</td>
+														<td rowspan="2">
+															<strong class="text-danger-pangx2">
+																<p>1,620,000원</p>
+															</strong>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<p class="mb-1">2018-02-01 ~ 2018-12-31</p>
+														</td>
+														<td>
+															<p>2019-12-31 까지</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="table-pangx2 td-text-center td-align-middle mb-1">
+											<table class="table">
+												<colgroup>
+													<col width="23%">
+													<col width="30%">
+													<col width="25%">
+													<col width="22%">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td rowspan="2">
+															<p>
+																<span>서버이름</span>
+																<i class="fa fa-question-circle-o tooltip-anchor" data-tooltip="server-spec"></i>
+															</p>
+															<p>222.222.222.222</p>
+														</td>
+														<td>웹호스팅 솔루션</td>
+														<td>
+															<select class="align-middle" style="color: rgb(255, 68, 68);">
+																<option value="1개월" style="color: rgb(51, 51, 51); font-weight: 500;">1개월</option>
+																<option value="3개월" style="color: rgb(51, 51, 51); font-weight: 500;">3개월</option>
+																<option value="6개월" class="text-danger-pangx2" selected="" style="font-weight: 700;">6개월 (5%할인)</option>
+																<option value="12개월" class="text-danger-pangx2" style="font-weight: 500;">12개월 (10%할인)</option>
+																<option value="24개월" class="text-danger-pangx2" style="font-weight: 500;">24개월 (12%할인)</option>
+															</select>
+														</td>
+														<td rowspan="2">
+															<strong class="text-danger-pangx2">
+																<p>1,620,000원</p>
+															</strong>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<p class="mb-1">2018-02-01 ~ 2018-12-31</p>
+														</td>
+														<td>
+															<p>2019-12-31 까지</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="expansion-pay">
+									<div class="panel w-100">
+										<div class="subtitle required">
+											<h3>
+												<i class="fa fa-check-circle"></i>
+												결제하기
+											</h3>
+										</div>
+										<div class="row mx-0 mb-2">
+											<div class="virtual-table-box w-100 border-primary border-width-normal">
+												<div class="d-table w-100 text-center">
+													<div class="d-table-row">
+														<div class="d-table-cell table-active-pangx2 py-3 align-middle font-weight-bold w-25">결제방법</div>
+														<div class="d-table-cell py-2 align-middle">
+															<div class="row mx-0 payment-method">
+																<div class="col col-4 px-0">
+																	<label class="radio-pangx2 m-0">
+																		<input type="radio" name="payment_method" checked="">
+																		<span></span>
+																		무통장입금
+																	</label>
+																</div>
+																<div class="col col-4 px-0">
+																	<label class="radio-pangx2 m-0">
+																		<input type="radio" name="payment_method">
+																		<span></span>
+																		가상계좌
+																	</label>
+																</div>
+																<div class="col col-4 px-0">
+																	<label class="radio-pangx2 m-0">
+																		<input type="radio" name="payment_method">
+																		<span></span>
+																		신용카드
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="d-table w-100 text-center account-info" style="border-top:1px solid #ddd;">
+													<div class="d-table-row">
+														<div class="d-table-cell py-3">
+															무통장 입금 계좌번호 : 우리은행 1002-111-11111-1111 ( 예금주 : 주식회사 팡팡 )
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<script type="text/javascript">
+										
+										
+										</script>
+										<!--                <div class="row mx-0 mb-2 panel-single panel-round no-account border-secondary border-width-normal py-3">
+												<ul class="clearfix">
+														<li class="float-left">무통장 입금 계좌번호 안내</li>
+														<li class="division float-left mx-3"></li>
+														<li class="float-left">우리은행</li>
+														<li class="division float-left mx-3"></li>
+														<li class="float-left">1002-111-11111-1111</li>
+														<li class="division float-left mx-3"></li>
+														<li class="float-left">예금주 : 주식회사 팡팡</li>
+												</ul>
+										</div>-->
+										<div class="box infobox notitle secondary infobox-ws icon py-3">
+											<div class="clearfix d-table w-100 h-100">
+												<p class="d-table-cell align-middle">
+													<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+													<span class="d-inline-block float-right">무통장 입금 계좌번호 : 우리은행 1002-111-11111-1111 ( 예금주 : 주식회사 팡팡 )</span>
+												</p>
+											</div>
+											<div class="clearfix d-table w-100 h-100">
+												<p class="d-table-cell align-middle">
+													<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+													<span class="d-inline-block float-right">신용카드 결제의 경우 신용카드 매출전표가 세금계산서를 대체합니다.</span>
+												</p>
+											</div>
+											<div class="clearfix d-table w-100 h-100">
+												<p class="d-table-cell align-middle">
+													<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+													<span class="d-inline-block float-right">세금계산서와 현금영수증은 중복발행되지 않습니다.</span>
+												</p>
+											</div>
+										</div>
+										<div class="single-panel panel-round text-center border-primary border-width-normal py-1 mb-3">
+											<label class="checkbox-inline checkbox-pangx2 mb-0 mr-2">
+												<input type="checkbox" name="inlineCheckOptions" id="inlineCheck1" value="option2">
+												<span></span>
+												서비스 이용약관 동의
+											</label>
+											<button class="btn btn-pangx2 btn-sm-pangx2 view-terms">약관보기</button>
+										</div>
+										<div class="text-center">
+											<button class="btn btn-pangx2 btn-m-pangx2 bg-primary-pangx2">결제하기</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- s : 서버사양 툴팁 -->
+						<div class="tooltip-box" data-anchor="server-spec">
+							<img src="/pangx2.com/assets/images/tooltip_triangle.png" class="triangle" alt="">
+							<p>CPU : Quad Core</p>
+							<p>RAM : 16G</p>
+							<p>HDD : SATA 1T</p>
+							<p>네트워크 : 30M</p>
+							<div class="tooltip-area"></div>
+						</div>
+						<!-- e : 서버사양 툴팁 -->
+						<!-- s : 서비스이용약관 -->
+						<div class="pop-box terms-service">
+							<div class="pop-wrap">
+								<div class="pop-header">
+									<p>서비스 이용약관 안내</p>
+								</div>
+								<div class="pop-cont scrollbar-inner">
+									<div class="scroll-cont pr-2">
+										서비스 이용약관 내용
+									</div>
+								</div>
+								<div class="pop-footer">
+									<button class="btn btn-pangx2 btn-m-pangx2 bg-secondary-pangx2">확인</button>
+								</div>
+							</div>
+							<div class="pop-close">
+								<i class="fa fa-times"></i>
+							</div>
+						</div>
+						<!-- e : 서비스이용약관 -->
+					</div>
+				</div>
+			</div>
+			<!-- s : alert front '확인' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' -->
+			<!-- s : alert front '성공' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title success">
+						<i class="fa fa-check-circle"></i>
+						<h1>성공</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '성공' -->
+			<!-- s : alert front '안내' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title info">
+						<i class="fa fa-question-circle"></i>
+						<h1>안내</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '안내' -->
+			<!-- s : alert front '오류' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title warning">
+						<i class="fas fa-exclamation-circle"></i>
+						<h1>오류</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '오류' -->
+			<!-- s : alert front '경고' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고' -->
+			<!-- s : alert front '경고', '버튼 1개' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button single">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고', '버튼 1개' -->
+			<!-- s : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<div class="alert-pop expand">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!--<div class="alert-pop diagnosis success">
+					<div class="alert-header">
+							<div class="title"><h1><i class="fas fa-search"></i> 서비스진단</h1></div>
+					</div>
+					<div class="alert-body">
+							<p class="text-dark f-em-2 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+							<div class="text-center my-2">
+									<img src="../assets/images/server_popup_success.png" alt="">
+							</div>
+							<p class="text-dark f-em-2 font-weight-bold">현재 모니터링 서비스는 <strong class="text-success">정상</strong>입니다.</p>
+					</div>
+					<div class="alert-footer">
+							<div class="row button double">
+									<div class="col">
+											<a href="#none" role="button" class="alert-btn-conf">확인</a>
+									</div>
+							</div>
+					</div>
+			</div>-->
+			<!-- e : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 오류 ----- 진단결과 출력 -->
+			<div class="alert-pop diagnosis error">
+				<div class="alert-header">
+					<div class="title text-danger mb-3">
+						<h1>
+							<span class="icon-diagnosis"></span>
+							서비스진단
+						</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<p class="text-dark f-em-3 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+					<div class="text-center my-4">
+						<div class="state-text mb-3 px-1">
+							<object type="image/svg+xml" data="../assets/images/network_error.svg"></object>
+							<span><span class="badge badge-secondary">222.239.90.118</span> 의 모니터링 서비스를 위한 통신이 원활하지 않습니다.</span>
+						</div>
+						<div class="diagnosis-result border border-dark rounded position-relative">
+							<div class="loading"></div>
+							<div class="type1">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">1. Snmpd 데몬 구동</div>
+								</div>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">2. Snmpd에 팡팡 모니터링 설정</div>
+								</div>
+								<div class="row mx-0 py-2">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross server-check-x text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">3. UDP 161 포트 접속허용 설정</div>
+								</div>
+							</div>
+							<div class="type2">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-3 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">
+										<a href="#none"><u>1:1문의</u></a>
+										or 고객센터로 문의주시기 바랍니다.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box infobox-sm infobox border-primary infobox-ws icon py-3 text-left pr-2">
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">해결가이드를 참고하여 서버상태를 체크 및 조치해야 합니다.</span>
+							</p>
+						</div>
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">문의사항은 고객센터로 연락주시기 바랍니다.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">취소</a>
+						</div>
+						<div class="col">
+							<a href="../admin/client/guide.php" role="button" class="alert-btn-guide">해결가이드</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- s : 서버 정상 아이콘 마우스오버 툴팁 -->
+			
+			<!-- e : 서버 정상 아이콘 마우스오버 툴팁 -->
+			<!-- s : 서버 오류 아이콘 마우스오버 툴팁 -->
+			<div class="tooltip-box text-center" data-anchor="error_diagnosis">
+				<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+				<p>클릭 시 모니터링<br>서비스 진단을 시작합니다.</p>
+			</div>
+			<!-- e : 서버 오류 아이콘 마우스오버 툴팁 -->
+			
+			<!-- s : footer -->
+			<div class="footer">
+				<div class="copy arial clearfix">
+					COPYRIGHT© 2017-2018 Pangx2. ALL RIGHT RESERVED.
+				</div>
+				<div class="mask"></div>
+			</div>
+			<!-- e : footer -->
+		</div>
+		<script type="text/javascript">
+			(function () {
+				[].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+					new CBPFWTabs(el);
+				});
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="format-detection" content="telephone=no">
+		<title>팡팡 관리자</title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabs.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabstyles.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tether.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/sumoselect.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/switchery.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.bxslider.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/pangx2-admin/pws.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome/fontawesome-all.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/icon/custom-ico.css">
+		<link rel="stylesheet" type="text/css" href="../assets/skins/default.css" id="clswitch">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		
+		<script type="text/javascript" src="../assets/js/common/cbpFWTabs.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easing.js"></script>
+		<script type="text/javascript" src="../assets/js/common/tether.js"></script>
+		<script type="text/javascript" src="../assets/js/common/popper.js"></script>
+		<script type="text/javascript" src="../assets/js/common/bootstrap.js"></script>
+		<script type="text/javascript" src="../assets/js/common/lc_switch.js"></script>
+		<script type="text/javascript" src="../assets/js/common/switchery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.scrollbar.js"></script>
+		<script type="text/javascript" src="../assets/js/common/peity.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easypiechart.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.matchHeight.js"></script>
+		<script type="text/javascript" src="../assets/js/common/loadingoverlay.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/common.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ElementQueries.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/member.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/setting.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/add_service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/monitoring.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/dashboard.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/all_guide.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- s : GNB -->
+			<div class="gnb gnb-bgcolor">
+				<a href="#none">
+					<div class="gnb-logo"></div>
+				</a>
+				<!-- s : 메뉴 -->
+				<div class="side-menu">
+					<!--<ul>
+						<li>
+							<a href="#none">
+								<i class="fa fa-desktop ico" aria-hidden="true"></i>대시보드<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>호스팅관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>도메인관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>웹빌더<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>
+								부가서비스
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>-->
+					<ul>
+						<!--<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>서비스신청<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>-->
+						<li>
+							<a href="../monitoring/monitoring.html">
+								<i class="fa fa-line-chart ico" aria-hidden="true"></i>
+								모니터링
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>
+								설정
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../setting/alarm.html">모니터링알람설정</a>
+								</li>
+								<li>
+									<a href="../setting/api.html">API 관리자</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								SSL 보안인증서
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../ssl/write.html">인증서신청</a>
+								</li>
+								<li>
+									<a href="../ssl/list.html">인증서목록</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								알림톡
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../bizmessage/apply.html">알림톡신청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-desktop"></i>
+								서비스관리
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../service/user.html">사용자설정</a>
+								</li>
+								<li>
+									<a href="../service/domain.html">서비스 도메인 설정</a>
+								</li>
+								<li>
+									<a href="../service/nameserver.html">네임서버 설정</a>
+								</li>
+								<li>
+									<a href="../service/setting.html">환경설정</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--<ul>
+						<li>
+							<a href="../admin_old/log/index.php">
+								<i class="far fa-list-alt"></i>
+								로그관리
+							</a>
+						</li>
+					</ul>-->
+				</div>
+				<script type="text/javascript">
+					$('.side-menu > ul > li').click(function () {
+						if ($(this).children('.depth-two').hasClass('on')) {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').removeClass('on').slideUp();
+							}
+						} else {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').addClass('on').slideDown();
+							}
+							$(this).siblings('li').children('.depth-two').removeClass('on').slideUp();
+						}
+					});
+				</script>
+				<!-- e : 메뉴 -->
+				<!-- s : 하단 퀵메뉴 -->
+				<div class="quick-btn">
+					<div class="row text-center">
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-gear2"><span>서비스관리</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2" aria-labelledby="dropdownMenuButton" style="top:-82px; left:5px;">
+								<a class="dropdown-item" href="#none">서비스현황</a>
+								<a class="dropdown-item" href="../admin_old/service/fee_mgt.php">요금관리</a>
+								<div class="dropdown-arrow bottom-left"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-add_service"><span>부가서비스</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="top:-46px; left:-63px;">
+								<a class="dropdown-item" href="../add_service/bizmessage.html">알림톡</a>
+								<div class="dropdown-arrow bottom-center"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-headphone"><span>고객센터</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="left:-128px;">
+								<a class="dropdown-item" href="#none">sub1</a>
+								<a class="dropdown-item" href="#none">sub2</a>
+								<a class="dropdown-item" href="#none">sub3</a>
+								<div class="dropdown-arrow bottom-right"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- e : 하단 퀵메뉴 -->
+			</div>
+			<!-- e : GNB -->
+			
+			<div class="header">
+				<div class="tabs tabs-style-fillup">
+					<nav class="color_switcher">
+						<ul>
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/default.css">
+									<span>대시보드</span>
+								</a>
+							</li>-->
+							<li>
+								<a href="../monitoring/monitoring.html" data-clswitch="../assets/skins/default.css">
+									<span>모니터링</span>
+								</a>
+							</li>
+							<!--<li>
+								<a href="../admin_old/pws/dashboard.php" data-clswitch="../assets/skins/blue.css">
+									<span>웹호스팅솔루션</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/purple.css">
+									<span>쇼핑몰</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="../ssl/write.html" data-clswitch="../assets/skins/default.css">
+									<span>부가서비스</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="">
+									<span>영구임대형</span>
+								</a>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+				<script type="text/javascript">
+					$('.color_switcher a').click(function () {
+						var change_css = $(this).attr('data-clswitch');
+						var loc_href = $(this).attr('href');
+						
+						$(this).parents('li').addClass('tab-current');
+						$(this).parents('li').siblings('li').removeClass('tab-current').removeClass('tab-current');
+						
+						$('#clswitch').attr('href', change_css);
+						$(location).attr('href', loc_href);
+					});
+				</script>
+				<div class="login-wrap float-right">
+					<div class="login-info dropdown">
+						<div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="clearfix">
+								<div class="float-left">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="float-left login-id">
+									<p class="name">팡팡관리자님</p>
+									<p class="email">manager@pangx2.com</p>
+								</div>
+								<div class="float-right text-center">
+									<button type="button" style="background:none;border:none;">
+										<i class="fa fa-angle-down"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-menu dropdown-menu-pangx2">
+							<a class="dropdown-item" href="../service/expansion.html">서비스연장</a>
+							<a class="dropdown-item" href="../mypage/modify.html">회원정보수정</a>
+							<a class="dropdown-item" href="../mypage/pw.html">비밀번호변경</a>
+							<a class="dropdown-item" href="#none">로그아웃</a>
+							<div class="dropdown-arrow top-left"></div>
+						</div>
+					</div>
+				</div>
+				<style>
+					.header-quick i {
+						font-size: 30px;
+						position: relative;
+						color: #454545;
+					}
+					
+					.header-quick i span {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 15px;
+						height: 15px;
+						border-radius: 100%;
+						font-size: 8px;
+						font-weight: 700;
+						text-align: center;
+						line-height: 15px;
+						color: #fff;
+						-webkit-transform: translate(50%, -50%);
+						-ms-transform: translate(50%, -50%);
+						-o-transform: translate(50%, -50%);
+						transform: translate(50%, -50%);
+					}
+					
+					.header-quick i span.no-count {
+						font-size: 0;
+						line-height: 0;
+						width: 8px;
+						height: 8px;
+					}
+				</style>
+				<div class="header-quick float-right h-100 mr-2">
+					<div class="d-table h-100">
+						<div class="d-table-cell align-middle">
+							<a href="#none">
+								<i class="far fa-bell mr-3">
+									<span class="bg-warning-pangx2">2</span>
+								</i>
+							</a>
+							<a href="#none">
+								<i class="far fa-comments">
+									<span class="bg-danger-pangx2 no-count"></span>
+								</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-pangx2">
+				<div class="contents-wrap scrollbar-inner">
+					<div id="contents_body" class="contents-body">
+						
+						<div class="page-title clearfix">
+							<div class="inner-top clearfix">
+								<div class="page-nav">
+									<h2>알림톡</h2>
+									<ul>
+										<li>
+											<a href="/"></a>
+										</li>
+										<li>부가서비스</li>
+										<li>알림톡</li>
+									</ul>
+								</div>
+								<div class="search-area clearfix" style="width:640px"></div>
+							</div>
+							<div class="inner-bottom clearfix" style="width:1140px"></div>
+						</div>
+						<div class="nav-tab mb-3 clearfix">
+							<ul class="clearfix float-left p-1">
+								<li class="on">알림톡 충전</li>
+								<li>알림톡 메세지</li>
+								<li>알림톡 수신내역</li>
+							</ul>
+						</div>
+						<div class="tab-cont">
+							<div class="panel talk-charge">
+								<div class="mb-3">
+									<div class="subtitle required">
+										<h3>
+											<i class="fa fa-check-circle"></i>
+											알림톡 사용현황
+										</h3>
+									</div>
+									<div class="table-box">
+										<table class="table">
+											<colgroup>
+												<col width="16%">
+												<col width="12%">
+												<col width="16%">
+												<col width="12%">
+												<col width="16%">
+												<col width="12%">
+												<col width="16%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>서비스명</th>
+													<th colspan="6">사용내역</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>알림톡</td>
+													<th>잔여건수</th>
+													<td><strong class="text-danger">1,000건</strong></td>
+													<th>사용건수</th>
+													<td>9,000건</td>
+													<th>총 충전건수</th>
+													<td>10,000건</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="select-option mb-3">
+									<div class="subtitle required">
+										<h3>
+											<i class="fa fa-check-circle"></i>
+											알림톡 충전하기
+										</h3>
+									</div>
+									<div class="option-list">
+										<div class="table-box">
+											<table class="table">
+												<colgroup>
+													<col width="19%">
+													<col width="27%">
+													<col width="27%">
+													<col width="27%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>충전건수</th>
+														<th>
+															<label class="radio-inline radio-pangx2 m-0">
+																<input type="radio" name="charge_count">
+																<span></span>
+																10,000건
+															</label>
+														</th>
+														<th>
+															<label class="radio-inline radio-pangx2 m-0">
+																<input type="radio" name="charge_count" checked="">
+																<span></span>
+																50,000건
+															</label>
+														</th>
+														<th>
+															<label class="radio-inline radio-pangx2 m-0">
+																<input type="radio" name="charge_count">
+																<span></span>
+																100,000건
+															</label>
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1건당 금액</td>
+														<td>10원</td>
+														<td>9원</td>
+														<td>8원</td>
+													</tr>
+													<tr>
+														<td>이용금액</td>
+														<td>100,000원</td>
+														<td>450,000원</td>
+														<td>800,000원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="focus-box">
+											<div class="focus-box-title">
+												<i class="fa fa-check pr-1"></i>
+												선택상품
+											</div>
+										</div>
+									</div>
+									<div class="box infobox notitle secondary infobox-ws icon">
+										<div class="clearfix d-table w-100 h-100">
+											<p class="d-table-cell align-middle">
+												<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+												<span class="d-inline-block float-right">알림톡의 경우 발송실패 시 자동으로 LMS로 전송되며 충전건수에서 4건이 차감됩니다.</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="payment-wrap">
+									<div class="subtitle required">
+										<h3>
+											<i class="fa fa-check-circle"></i>
+											결제하기
+										</h3>
+									</div>
+									<div class="row mx-0 mb-2 payment-price">
+										<div class="col col-3 pl-0">
+											<div class="virtual-table-box border-primary border-width-normal">
+												<div class="d-table w-100 text-center">
+													<div class="d-table-row table-active">
+														<div class="d-table-cell py-3 font-weight-bold">충전건수</div>
+													</div>
+													<div class="d-table-row">
+														<div class="d-table-cell py-3"><strong>10,000건</strong></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col col-9 px-0">
+											<div class="virtual-table-box border-primary border-width-normal">
+												<div class="d-table w-100 text-center">
+													<div class="d-table-row table-active">
+														<div class="d-table-cell py-3 font-weight-bold">1건당 이용금액</div>
+														<div class="d-table-cell py-3 font-weight-bold">충전건수</div>
+														<div class="d-table-cell py-3 font-weight-bold">결제금액</div>
+													</div>
+													<div class="d-table-row">
+														<div class="d-table-cell py-3">
+															<strong>11원(VAT포함)</strong>
+														</div>
+														<div class="d-table-cell py-3">
+															<strong>10,000건</strong>
+															<div class="calc-icon">
+																<i class="icon-cross"></i>
+															</div>
+														</div>
+														<div class="d-table-cell py-3">
+															<strong class="text-danger">110,000원(VAT포함)</strong>
+															<div class="calc-icon">
+																<i class="icon-pause2"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row mx-0 mb-2">
+										<div class="virtual-table-box w-100 border-primary border-width-normal">
+											<div class="d-table w-100 text-center">
+												<div class="d-table-row">
+													<div class="d-table-cell table-active py-3 align-middle font-weight-bold w-25">결제방법을 선택해주세요.</div>
+													<div class="d-table-cell py-3 align-middle font-weight-bold">
+														<div class="row mx-0 payment-method">
+															<div class="col col-4 px-0">
+																<label class="radio-pangx2 m-0">
+																	<input type="radio" name="payment_method">
+																	<span></span>
+																	무통장입금
+																</label>
+															</div>
+															<div class="col col-4 px-0">
+																<label class="radio-pangx2 m-0">
+																	<input type="radio" name="payment_method">
+																	<span></span>
+																	가상계좌
+																</label>
+															</div>
+															
+															<div class="col col-4 px-0">
+																<label class="radio-pangx2 m-0">
+																	<input type="radio" name="payment_method">
+																	<span></span>
+																	신용카드
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row mx-0 mb-2 panel-single panel-round no-account border-secondary border-width-normal">
+										<ul class="clearfix">
+											<li class="float-left">무통장 입금 계좌번호 안내</li>
+											<li class="division float-left mx-3"></li>
+											<li class="float-left">우리은행</li>
+											<li class="division float-left mx-3"></li>
+											<li class="float-left">1002-111-11111-1111</li>
+											<li class="division float-left mx-3"></li>
+											<li class="float-left">예금주 : 주식회사 팡팡</li>
+										</ul>
+									</div>
+									<div class="box infobox notitle secondary infobox-ws icon">
+										<div class="clearfix d-table w-100 h-100">
+											<p class="d-table-cell align-middle">
+												<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+												<span class="d-inline-block float-right">신용카드 결제의 경우 신용카드 매출전표가 세금계산서를 대체합니다. (부가가치세 세법에 의거)</span>
+											</p>
+										</div>
+										<div class="clearfix d-table w-100 h-100">
+											<p class="d-table-cell align-middle">
+												<i class="fa fa-exclamation-circle float-left p-1 m-0" aria-hidden="true"></i>
+												<span class="d-inline-block float-right">세금계산서와 현금영수증은 중복발행되지 않습니다.</span>
+											</p>
+										</div>
+									</div>
+									<div class="single-panel panel-round text-center border-primary border-width-normal py-2 mb-3">
+										<label class="checkbox-inline checkbox-pangx2">
+											<input type="checkbox" name="inlineCheckOptions" id="inlineCheck1" value="option2">
+											<span></span>
+											서비스이용약관동의
+										</label>
+										<button class="btn btn-pangx2 view-terms">약관보기</button>
+									</div>
+									<div class="text-center">
+										<button class="btn btn-pangx2 bg-primary-pangx2">결제하기</button>
+									</div>
+								</div>
+							</div>
+							<div class="panel talk-msg" style="display:none;">
+								<div class="subtitle required">
+									<h3>
+										<i class="fa fa-check-circle"></i>
+										트래픽사용량
+									</h3>
+								</div>
+								<div class="table-box mb-4">
+									<table class="table th-text-center">
+										<colgroup>
+											<col width="33.333%">
+											<col width="33.333%">
+											<col width="33.333%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>알림종류</th>
+												<th>알림톡형식</th>
+												<th>알림톡예시</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-warning text-icon-sm mr-2">경고</span>
+													<strong class="text-icon-border text-icon-3xl">80</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[경고]트래픽사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 트래픽사용량이 80%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-danger text-icon-sm mr-2">위험</span>
+													<strong class="text-icon-border text-icon-3xl">90</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[위험]트래픽사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 트래픽사용량이 90%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="subtitle required">
+									<h3>
+										<i class="fa fa-check-circle"></i>
+										CPU 사용량
+									</h3>
+								</div>
+								<div class="table-box mb-4">
+									<table class="table th-text-center">
+										<colgroup>
+											<col width="33.333%">
+											<col width="33.333%">
+											<col width="33.333%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>알림종류</th>
+												<th>알림톡형식</th>
+												<th>알림톡예시</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-warning text-icon-sm mr-2">경고</span>
+													<strong class="text-icon-border text-icon-3xl">80</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[경고]CPU 사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 CPU 사용량이 80%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-danger text-icon-sm mr-2">위험</span>
+													<strong class="text-icon-border text-icon-3xl">90</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[위험]CPU 사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 CPU 사용량이 90%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="subtitle required">
+									<h3>
+										<i class="fa fa-check-circle"></i>
+										메모리 사용량
+									</h3>
+								</div>
+								<div class="table-box mb-4">
+									<table class="table th-text-center">
+										<colgroup>
+											<col width="33.333%">
+											<col width="33.333%">
+											<col width="33.333%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>알림종류</th>
+												<th>알림톡형식</th>
+												<th>알림톡예시</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-warning text-icon-sm mr-2">경고</span>
+													<strong class="text-icon-border text-icon-3xl">80</strong>% 초과 후 <strong>5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[경고]메모리 사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 메모리 사용량이 80%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-danger text-icon-sm mr-2">위험</span>
+													<strong class="text-icon-border text-icon-3xl">90</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[위험]메모리 사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 메모리 사용량이 90%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="subtitle required">
+									<h3>
+										<i class="fa fa-check-circle"></i>
+										디스크사용량
+									</h3>
+								</div>
+								<div class="table-box">
+									<table class="table th-text-center">
+										<colgroup>
+											<col width="33.333%">
+											<col width="33.333%">
+											<col width="33.333%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>알림종류</th>
+												<th>알림톡형식</th>
+												<th>알림톡예시</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-warning text-icon-sm mr-2">경고</span>
+													<strong class="text-icon-border text-icon-3xl">80</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[경고]디스크사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 디스크 사용량이 80%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="text-icon text-icon-danger text-icon-sm mr-2">위험</span>
+													<strong class="text-icon-border text-icon-3xl">90</strong>% 초과 후
+													<strong class="text-icon-border text-icon-3xl">5</strong>분 지속 시
+												</td>
+												<td class="talk_form">
+													팡팡 모니터링 알림입니다.<br><br>[{알림종류}]{발송항목}<br>발생일시 : {이벤트발생일시}<br>대상서버 : {이벤트발생서버}<br>내용 : 모니터링 중 {발송항목}이 {임계치설정값}%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+												</td>
+												<td>
+													<div class="alarm-example">
+														<div class="title">
+															<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+															<span>알림톡 도착</span>
+															<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+														</div>
+														<div class="cont">
+															팡팡 모니터링 알림입니다.<br><br>[위험]디스크사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 디스크 사용량이 90%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="panel receive-list" style="display:none;">
+								<div class="clearfix mb-3">
+									<button type="button" class="btn btn-pangx2 bg-mint-pangx2 float-right ml-2">검색</button>
+									<div class="form-inline float-right">
+										<div class="form-group">
+											<input type="text" class="form-control form-control-pangx2 alarm-picker1 picker1 hasDatepicker" id="dp1648010550251">
+											<span class="px-1">~</span>
+											<input type="text" class="form-control form-control-pangx2 alarm-picker2 picker2 hasDatepicker" id="dp1648010550252">
+										</div>
+									</div>
+									<ul class="select-tab float-right clearfix">
+										<li class="float-left on">1일</li>
+										<li class="float-left">7일</li>
+										<li class="float-left">1개월</li>
+										<li class="float-left">1년</li>
+									</ul>
+									<div class="subtitle required float-left">
+										<h3 class="py-2">
+											<i class="fa fa-check-circle"></i>
+											알림톡 수신내역 검색
+										</h3>
+									</div>
+									<select name="" id="" class="server-select pr-4 float-right" title="서버IP별 검색">
+										<option value="" selected="selected">서버IP별 검색</option>
+										<option value="">111.111.111.11</option>
+										<option value="">111.111.111.11</option>
+										<option value="">111.111.111.11</option>
+										<option value="">111.111.111.11</option>
+										<option value="">111.111.111.11</option>
+									</select>
+								</div>
+								<div class="table-pangx2 radius th-text-center td-text-center">
+									<table class="table">
+										<colgroup>
+											<col width="6%">
+											<col width="14%">
+											<col width="13%">
+											<col width="20%">
+											<col width="18%">
+											<col width="10%">
+											<col width="6%">
+											<col width="13%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>알림톡구분</th>
+												<th>대상서버</th>
+												<th>메시지내용</th>
+												<th>발송시간</th>
+												<th>발송건수
+													<i class="fa fa-question-circle-o tooltip-anchor" data-tooltip="send_info"></i>
+												</th>
+												<th>성공</th>
+												<th>LMS발송건수
+													<i class="fa fa-question-circle-o tooltip-anchor" data-tooltip="lms_count"></i>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>모니터링알림</td>
+												<td>123.123.123.1</td>
+												<td class="text-left" style="max-width:200px">
+													<p class="subject mb-1">팡팡 모니터링 알림입니다.</p>
+													<p class="contents">
+														<span>[{알림종류}]{발송항목} 발생일시 : {이벤트발생일시}</span>
+														<i class="fa fa-ellipsis-h tooltip-anchor text-dark" data-tooltip="alarm_receive_cont"></i>
+													</p>
+												</td>
+												<td>2018-03-22 16:35:00</td>
+												<td>
+													<span class="tooltip-anchor text-dark" data-tooltip="send_count">5건</span>
+												</td>
+												<td>5건</td>
+												<td>0건</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- s : 서비스이용약관 -->
+						<div class="pop-box terms-service">
+							<div class="pop-wrap">
+								<div class="pop-header">
+									<p>서비스이용약관안내</p>
+								</div>
+								<div class="scroll-wrapper pop-cont scrollbar-inner" style="position: relative;">
+									<div class="pop-cont scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;">
+										<div class="scroll-cont pr-2">
+											제1장 총칙 제1조 (목적) 이 약관은 주식회사 다날 및 주식회사 케이지모빌리언스(이하 통칭하여 ‘회사’라 함)가 제공하는 휴대폰간편결제 서비스의 이용과 관련하여 회사와 이용자와의 권리, 의무, 책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.
+											<br> <br> 제2조 (용어의 정의) 이 약관에서 정하는 용어의 정의는 다음과 같습니다.
+											<br> 1. ‘이용자'라 함은 이 약관에 동의하고 회사가 제공하는 휴대폰 간편결제 서비스를 이용하는 자를 말합니다.
+											<br> 2. ‘휴대폰간편결제 서비스’란 ‘이용자’가 휴대용 단말기 등 각종 유무선 기기를 통하여 자신의 정보를 입력하여 서비스 등록 후에는 휴대폰번호와 비밀번호의 입력만으로 결제를 요청할 수 있는 서비스를 말합니다.
+											<br> 이용자 3. '비밀번호'라 함은 휴대폰 간편결제 서비스를 이용하기 위하여 필요한 인증 수단으로서 이용자가 본인임을 사전에 확인하고 스스로 설정한 6자리 숫자의 조합을 말합니다.
+											<br>
+											<br> 제3조 (약관의 명시 및 효력변경) 1. 회사는 이용자가 휴대폰 간편결제 서비스를 이용하기 전에 이 약관을 게시하고 이용자가 이 약관의 중요한 내용을 확인할 수 있도록 합니다.
+											<br> 2. 회사는 이용자의 요청이 있는 경우 전자문서의 전송방식에 의하여 본 약관의 사본을 이용자에게 교부합니다.
+											<br> 3. 회사가 이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 제 1항의 방식에 따라 그 개정약관을 적용일자 7일 전부터 적용일자 전일까지 공지합니다. 다만, 이용자에게 불리하거나 중요한 사항을 변경하는 경우에는 적용일자 30일 이전에 공지하며, 공지 외에 이용자의 전자우편 등의 전자적 수단을 통해 따로 명확히 통지합니다.
+											<br> 4. 회사가 전 항에 따라 개정약관을 공지 또는 통지하면서 이용자에게 개정약관 적용일자 전까지 의사표시를 하지 않으면 개정약관에 동의한 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 이용자가 명시적으로 거부의사를 표명하지 아니한 경우 이용자가 개정약관에 동의한 것으로 봅니다.
+											<br> 5. 이용자가 개정약관의 내용에 동의하지 않는 경우 회사는 해당 이용자에 대하여 개정약관의 내용을 적용할 수 없으며, 이 경우 이용자는 이용계약을 해지할 수 있습니다. 다만, 회사가 개정약관에 동의하지 않은 이용자에게 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 해당 이용자와의 이용계약을 해지할 수 있습니다.
+											<br> 제2장 서비스 이용
+											<br> 제4조 (이용 계약의 성립) 1. 휴대폰 간편결제 서비스 이용계약은 이용자가 되고자 하는 자가 회사가 정한 가입 절차와 방법에 따라 휴대폰 간편결제 서비스 이용신청을 하고, 회사가 이러한 신청에 대하여 승낙함으로써 체결됩니다.
+											<br> 2. 서비스 이용자가입 시 이 약관의 동의 란에 체크하면 이 약관에 동의하는 것으로 간주됩니다.
+											<br> 3. 회사는 다음 각 호에 해당하는 신청에 대하여는 승인을 하지 않거나 사후에 이용의 제한 또는이용계약을 해지할 수 있습니다. 1) 회사의 실명 확인절차에서 실명기입정보와 사실여부가 일치하지 아니하는 경우 2) 이미 가입된 이용자와 이름 및 개인정보가 이용자정보와 입력정보가 동일한 경우 3) 등록내용에 허위 정보를 기재하거나, 기재누락, 오기가 있는 경우 4) 기타 이 약관에 위배되거나 위법 또는 부당한 이용신청임이 확인된 경우 및 회사가 합리적인 판단에 의하여 필요하다고 인정하는 경우 5) 관계법령에 위배되거나 사회의 안녕질서 혹은 미풍양속을 저해할 수 있는 목적으로 신청한 경우 6) 이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 규정한 제반 사항을 위반하여 신청하는 경우 7) 회사는 이용자의 종류에 따라 전문기관을 통한 실명확인 및 본인인증을 요청할 수 있습니다. 8) 회사는 서비스관련설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다. 9) 제8조 회원의 의무를 위반하는 경우
+											<br> 제5조 (이용 신청) 서비스 이용 신청은 서비스 동의 화면에서 이용자가 약관에 동의한 후, 다음 사항을 양식에 입력하는 방법으로 행합니다.
+											<br> - 이동통신사명 - 휴대폰번호 - 주민등록번호 앞 7자리 - 비밀번호 - 이메일주소
+											<br> 제6조 (서비스의 이용) 1. 회사는 이용자의 이용 신청을 승낙한 때부터 서비스를 개시합니다.
+											<br> 2. 회사의 업무상 또는 기술상의 이유 등으로 인하여 서비스를 개시하지 못한 경우에는 이를 서비스 화면에 공지합니다.
+											<br> 3. 이용자는 자신의 접근매체를 제3자에게 누설 또는 노출하거나 방치하여서는 안되며, 접근매체의 도용이나 위조 또는 변조를 방지하기 위하여 충분한 주의를 기울여야 합니다.
+											<br> 4. 회사는 이용자로부터 접근매체의 분실이나 도난 등의 발생시 회사가 정해놓은 본인확인 등의 절차에 따라 분실이나 도난 등의 접수를 받은 때를 제외하고는 제3자가 그 접근매체를 사용함으로 인하여 이용자에게 발생한 손해에 대하여 어떠한 책임도 부담하지 않습니다.
+											<br> 제3장 계약 당사자의 의무 제7조 (회사의 의무) 1. 회사는 이 약관에서 정한 바에 따라 계속적, 안정적으로 서비스를 제공하도록 노력하여야 합니다.
+											<br> 2. 회사는 서비스 제공과 관련하여 알게 된 이용자의 개인정보를 본인의 동의 없이 제3자에게 누설, 배포하지 않습니다. 단, 관계 법령에 다른 수사상의 목적으로 관계 기관으로부터 요구를 받았거나 법률의 규정에 따른 적법한 절차에 의한 경우에는 그러하지 않습니다.
+											<br> 3. 회사는 서비스와 관련한 이용자의 불만사항이 고객센터를 통하여 접수되면 이를 신속하게 처리해야 하며, 신속한 처리가 어렵다면 그 사유와 처리 일정을 서비스 화면에 게재하거나 해당 이용자에게 통지합니다.
+											<br> 4. 회사가 제공하는 서비스로 인하여 이용자에게 손해가 발생한 경우, 회사는 그러한 손해가 회사의 귀책사유로 인해 발생한 경우에 한하여 책임을 부담하며, 그 책임의 범위는 통상손해에 한합니다.
+											<br> 5. 회사는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법규를 준수합니다.
+											<br> 6. 회사는 회원이 안전하게 서비스를 이용할 수 있도록 회원의 개인정보 (신용정보포함) 보호를 위한 보안시스템을 갖추고 있으며, 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다. [주식회사 다날] 개인정보보호 및 관리책임자: 결제사업본부 본부장 허남순 개인정보보호 및 관리담당자: 결제사업본부 컨버전스사업실장 백경숙 담당부서: 결제사업본부 개인정보보호 담당 전화번호 : 031-697-1167 E-mail : help@danal.co.kr
+											<br> [주식회사 케이지모빌리언스] 개인정보 보호책임자 성명 : 현동식 직위 : IT총괄 전화번호 : 02-2192-2000 이메일 : security@mobilians.co.kr
+											<br> 개인정보담당부서 : 정보보안팀 전화번호 : 02-2192-2000 이메일 : security@mobilians.co.kr
+											<br> 제8조 (이용자의 의무) 1. 이용자는 이 약관의 규정, 관계 법령, 이용안내 및 서비스상에 공지한 주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사 업무 또는 서비스에 방해되는 행위를 하여서는 아니 됩니다.
+											<br> 2. 이용자는 서비스를 이용할 때 아래 각 호의 행위를 하여서는 아니 됩니다.
+											<br> 가. 서비스 이용신청 또는 변경 시 허위 사실을 기재하거나, 휴대전화 명의자의 허락 없이 실사용자가 인증을 수행하는 행위 나. 타인의 허락 없이 타인의 휴대전화번호를 이용하여 서비스를 이용하는 행위 라. 회사의 서비스 정보를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복제 또는 유통시키거나 상업적으로 이용하는 행위 마. 서비스와 관련된 설비의 오작동이나 정보 등의 파괴 및 혼란을 유발시키는 컴퓨터 바이러스 감염 자료를 등록 또는 유포하는 행위
+											<br> 3. 이용자는 서비스 이용을 위해 등록을 할 경우 현재의 사실과 일치하는 완전한 정보를 제공하여야 합니다. <br>
+											<br> 제9조 (이용자의 비밀번호 등 관리에 대한 책임) 1. 이용자는 비밀번호 등의 관리에 대한 책임을 부담하고, 비밀번호 등에 대한 관리 소홀로인하여 부정 사용에 의하여 발생하는 모든 책임은 이용자 본인에게 있습니다.
+											<br> 2. 이용자는 비밀번호 등을 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 즉시 비밀번호 등을 변경하는 등의 조치를 취하여야 하며, 이와 동시에 회사에 통보하고, 회사의 안내가 있는 경우에는 그에 따라야 합니다.
+											<br> 제10조 (이용자의 정보 변경 및 탈퇴) 1. 이용자는 서비스 이용 신청 시 기재한 사항이 변경되었을 경우 회사가 정한 방법에 의하여 수정하여야 합니다. 회사는 이용자가 변경 사항을 적시에 수정하지 않음으로 인하여 발생하는 문제에 대해서는 어떠한 책임도 지지 않습니다.
+											<br> 2. 이용자는 언제든지 아래 고객센터를 통하여 이용계약을 해지 할 수 있으며, 이용계약의 해지 시 별도의 법령에 정한 바가 없으면, 이용자의 정보는 지체 없이 삭제합니다.
+											<br> [주식회사 다날] - 고객센터 전화번호 : 1566-3355 - 담당자 : 결제사업본부 고객관리팀 민원담당 - 이메일 : help@danal.co.kr
+											<br> [주식회사 케이지모빌리언스] 고객서비스담당 부서 : 고객센터 전화번호 : 1600-0523 이메일 : salesop@kggroup.co.kr
+											<br> 제11조 (이용자에 대한 통지) 회사는 이용자에 대하여 통지를 하는 경우, 서비스 화면에서의 공지 또는 이메일, SMS 등의 방법으로 할 수 있습니다.
+											<br> 제12조 (이용자의 개인정보보호 등) 1. 회사는 관계 법령이 정하는 바에 따라 이용자의 등록정보를 포함한 이용자의 개인정보를 보호하기 위하여 노력합니다. 이용자의 개인정보보호에 관한 사항은 관련 법령 및 회사가 정하는 개인정보처리방침에 정한 바에 따릅니다.
+											<br> 2. 회사는 서비스의 제공을 위하여 이용자의 동의를 받아 이용자의 개인정보를 제휴사에게 제공할 수 있습니다. <br> 3.
+											<br>회사는 수집된 개인정보의 취급 및 관리 등의 업무를 스스로 수행함을 원칙으로 하나, 필요한 경우 위 업무의 일부 또는 전부를 회사가 선정한 회사에 위탁할 수 있습니다.
+											<br> 제4장 계약 해지 및 이용 제한 제13조 (계약 해지 및 이용 제한) 1. 이용자는 회사가 정한 방법 및 절차에 따르거나, 직접 회사의 상담센터 등에 통보하고서 서비스 이용계약을 해지할 수 있습니다.
+											<br> 2. 회사는 이용자가 제8조에 규정한 이용자의 의무를 이행하지 않는 경우, 사전 통지 없이 즉시 이용계약을 해지하거나 서비스 이용을 중지할 수 있습니다.
+											<br> 3. 회사는 이용자에게 다음 각 호의 어느 하나에 해당하는 사유가 있는 경우 서비스 이용 계약을 해지하거나 서비스 이용을 제한할 수 있습니다.
+											<br> 가. 이용자가 이 약관을 위반하는 경우 나. 이용자가 고의로 회사의 영업을 방해한 경우 다. 이용자가 관계 법령, 감독규정, 감독기관의 지침 등을 위반한 경우 라. 타인의 휴대전화번호 등을 도용하는 등 비정상적으로 결제정보를 등록을 하는 경우 마. 다른 이용자의 권리나 명예, 신용 기타 정당한 이익을 침해하거나 대한민국 법령 또는 선량한 풍속 기타 사회질서에 위배되는 행위를 한 경우 바. 서비스의 이용 목적을 벗어난 불합리한 용도로 이용한 경우 사. 관계 법령이나 감독규정, 감독기관의 지침, 회사의 약관과 지침 등에 의해 서비스 제공이 곤란한 경우 아. 이용신청 내용에 허위, 기재 누락, 오기가 있는 경우
+											<br> 4. 이용자는 제2항 및 제3항의 회사 조치에 대하여 이의가 있는 경우 회사가 정한 절차에 따라 이의 신청을 할 수 있고, 이에 대하여 회사는 이의 신청이 정당하다고 인정하는 경우, 즉시 서비스 이용을 재개합니다.
+											<br> 제5장 손해배상 등 제14조 (손해배상) 1. 이용자가 이 약관의 규정을 위반하여 회사에 손해가 발생하는 경우, 이 약관을 위반한 이용자는 회사가 입은 모든 손해를 배상하여야 합니다.
+											<br> 2. 이용자가 서비스를 이용함에 있어 불법행위나 이 약관의 위반으로 인하여 회사가 제3자로부터 손해배상청구 또는 소송을 비롯한 각종 이의제기를 받는 경우, 당해 이용자는 자신의 책임과 비용으로 회사를 면책시켜야 하며, 당해 이용자는 그로 인하여 회사가 입은 모든 손해를 배상하여야 합니다.
+											<br> 제15조 (면책사항) 1. 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.
+											<br> 2. 회사는 이용자의 귀책사유로 인한 서비스의 이용 장애에 대하여 책임을 지지 않습니다.
+											<br> 3. 회사는 이용자가 서비스를 이용하여 기대하는 수익을 상실한 것에 대하여 책임을 지지 않으며, 서비스를 통하여 얻은 자료로 인한 손해 등에 대하여도 책임을 지지 않습니다.
+											<br> 4. 회사는 이용자 상호간 또는 이용자와 제3자 상호간에 서비스 매개로 발생한 분쟁에 대해서는 개입할 의무가 없으며, 이로 인한 손해를 배상할 책임도 없습니다.
+											<br> 제16조 (준용) 이 약관에 명시되지 아니한 사항이나 약관의 해석에 관한 사항에 대하여는 관계 법령 및 상관례에 따릅니다.
+											<br> 제17조 (관할법원) 1. 서비스 이용과 관련하여 회사와 이용자 사이에 분쟁이 발생한 경우, 회사와 이용자는 분쟁의 해결을 위해 성실히 협의합니다.
+											<br> 2. 제1항의 협의를 통해서도 분쟁이 해결되지 않는 경우, 이용자의 주소 또는 거소의 법원을 관할법원으로 하나 이용자의 주소 또는 거소를 알 수 없는 경우에는 민사소송법상의 관할법원을 전속적인 관할법원으로 정하여 해결합니다.
+										</div>
+									</div>
+									<div class="scroll-element scroll-x">
+										<div class="scroll-element_outer">
+											<div class="scroll-element_size"></div>
+											<div class="scroll-element_track"></div>
+											<div class="scroll-bar"></div>
+										</div>
+									</div>
+									<div class="scroll-element scroll-y">
+										<div class="scroll-element_outer">
+											<div class="scroll-element_size"></div>
+											<div class="scroll-element_track"></div>
+											<div class="scroll-bar"></div>
+										</div>
+									</div>
+								</div>
+								<div class="pop-footer">
+									<button class="btn btn btn-m bg-secondary">확인</button>
+								</div>
+							</div>
+							<div class="pop-close">
+								<i class="fa fa-times"></i>
+							</div>
+						</div>
+						<!-- e : 서비스이용약관 -->
+						<!-- s : 알림톡 수신내역 말줄임 -->
+						<div class="tooltip-box white expand" data-anchor="alarm_receive_cont">
+							<img src="../assets/images/tooltip_triangle_w.png" class="triangle" alt="">
+							<div class="pop-cont">
+								<div class="alarm-example">
+									<div class="title">
+										<img src="../assets/images/talk_msg.png" alt="" class="icon1">
+										<span>알림톡 도착</span>
+										<img src="../assets/images/talk_kakao.png" alt="" class="icon2">
+									</div>
+									<div class="cont">
+										팡팡 모니터링 알림입니다.<br><br>[경고]CPU 사용량<br>발생일시 : 2018년 3월 20일 14:41:00<br>대상서버 : 123.123.123.1<br>내용 : 모니터링 중 CPU 사용량이 80%를 초과하였습니다.<br><br>서버상태를 확인해보시기 바랍니다.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- e : 알림톡 수신내역 말줄임 -->
+						<!-- s : 발송건수 툴팁 -->
+						<div class="tooltip-box text-center" data-anchor="send_info">
+							<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+							<p>발송건수 클릭 시 대상자<br>리스트를 확인하실 수 있습니다.</p>
+							<div class="tooltip-area"></div>
+						</div>
+						<!-- e : 발송건수 툴팁 -->
+						<!-- s : LMS 발송건수 툴팁 -->
+						<div class="tooltip-box text-center" data-anchor="lms_count">
+							<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+							<p>알림톡의 경우 발송실패 시 자동으로 LMS로 전송되며 충전건수에서 4건이 차감됩니다.</p>
+							<div class="tooltip-area"></div>
+						</div>
+						<!-- e : LMS 발송건수 툴팁 -->
+						<!-- s : 발송건수 항목 텍스트 툴팁 -->
+						<div class="tooltip-box text-center" data-anchor="send_count">
+							<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+							<p>홍길동 010-0000-0000</p>
+							<p>홍길동 010-0000-0000</p>
+							<p>홍길동 010-0000-0000</p>
+							<p>홍길동 010-0000-0000</p>
+							<p>홍길동 010-0000-0000</p>
+							<div class="tooltip-area"></div>
+						</div>
+						<!-- e : 발송건수 항목 텍스트 툴팁 -->
+					</div>
+				</div>
+			</div>
+			<!-- s : alert front '확인' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' -->
+			<!-- s : alert front '성공' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title success">
+						<i class="fa fa-check-circle"></i>
+						<h1>성공</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '성공' -->
+			<!-- s : alert front '안내' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title info">
+						<i class="fa fa-question-circle"></i>
+						<h1>안내</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '안내' -->
+			<!-- s : alert front '오류' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title warning">
+						<i class="fas fa-exclamation-circle"></i>
+						<h1>오류</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '오류' -->
+			<!-- s : alert front '경고' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고' -->
+			<!-- s : alert front '경고', '버튼 1개' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button single">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고', '버튼 1개' -->
+			<!-- s : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<div class="alert-pop expand">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!--<div class="alert-pop diagnosis success">
+					<div class="alert-header">
+							<div class="title"><h1><i class="fas fa-search"></i> 서비스진단</h1></div>
+					</div>
+					<div class="alert-body">
+							<p class="text-dark f-em-2 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+							<div class="text-center my-2">
+									<img src="../assets/images/server_popup_success.png" alt="">
+							</div>
+							<p class="text-dark f-em-2 font-weight-bold">현재 모니터링 서비스는 <strong class="text-success">정상</strong>입니다.</p>
+					</div>
+					<div class="alert-footer">
+							<div class="row button double">
+									<div class="col">
+											<a href="#none" role="button" class="alert-btn-conf">확인</a>
+									</div>
+							</div>
+					</div>
+			</div>-->
+			<!-- e : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 오류 ----- 진단결과 출력 -->
+			<div class="alert-pop diagnosis error">
+				<div class="alert-header">
+					<div class="title text-danger mb-3">
+						<h1>
+							<span class="icon-diagnosis"></span>
+							서비스진단
+						</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<p class="text-dark f-em-3 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+					<div class="text-center my-4">
+						<div class="state-text mb-3 px-1">
+							<object type="image/svg+xml" data="../assets/images/network_error.svg"></object>
+							<span><span class="badge badge-secondary">222.239.90.118</span> 의 모니터링 서비스를 위한 통신이 원활하지 않습니다.</span>
+						</div>
+						<div class="diagnosis-result border border-dark rounded position-relative">
+							<div class="loading"></div>
+							<div class="type1">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">1. Snmpd 데몬 구동</div>
+								</div>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">2. Snmpd에 팡팡 모니터링 설정</div>
+								</div>
+								<div class="row mx-0 py-2">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross server-check-x text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">3. UDP 161 포트 접속허용 설정</div>
+								</div>
+							</div>
+							<div class="type2">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-3 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">
+										<a href="#none"><u>1:1문의</u></a>
+										or 고객센터로 문의주시기 바랍니다.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box infobox-sm infobox border-primary infobox-ws icon py-3 text-left pr-2">
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">해결가이드를 참고하여 서버상태를 체크 및 조치해야 합니다.</span>
+							</p>
+						</div>
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">문의사항은 고객센터로 연락주시기 바랍니다.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">취소</a>
+						</div>
+						<div class="col">
+							<a href="../admin/client/guide.php" role="button" class="alert-btn-guide">해결가이드</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- s : 서버 정상 아이콘 마우스오버 툴팁 -->
+			
+			<!-- e : 서버 정상 아이콘 마우스오버 툴팁 -->
+			<!-- s : 서버 오류 아이콘 마우스오버 툴팁 -->
+			<div class="tooltip-box text-center" data-anchor="error_diagnosis">
+				<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+				<p>클릭 시 모니터링<br>서비스 진단을 시작합니다.</p>
+			</div>
+			<!-- e : 서버 오류 아이콘 마우스오버 툴팁 -->
+			
+			<!-- s : footer -->
+			<div class="footer">
+				<div class="copy arial clearfix">
+					COPYRIGHT© 2017-2018 Pangx2. ALL RIGHT RESERVED.
+				</div>
+				<div class="mask"></div>
+			</div>
+			<!-- e : footer -->
+		</div>
+		<script type="text/javascript">
+			(function () {
+				[].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+					new CBPFWTabs(el);
+				});
+			})();
+		</script>
+	</body>
+</html>

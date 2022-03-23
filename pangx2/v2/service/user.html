@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="format-detection" content="telephone=no">
+		<title>팡팡 관리자</title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabs.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tabstyles.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/tether.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/sumoselect.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/server-monitoring-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/switchery.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common/jquery.bxslider.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-pangx2-admin.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/pangx2-admin/pws.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome/fontawesome-all.css">
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/icon/custom-ico.css">
+		<link rel="stylesheet" type="text/css" href="../assets/skins/default.css" id="clswitch">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		
+		<script type="text/javascript" src="../assets/js/common/cbpFWTabs.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easing.js"></script>
+		<script type="text/javascript" src="../assets/js/common/tether.js"></script>
+		<script type="text/javascript" src="../assets/js/common/popper.js"></script>
+		<script type="text/javascript" src="../assets/js/common/bootstrap.js"></script>
+		<script type="text/javascript" src="../assets/js/common/lc_switch.js"></script>
+		<script type="text/javascript" src="../assets/js/common/switchery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.scrollbar.js"></script>
+		<script type="text/javascript" src="../assets/js/common/peity.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.easypiechart.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.matchHeight.js"></script>
+		<script type="text/javascript" src="../assets/js/common/loadingoverlay.js"></script>
+		<script type="text/javascript" src="../assets/js/common/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/common.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ElementQueries.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/member.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/setting.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/add_service.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/monitoring.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/dashboard.js"></script>
+		<script type="text/javascript" src="../assets/js/pangx2-admin/all_guide.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- s : GNB -->
+			<div class="gnb gnb-bgcolor">
+				<a href="#none">
+					<div class="gnb-logo"></div>
+				</a>
+				<!-- s : 메뉴 -->
+				<div class="side-menu">
+					<!--<ul>
+						<li>
+							<a href="#none">
+								<i class="fa fa-desktop ico" aria-hidden="true"></i>대시보드<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>호스팅관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>도메인관리<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>웹빌더<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-server ico" aria-hidden="true"></i>
+								부가서비스
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>-->
+					<ul>
+						<!--<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>서비스신청<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>-->
+						<li>
+							<a href="../monitoring/monitoring.html">
+								<i class="fa fa-line-chart ico" aria-hidden="true"></i>
+								모니터링
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-credit-card-alt ico" aria-hidden="true"></i>
+								설정
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../setting/alarm.html">모니터링알람설정</a>
+								</li>
+								<li>
+									<a href="../setting/api.html">API 관리자</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								SSL 보안인증서
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../ssl/write.html">인증서신청</a>
+								</li>
+								<li>
+									<a href="../ssl/list.html">인증서목록</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-file-alt"></i>
+								알림톡
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../bizmessage/apply.html">알림톡신청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fas fa-desktop"></i>
+								서비스관리
+								<i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+							</a>
+							<ul class="depth-two">
+								<li>
+									<a href="../service/user.html">사용자설정</a>
+								</li>
+								<li>
+									<a href="../service/domain.html">서비스 도메인 설정</a>
+								</li>
+								<li>
+									<a href="../service/nameserver.html">네임서버 설정</a>
+								</li>
+								<li>
+									<a href="../service/setting.html">환경설정</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--<ul>
+						<li>
+							<a href="../admin_old/log/index.php">
+								<i class="far fa-list-alt"></i>
+								로그관리
+							</a>
+						</li>
+					</ul>-->
+				</div>
+				<script type="text/javascript">
+					$('.side-menu > ul > li').click(function () {
+						if ($(this).children('.depth-two').hasClass('on')) {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').removeClass('on').slideUp();
+							}
+						} else {
+							if (!$(this).children('.depth-two').is(':animated')) {
+								$(this).children('.depth-two').addClass('on').slideDown();
+							}
+							$(this).siblings('li').children('.depth-two').removeClass('on').slideUp();
+						}
+					});
+				</script>
+				<!-- e : 메뉴 -->
+				<!-- s : 하단 퀵메뉴 -->
+				<div class="quick-btn">
+					<div class="row text-center">
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-gear2"><span>서비스관리</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2" aria-labelledby="dropdownMenuButton" style="top:-82px; left:5px;">
+								<a class="dropdown-item" href="#none">서비스현황</a>
+								<a class="dropdown-item" href="../admin_old/service/fee_mgt.php">요금관리</a>
+								<div class="dropdown-arrow bottom-left"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-add_service"><span>부가서비스</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="top:-46px; left:-63px;">
+								<a class="dropdown-item" href="../add_service/bizmessage.html">알림톡</a>
+								<div class="dropdown-arrow bottom-center"></div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<a href="#none" class="title" data-toggle="dropdown" haspopup="true" aria-expanded="false">
+								<span class="icon-headphone"><span>고객센터</span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-pangx2 dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="left:-128px;">
+								<a class="dropdown-item" href="#none">sub1</a>
+								<a class="dropdown-item" href="#none">sub2</a>
+								<a class="dropdown-item" href="#none">sub3</a>
+								<div class="dropdown-arrow bottom-right"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- e : 하단 퀵메뉴 -->
+			</div>
+			<!-- e : GNB -->
+			
+			<div class="header">
+				<div class="tabs tabs-style-fillup">
+					<nav class="color_switcher">
+						<ul>
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/default.css">
+									<span>대시보드</span>
+								</a>
+							</li>-->
+							<li>
+								<a href="../monitoring/monitoring.html" data-clswitch="../assets/skins/default.css">
+									<span>모니터링</span>
+								</a>
+							</li>
+							<!--<li>
+								<a href="../admin_old/pws/dashboard.php" data-clswitch="../assets/skins/blue.css">
+									<span>웹호스팅솔루션</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="#none" data-clswitch="../assets/skins/purple.css">
+									<span>쇼핑몰</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="../ssl/write.html" data-clswitch="../assets/skins/default.css">
+									<span>부가서비스</span>
+								</a>
+							</li>-->
+							<!--<li>
+								<a href="">
+									<span>영구임대형</span>
+								</a>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+				<script type="text/javascript">
+					$('.color_switcher a').click(function () {
+						var change_css = $(this).attr('data-clswitch');
+						var loc_href = $(this).attr('href');
+						
+						$(this).parents('li').addClass('tab-current');
+						$(this).parents('li').siblings('li').removeClass('tab-current').removeClass('tab-current');
+						
+						$('#clswitch').attr('href', change_css);
+						$(location).attr('href', loc_href);
+					});
+				</script>
+				<div class="login-wrap float-right">
+					<div class="login-info dropdown">
+						<div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="clearfix">
+								<div class="float-left">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="float-left login-id">
+									<p class="name">팡팡관리자님</p>
+									<p class="email">manager@pangx2.com</p>
+								</div>
+								<div class="float-right text-center">
+									<button type="button" style="background:none;border:none;">
+										<i class="fa fa-angle-down"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-menu dropdown-menu-pangx2">
+							<a class="dropdown-item" href="../service/expansion.html">서비스연장</a>
+							<a class="dropdown-item" href="../mypage/modify.html">회원정보수정</a>
+							<a class="dropdown-item" href="../mypage/pw.html">비밀번호변경</a>
+							<a class="dropdown-item" href="#none">로그아웃</a>
+							<div class="dropdown-arrow top-left"></div>
+						</div>
+					</div>
+				</div>
+				<style>
+					.header-quick i {
+						font-size: 30px;
+						position: relative;
+						color: #454545;
+					}
+					
+					.header-quick i span {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 15px;
+						height: 15px;
+						border-radius: 100%;
+						font-size: 8px;
+						font-weight: 700;
+						text-align: center;
+						line-height: 15px;
+						color: #fff;
+						-webkit-transform: translate(50%, -50%);
+						-ms-transform: translate(50%, -50%);
+						-o-transform: translate(50%, -50%);
+						transform: translate(50%, -50%);
+					}
+					
+					.header-quick i span.no-count {
+						font-size: 0;
+						line-height: 0;
+						width: 8px;
+						height: 8px;
+					}
+				</style>
+				<div class="header-quick float-right h-100 mr-2">
+					<div class="d-table h-100">
+						<div class="d-table-cell align-middle">
+							<a href="#none">
+								<i class="far fa-bell mr-3">
+									<span class="bg-warning-pangx2">2</span>
+								</i>
+							</a>
+							<a href="#none">
+								<i class="far fa-comments">
+									<span class="bg-danger-pangx2 no-count"></span>
+								</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-pangx2">
+				<div class="contents-wrap scrollbar-inner">
+					<div id="contents_body" class="contents-body">
+						<script type="text/javascript" src="../assets/js/pangx2-admin/accountSetting.js"></script>
+						<style>
+							.validate {
+								display: none;
+							}
+							
+							.validate.on {
+								display: block;
+							}
+						</style>
+						<div class="page-title clearfix">
+							<div class="inner-top clearfix">
+								<div class="page-nav">
+									<h2>사용자설정</h2>
+									<ul>
+										<li>
+											<a href="/"></a>
+										</li>
+										<li>서비스관리</li>
+										<li>사용자설정</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="page-title-blank"></div>
+						<div class="mb-3">
+							<div class="table-box">
+								<table class="table">
+									<colgroup>
+										<col width="30%">
+										<col width="56%">
+										<col width="15%">
+										<col width="9%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th class="text-center">
+												<label class="radio-inline radio-pangx2 m-0 mr-3">
+													<input type="radio" name="searchType" value="id" id="searchType1" checked="">
+													<span></span>
+													이메일(계정)
+												</label>
+												<label class="radio-inline radio-pangx2 m-0 mr-3">
+													<input type="radio" name="searchType" value="domain" id="searchType2" checked="">
+													<span></span>
+													도메인
+												</label>
+												<label class="radio-inline radio-pangx2 m-0">
+													<input type="radio" name="searchType" value="name" id="searchType3" checked="">
+													<span></span>
+													담당자명
+												</label>
+											</th>
+											<td>
+												<div class="form-inline">
+													<input type="text" class="form-control form-control-pangx2 w-75 mr-2" placeholder="검색어를 입력해주세요" name="searchText" id="searchText">
+													<a id="resultPop" href="#memberResult" class="btn btn-pangx2 btn-m-pangx2 bg-primary-master text-white" data-popup="true">검색</a>
+												</div>
+											</td>
+											<td class="text-center">
+												<button type="button" class="btn btn-pangx2 bg-primary-pangx2" data-pop="true" data-popname="userAddPopup">
+													<i class="fas fa-plus"></i>
+													사용자추가
+												</button>
+											</td>
+											<td class="text-center">
+												<div class="d-inline-block py-1 px-2 border rounded bg-grayscale-f7">
+													<a href="accountSetting.php">
+														<i class="fas fa-list"></i>
+													</a>
+												</div>
+												<div class="d-inline-block py-1 px-2 border rounded bg-grayscale-f7">
+													<a href="accountSetting2.php">
+														<i class="fas fa-th"></i>
+													</a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<style>
+							.fa-sort-down {
+								-webkit-transform: translateY(-25%);
+								-ms-transform: translateY(-25%);
+								-o-transform: translateY(-25%);
+								transform: translateY(-25%);
+							}
+							
+							.fa-sort-up {
+								-webkit-transform: translateY(25%);
+								-ms-transform: translateY(25%);
+								-o-transform: translateY(25%);
+								transform: translateY(25%);
+							}
+						</style>
+						<div class="panel mb-0">
+							<table class="table table-default">
+								<colgroup>
+									<col width="5%">
+									<col width="18%">
+									<col width="24%">
+									<col width="13%">
+									<col width="13%">
+									<col width="10%">
+									<col width="10%">
+									<col width="7%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">NO</th>
+										<th scope="col">아이디
+											<a href="#none" class="sort-icon">
+												<i class="fas fa-sort-down"></i>
+											</a>
+										</th>
+										<th scope="col">도메인</th>
+										<th scope="col">트래픽</th>
+										<th scope="col">하드</th>
+										<th scope="col">생성일
+											<a href="#none" class="sort-icon">
+												<i class="fas fa-sort-down"></i>
+											</a>
+										</th>
+										<th scope="col">만료일
+											<a href="#none" class="sort-icon">
+												<i class="fas fa-sort-down"></i>
+											</a>
+										</th>
+										<th scope="col">설정</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td class="text-left">
+											<p>manager</p>
+										</td>
+										<td class="text-left">manager.pangx2.com
+											<a href="#" class="domain-link">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test1" data-min="0" data-max="400" data-current="150" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker" style="left: 37.5%;">150MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>400MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="p-2 border rounded bg-grayscale-f7">
+												<div class="progress-wrap test2" data-min="0" data-max="500" data-current="250" data-animate="on">
+													<div class="progress-box">
+														<div class="progress-bar">
+															<div class="threshold on">
+																<div class="inner"></div>
+															</div>
+														</div>
+														<div class="marker">250MB</div>
+													</div>
+													<div class="progress-range clearfix">
+														<div class="float-left min">
+															<p>0MB</p>
+														</div>
+														<div class="float-right text-right max">
+															<p>500MB</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="text-center">
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<span class="badge badge-success mb-1">D-300</span>
+											<p>2017-03-15</p>
+										</td>
+										<td class="text-center">
+											<button type="button" class="btn btn-pangx2 btn-sm bg-info" onclick="location.href='modify.html'">
+												<i class="far fa-edit"></i>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging">
+        <span>
+                <a href="#none" class="first"><span class="blind">처음</span></a>
+        <a href="#none" class="prev"><span class="blind">이전</span></a>
+        </span>
+								<span class="numbering">
+                <a class="active" href="#">1</a>
+                <a href="#none">2</a>
+            </span>
+								<span>
+                <a href="#none" class="next"><span class="blind">다음</span></a>
+        <a href="#none" class="last"><span class="blind">맨끝</span></a>
+        </span>
+							</div>
+						</div>
+						<div class="pop-box px-4" data-popname="userAddPopup" style="width:700px;max-width:800px">
+							<div class="subtitle required">
+								<h3>
+									<i class="fa fa-check-circle"></i>
+									사용자추가
+								</h3>
+							</div>
+							<div class="table-box">
+								<table class="table">
+									<colgroup>
+										<col width="30%">
+										<col width="70%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>아이디</th>
+											<td>
+												<input type="text" name="addUserId" id="addUserId" class="form-control-pangx2" placeholder="아이디를 입력해주세요." autocomplete="off" maxlength="16">
+												<p id="okIdTxt" class="text-success validate on"><small>
+													<i class="far fa-check-circle"></i>
+													사용 가능한 아이디입니다.</small></p>
+												<p id="notokIdTxt" class="text-danger validate on"><small>
+													<i class="far fa-times-circle"></i>
+													사용 불가능한 아이디입니다.</small></p>
+												<p id="deleteIdTxt" class="text-danger validate"><small>
+													<i class="far fa-times-circle"></i>
+													삭제 요청중인 아이디입니다. 잠시후 다시 시도해주세요.</small></p>
+												<p id="banIdTxt" class="text-danger validate"><small>
+													<i class="far fa-times-circle"></i>
+													아이디로 사용이 금지된 단어입니다. 다른 계정명을 입력해주세요.</small></p>
+											</td>
+										</tr>
+										<tr>
+											<th>담당자명(상호)</th>
+											<td>
+												<input type="text" name="addUserName" id="addUserName" class="form-control-pangx2 w-100" value="" autocomplete="off">
+											</td>
+										</tr>
+										<tr>
+											<th>도메인</th>
+											<td>
+												<input type="text" name="addUserDomain1" id="addUserDomain1" class="form-control-pangx2 domain_input1" value="" style="width:140px;display:none;" autocomplete="off">
+												<span class="font-weight-bold domain_dot" id="addUserDomainDot" style="display:none;">.</span>
+												<input type="text" name="addUserDomain2" id="addUserDomain2" class="form-control-pangx2 domain_input2 readonly" value="" style="width:130px;display:none;" readonly="">
+												<input type="text" name="addUserDomain3" id="addUserDomain3" class="form-control-pangx2 domain_input3" value="" style="width:255px;" autocomplete="off">
+												<select name="selectDomain" id="selectDomain" class="form-control-pangx2 select-domain" style="width: 140px;">
+													<option value="" selected="selected">직접입력</option>
+													<option value="pangx2.site">pangx2.site</option>
+													<option value="pangx2.info">pangx2.info</option>
+												</select>
+												<p id="notokDomainTxt" class="validate text-danger on"><small>
+													<i class="far fa-times-circle"></i>
+													현재 사용중인 도메인입니다.</small></p>
+											</td>
+										</tr>
+										<tr>
+											<th>FTP/DB 비밀번호</th>
+											<td>
+												<input type="password" name="addUserPw" id="addUserPw" class="form-control-pangx2 w-100" placeholder="FTP/DB 비밀번호를 입력해주세요." value="" autocomplete="off">
+											</td>
+										</tr>
+										<tr>
+											<th>FTP/DB 비밀번호 확인</th>
+											<td>
+												<input type="password" name="addUserPwChk" id="addUserPwChk" class="form-control-pangx2 w-100" placeholder="FTP/DB 비밀번호를 다시 입력해주세요." value="" autocomplete="off">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pop-footer text-center mt-4">
+								<button class="btn btn-pangx2 bg-secondary-pangx2">취소</button>
+								<button class="btn btn-pangx2 bg-primary-pangx2">확인</button>
+							</div>
+						</div>
+						<script type="text/javascript">
+							/* 플러그인 선언 */
+							(function ($) {
+								$.fn.accountProgress = function () {
+									return this.each(function () {
+										
+										var opts = {
+											min: $(this).attr('data-min'),
+											max: $(this).attr('data-max'),
+											current: $(this).attr('data-current'),
+											animate: $(this).attr('data-animate')
+										}
+										
+										var options = $.extend({}, $.fn.accountProgress.defaults, opts || {});
+										
+										if (options.animate === 'on') {
+											$(this).find('.progress-bar .threshold').addClass('on');
+										} else if (options.animate === 'off') {
+											$(this).find('.progress-bar .threshold').removeClass('on');
+										}
+										
+										$(this).find('.min p').text(options.min + 'MB');
+										$(this).find('.max p').text(options.max + 'MB');
+										$(this).find('.marker').text(options.current + 'MB');
+										$(this).find('.marker').css({
+											left: (options.current / options.max) * 100 + '%'
+										})
+										$(this).find('.progress-bar .threshold').css({
+											width: (options.current / options.max) * 100 + '%'
+										})
+									});
+								}
+								
+								/* 기본값 */
+								$.fn.accountProgress.defaults = {
+									min: 0,
+									max: 500,
+									current: 0,
+									animate: 'on'
+								}
+							})(jQuery);
+							
+							/* 실행 */
+							$(function () {
+								$('.test1, .test2').accountProgress();
+							});
+							
+							$('.select-domain').on('change', function () {
+								var selected = $(this).val();
+								
+								if (selected == "pangx2.site" || selected == "pangx2.info") {
+									$('.domain_input3').css({
+										'display': 'none'
+									});
+									$('.domain_input1, .domain_input2, .domain_dot').css({
+										'display': 'inline-block'
+									});
+									$('.domain_input2').val(selected);
+								} else {
+									$('.domain_input3').css({
+										'display': 'inline-block'
+									});
+									$('.domain_input1, .domain_input2, .domain_dot').css({
+										'display': 'none'
+									});
+									$('.domain_input2').val('');
+								}
+							});
+							
+							function pieChart(el, num) {
+								var $el = el;
+								var currVal = num;
+								var resVal = 1.8 * currVal;
+								
+								$el.find('.chart-graph').css({'transform': 'rotate(' + resVal + 'deg)'});
+							}
+							
+							pieChart($('.chart-wrap'), 50);
+							
+							$('.sort-icon').on('click', function () {
+								if ($(this).children('i').hasClass('fa-sort-down')) {
+									$(this).children('i').removeClass('fa-sort-down');
+									$(this).children('i').addClass('fa-sort-up');
+								} else {
+									$(this).children('i').removeClass('fa-sort-up');
+									$(this).children('i').addClass('fa-sort-down');
+								}
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<!-- s : alert front '확인' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' -->
+			<!-- s : alert front '성공' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title success">
+						<i class="fa fa-check-circle"></i>
+						<h1>성공</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '성공' -->
+			<!-- s : alert front '안내' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title info">
+						<i class="fa fa-question-circle"></i>
+						<h1>안내</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '안내' -->
+			<!-- s : alert front '오류' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title warning">
+						<i class="fas fa-exclamation-circle"></i>
+						<h1>오류</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '오류' -->
+			<!-- s : alert front '경고' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고' -->
+			<!-- s : alert front '경고', '버튼 1개' -->
+			<div class="alert-pop">
+				<div class="alert-header">
+					<div class="title danger">
+						<i class="far fa-times-circle"></i>
+						<h1>경고</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button single">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '경고', '버튼 1개' -->
+			<!-- s : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<div class="alert-pop expand">
+				<div class="alert-header">
+					<div class="title check">
+						<i class="far fa-circle"></i>
+						<h1>확인</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+					<h3>이메일 인증이 완료되었습니다.</h3>
+					<p>이메일 인증이 성공적으로 완료되었습니다.</p>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-cancel">취소</a>
+						</div>
+						<div class="col col-6">
+							<a href="#none" role="button" class="alert-btn-conf">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- e : alert front '확인' expand : 컨텐츠 많을 경우 기존 클래스 alert-pop에 클래스 expand 추가 -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!--<div class="alert-pop diagnosis success">
+					<div class="alert-header">
+							<div class="title"><h1><i class="fas fa-search"></i> 서비스진단</h1></div>
+					</div>
+					<div class="alert-body">
+							<p class="text-dark f-em-2 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+							<div class="text-center my-2">
+									<img src="../assets/images/server_popup_success.png" alt="">
+							</div>
+							<p class="text-dark f-em-2 font-weight-bold">현재 모니터링 서비스는 <strong class="text-success">정상</strong>입니다.</p>
+					</div>
+					<div class="alert-footer">
+							<div class="row button double">
+									<div class="col">
+											<a href="#none" role="button" class="alert-btn-conf">확인</a>
+									</div>
+							</div>
+					</div>
+			</div>-->
+			<!-- e : 서버 오류 아이콘 클릭 시 팝업 : 정상  ------- '사용안함' -->
+			<!-- s : 서버 오류 아이콘 클릭 시 팝업 : 오류 ----- 진단결과 출력 -->
+			<div class="alert-pop diagnosis error">
+				<div class="alert-header">
+					<div class="title text-danger mb-3">
+						<h1>
+							<span class="icon-diagnosis"></span>
+							서비스진단
+						</h1>
+					</div>
+				</div>
+				<div class="alert-body">
+					<p class="text-dark f-em-3 font-weight-bold">모니터링서비스 SNMP 통신상태(UDP, 161포트)</p>
+					<div class="text-center my-4">
+						<div class="state-text mb-3 px-1">
+							<object type="image/svg+xml" data="../assets/images/network_error.svg"></object>
+							<span><span class="badge badge-secondary">222.239.90.118</span> 의 모니터링 서비스를 위한 통신이 원활하지 않습니다.</span>
+						</div>
+						<div class="diagnosis-result border border-dark rounded position-relative">
+							<div class="loading"></div>
+							<div class="type1">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">1. Snmpd 데몬 구동</div>
+								</div>
+								<div class="row mx-0 py-2 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">2. Snmpd에 팡팡 모니터링 설정</div>
+								</div>
+								<div class="row mx-0 py-2">
+									<div class="col-1 px-0 border-right">
+										<span class="fas fa-check text-success check-result normal"></span>
+										<span class="icon-cross server-check-x text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">3. UDP 161 포트 접속허용 설정</div>
+								</div>
+							</div>
+							<div class="type2">
+								<p class="text-left f-em-2 font-weight-bold px-3 py-2 border-bottom bg-dark text-light">진단결과</p>
+								<div class="row mx-0 py-3 border-bottom">
+									<div class="col-1 px-0 border-right">
+										<span class="icon-cross text-danger check-result error"></span>
+									</div>
+									<div class="col-11 text-left">
+										<a href="#none"><u>1:1문의</u></a>
+										or 고객센터로 문의주시기 바랍니다.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box infobox-sm infobox border-primary infobox-ws icon py-3 text-left pr-2">
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">해결가이드를 참고하여 서버상태를 체크 및 조치해야 합니다.</span>
+							</p>
+						</div>
+						<div class="clearfix d-table w-100 h-100">
+							<p class="d-table-cell align-middle">
+								<i class="fa fa-exclamation-circle float-left p-1 m-0 text-dark" aria-hidden="true"></i>
+								<span class="d-inline-block float-right text-dark">문의사항은 고객센터로 연락주시기 바랍니다.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="alert-footer">
+					<div class="row button double">
+						<div class="col">
+							<a href="#none" role="button" class="alert-btn-conf">취소</a>
+						</div>
+						<div class="col">
+							<a href="../admin/client/guide.php" role="button" class="alert-btn-guide">해결가이드</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- s : 서버 정상 아이콘 마우스오버 툴팁 -->
+			
+			<!-- e : 서버 정상 아이콘 마우스오버 툴팁 -->
+			<!-- s : 서버 오류 아이콘 마우스오버 툴팁 -->
+			<div class="tooltip-box text-center" data-anchor="error_diagnosis">
+				<img src="../assets/images/tooltip_triangle.png" class="triangle" alt="">
+				<p>클릭 시 모니터링<br>서비스 진단을 시작합니다.</p>
+			</div>
+			<!-- e : 서버 오류 아이콘 마우스오버 툴팁 -->
+			
+			<!-- s : footer -->
+			<div class="footer">
+				<div class="copy arial clearfix">
+					COPYRIGHT© 2017-2018 Pangx2. ALL RIGHT RESERVED.
+				</div>
+				<div class="mask"></div>
+			</div>
+			<!-- e : footer -->
+		</div>
+		<script type="text/javascript">
+			(function () {
+				[].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+					new CBPFWTabs(el);
+				});
+			})();
+		</script>
+	</body>
+</html>
