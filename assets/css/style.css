@@ -5,7 +5,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12585,6 +12584,15 @@ html {
 }
 .portfolio .item:nth-child(7) .inner {
   background-image: url(../images/prj_7.jpg);
+}
+.portfolio .item:nth-child(8) .inner {
+  background-image: url(../images/prj_8.jpg);
+}
+.portfolio .item:nth-child(9) .inner {
+  background-image: url(../images/prj_9.jpg);
+}
+.portfolio .item:nth-child(10) .inner {
+  background-image: url(../images/prj_10.jpg);
 }
 .portfolio .item:nth-child(1) .inner {
   background-color: #1a1a1a;

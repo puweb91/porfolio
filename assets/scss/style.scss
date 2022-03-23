@@ -102,7 +102,7 @@ html {
       }
     }
     
-    @for $i from 1 through 7 {
+    @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
         .inner {
           background-image: url(../images/prj_#{$i}.jpg);
