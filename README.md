@@ -1,6 +1,7 @@
 ### 포트폴리오 및 작업내용 한눈에 보기
 
-<a href="https://puweb91.github.io/portfolio/index.html" rel="noopener" target="_blank">바로가기</a>
+<a href="https://puweb91.github.io/portfolio/index.html" rel="noopener" target="_blank">바로가기</a><br>
+markdown 기능 지원의 한계로 컨트롤 키를 누른 후 좌클릭 부탁드립니다.
 
 ---
 
