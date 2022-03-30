@@ -48,7 +48,11 @@ html {
 }
 
 .main {
-  padding: rem(100) 0 rem(1000);
+  padding: rem(100) 0 0;
+}
+
+.section {
+  padding-bottom: em(400);
 }
 
 .section-title {
