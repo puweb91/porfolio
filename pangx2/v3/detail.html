@@ -70,7 +70,7 @@
         <div class="nav-list service-title">
           <div class="nav-list-main">
             <div class="nav-list-item">
-              <a href="/pangx2/v3/grid.html">웹호스팅솔루션</a>
+              <a href="/portfolio/pangx2/v3/grid.html">웹호스팅솔루션</a>
             </div>
           </div>
         </div>
@@ -265,12 +265,12 @@
                       <div class="connect-domain-header">
                         <ul class="option-list">
                           <li class="option-list-item">
-                            <label class="custom-checkbox custom-checkbox-lg"><input type="checkbox" id="" checked=""><span></span>
+                            <label class="custom-checkbox custom-checkbox-lg"><input type="radio" name="hyperText" id="hyperText1" checked=""><span></span>
                               <p>HTTP</p>
                             </label>
                           </li>
                           <li class="option-list-item">
-                            <label class="custom-checkbox custom-checkbox-lg https"><input type="checkbox" id=""
+                            <label class="custom-checkbox custom-checkbox-lg https"><input type="radio" name="hyperText" id="hyperText2"
                               checked=""><span></span>
                               <p>HTTPS</p>
                             </label>
@@ -1217,25 +1217,23 @@
           
           $(this).siblings('.form-control').focus();
         });
-        
-        $('.edit-control .edit-modify').on('click', function () {
+
+        $('.edit-control .edit-modify').on('click', function(){
           var $input = $(this).siblings('.form-control'),
-            prop = $input.prop('readonly');
-          
+            prop = $input.prop('disabled');
+  
           if (typeof prop !== typeof undefined && prop !== false) {
-            $input.removeAttr('readonly');
+            $input.removeAttr('disabled');
             $input.focus();
           }
-        }).siblings('.form-control').focusout(function () {
-          $(this).prop('readonly', true);
+        }).siblings('.form-control').focusout(function(){
+          $(this).prop('disabled',true);
         });
-        
-        $('.edit-control .edit-delete').on('click', function () {
+
+        $('.edit-control .edit-delete').on('click', function(){
           var $input = $(this).siblings('.form-control');
           $input.val('');
         });
-      
-      
       </script>
     
     </section>
