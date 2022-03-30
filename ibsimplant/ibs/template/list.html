@@ -1,0 +1,87 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+<head>
+  <?
+    $P_dp1 = '6';
+    include "../include/meta.html"
+    ?>
+</head>
+<body class="main-body">
+<main class="main" id="contents">
+  <div class="layout">
+    <!-- S : LNB -->
+    <div class="layout-nav">
+      <? include "../include/nav.html" ?>
+    </div>
+    <!-- E : LNB -->
+    
+    <!-- S : CONTENTS -->
+    <div class="layout-contents">
+      <section class="section">
+        <!-- S : 페이지 공통 타이틀 -->
+        <div class="section-title-box">
+          <h1 class="section-title">
+            <i class="nav-ico--1"></i> <?=${nav_.$P_dp1}?>
+          </h1>
+        </div>
+        <!-- E : 페이지 공통 타이틀 -->
+        
+        <h2 class="text-color-1 mb-5">List 샘플</h2>
+  
+        <!-- S : 리스트 -->
+        <table class="table_board_for type_a">
+          <colgroup>
+            <col width="">
+            <col width="">
+            <col width="">
+            <col width="">
+            <col width="">
+          </colgroup>
+          <thead>
+          <tr>
+            <th>
+              <input type="checkbox" name="all_chk" id="" class="chk-all">
+            </th>
+            <th>타이틀 1</th>
+            <th>타이틀 2</th>
+            <th>타이틀 3</th>
+            <th>타이틀 4</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <input type="checkbox" name="chk[]" id="" class="chk">
+            </td>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+          </tr>
+          </tbody>
+        </table>
+        <!-- E : 리스트 -->
+        
+        <!-- S : 페이징 -->
+        <div class="paging-area">
+          <ul>
+            <li><a href="javascript:;" class="prev-first"><span>맨앞으로</span></a></li>
+            <li><a href="javascript:;" class="prev"><span>이전으로</span></a></li>
+            <li><a href="javascript:;" class="active">1<span></span></a></li>
+            <li><a href="javascript:;">2<span></span></a></li>
+            <li><a href="javascript:;">3<span></span></a></li>
+            <li><a href="javascript:;" class="next"><span>다음으로</span></a></li>
+            <li><a href="javascript:;" class="next-last"><span>맨뒤로</span></a></li>
+          </ul>
+        </div>
+        <!-- E : 페이징 -->
+      </section>
+    </div>
+    <!-- E : CONTENTS -->
+  </div>
+</main>
+
+<? include "../include/js.html" ?>
+</body>
+</html>

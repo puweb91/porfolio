@@ -1,0 +1,88 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '7';
+    $P_dp2 = '2';
+    include "../include/meta.html"
+    ?>
+	</head>
+	<body class="main-body">
+		<main class="main" id="contents">
+			<div class="layout">
+				<!-- S : LNB -->
+				<div class="layout-nav">
+					<? include "../include/nav.html" ?>
+				</div>
+				<!-- E : LNB -->
+
+				<!-- S : CONTENTS -->
+				<div class="layout-contents">
+					<section class="section">
+						<!-- S : 페이지 공통 타이틀 -->
+						<div class="section-title-box">
+							<h1 class="section-title">
+								<?=${nav_.$P_dp1._.$P_dp2}?>
+							</h1>
+						</div>
+						<!-- E : 페이지 공통 타이틀 -->
+
+						<div class="form-box">
+							<h2 class="form-title">주문정보</h2>
+
+							<table class="table-form-01">
+								<colgroup>
+									<col width="180px" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>주문상품</th>
+										<td>상품명이 노출됩니다.</td>
+									</tr>
+									<tr>
+										<th>기공소명</th>
+										<td>ABC 기공소</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="form-box">
+							<h2 class="form-title">마일리지 정보</h2>
+
+							<table class="table-form-01">
+								<colgroup>
+									<col width="180px" />
+									<col width="" />
+									<col width="180px" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>분류</th>
+										<td>지급</td>
+										<th>금액</th>
+										<td>1,000,000</td>
+									</tr>
+									<tr>
+										<th>등록일자</th>
+										<td colspan="3">2022-01-01</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="text-center mt-15">
+							<button type="button" class="btn-type-01 btn-lg py-4 px-15" onclick="javascript:history.go(-1);">목록</button>
+						</div>
+					</section>
+				</div>
+				<!-- E : CONTENTS -->
+			</div>
+		</main>
+
+		<? include "../include/js.html" ?>
+	</body>
+</html>

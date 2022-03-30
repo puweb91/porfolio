@@ -1,0 +1,38 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '3';
+    $P_dp2 = '1';
+    include "../include/meta.html"
+    ?>
+	</head>
+	<body class="main-body">
+		<main class="main" id="contents">
+			<div class="layout">
+				<!-- S : LNB -->
+				<div class="layout-nav">
+					<? include "../include/nav.html" ?>
+				</div>
+				<!-- E : LNB -->
+
+				<!-- S : CONTENTS -->
+				<div class="layout-contents">
+					<section class="section">
+						<!-- S : 페이지 공통 타이틀 -->
+						<div class="section-title-box">
+							<h1 class="section-title">
+								<?=${nav_.$P_dp1._.$P_dp2}?>
+							</h1>
+						</div>
+						<!-- E : 페이지 공통 타이틀 -->
+					</section>
+				</div>
+				<!-- E : CONTENTS -->
+			</div>
+		</main>
+
+		<? include "../include/js.html" ?>
+	</body>
+</html>

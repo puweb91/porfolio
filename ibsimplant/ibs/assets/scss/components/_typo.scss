@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// 페이지 상단 공통 타이틀
+.section-title-box {
+	padding-top: em(16);
+	padding-bottom: em(16);
+	margin-bottom: em(42);
+	border-bottom: 2px solid $gray-3;
+}
+
+.section-title {
+	display: flex;
+	align-items: center;
+	font-size: em(24);
+	font-weight: 500;
+	color: #333;
+	line-height: 1;
+	
+	[class^="nav-ico--"],
+	[class*=" nav-ico--"] {
+		width: em(15, 24);
+		height: em(15, 24);
+		margin-right: em(10, 24);
+	}
+}
+
+// 주문폼 타이틀
+.form-title {
+	display: flex;
+	align-items: center;
+	font-size: em(18);
+	font-weight: 700;
+	color: $gray-3;
+	padding-bottom: em(24, 18);
+	
+	&::before {
+		content: '';
+		display: block;
+		width: 6px;
+		height: 6px;
+		border-radius: 100%;
+		background-color: $gray-3;
+		margin-right: 8px;
+	}
+	
+	&.required {
+		color: $color-1;
+		
+		&::before {
+			background-color: $color-1;
+		}
+	}
+}
+
+//공통사용 텍스트 스타일 정의
+@for $i from 12 through 40 {
+	// $size: ($i*2) + 16;
+	$size: $i;
+	
+	.common-text {
+		&--#{$size} {
+			font-size: em($size);
+		}
+	}
+}

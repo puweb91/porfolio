@@ -1,0 +1,395 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '7';
+    $P_dp2 = '1';
+    include "../include/meta.html"
+    ?>
+	</head>
+	<body class="main-body">
+		<main class="main" id="contents">
+			<div class="layout">
+				<!-- S : LNB -->
+				<div class="layout-nav">
+					<? include "../include/nav.html" ?>
+				</div>
+				<!-- E : LNB -->
+
+				<!-- S : CONTENTS -->
+				<div class="layout-contents">
+					<section class="section">
+						<!-- S : 페이지 공통 타이틀 -->
+						<div class="section-title-box">
+							<h1 class="section-title">
+								<?=${nav_.$P_dp1._.$P_dp2}?>
+							</h1>
+						</div>
+						<!-- E : 페이지 공통 타이틀 -->
+
+						<!-- S : 폼 시작 -->
+						<form action="" method="post">
+							<div class="join-wrap p-0 m-0">
+								<!--
+                 S : 임직원정보
+                 TODO: 임직원 가입인 경우만 노출입니다.
+                -->
+								<div class="form-box">
+									<h2 class="form-title required">임직원 정보</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													이름
+												</th>
+												<td colspan="3">
+													<input type="text" name="uname" id="uname" title="이름" value="홍길동" readonly required />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													아이디
+												</th>
+												<td colspan="3">
+													<input type="text" name="uid" id="uid" title="아이디" value="email@eamil.com" placeholder="아이디를 입력해주세요." required readonly />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													비밀번호
+												</th>
+												<td colspan="3">
+													<input type="password" name="pass" id="pass" title="비밀번호" value="" placeholder="비밀번호를 입력해주세요." required />
+													<p class="text-info mt-1"><i class="xi-info-o"></i> 영문, 숫자, 특수문자(!@#$%^*)를 조합하여 최소 6~16자 이상으로 입력해주세요</p>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													비밀번호 확인
+												</th>
+												<td colspan="3">
+													<input type="password" name="pass1" id="pass1" title="비밀번호 확인" value="" placeholder="비밀번호를 입력해주세요." required />
+												</td>
+											</tr>
+											<tr>
+												<th>연락처</th>
+												<td>
+													<input type="tel" name="utel" id="utel" title="연락처" value="010-1234-5678" readonly required />
+													<span class="text-success"><i class="xi-check-circle-o"></i> 본인인증완료</span>
+
+													<div class="mt-2">
+														<button type="button" class="btn-type-09">연락처 변경</button>
+														<p class="text-info mt-1"><i class="xi-info-o"></i> 연락처 변경은 본인인증을 통해 변경해주세요.</p>
+													</div>
+												</td>
+												<th>이메일</th>
+												<td>
+													<input type="email" name="uemail" id="uemail" title="이메일" value="" required />
+												</td>
+											</tr>
+											<tr>
+												<th>사번</th>
+												<td>
+													<input type="tel" name="info8" id="info8" title="사번" value="123456" readonly required />
+												</td>
+												<th>직책/직급</th>
+												<td>
+													<input type="text" name="info9" id="info9" title="직책/직급" value="팀장/과장" required />
+												</td>
+											</tr>
+											<tr>
+												<th>국가</th>
+												<td colspan="3">
+													<select name="info10" id="info10" class="w-25" required>
+														<option value="">한국</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- E : 임직원정보 -->
+
+								<!--
+                  S : 회원정보
+                  TODO: 기본정보 (치과회원 or 기공소회원 가입인 경우만 노출입니다.)
+                -->
+								<div class="form-box">
+									<h2 class="form-title required">회원정보</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													이름
+												</th>
+												<td colspan="3">
+													<input type="text" name="uname" id="uname" title="이름" value="홍길동" readonly required />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													아이디
+												</th>
+												<td colspan="3">
+													<input type="text" name="uid" id="uid" title="아이디" value="email@email.com" placeholder="아이디를 입력해주세요." required readonly />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													비밀번호
+												</th>
+												<td colspan="3">
+													<input type="password" name="pass" id="pass" title="비밀번호" value="" placeholder="비밀번호를 입력해주세요." required />
+													<p class="text-info mt-1"><i class="xi-info-o"></i> 영문, 숫자, 특수문자(!@#$%^*)를 조합하여 최소 6~16자 이상으로 입력해주세요</p>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													비밀번호 확인
+												</th>
+												<td colspan="3">
+													<input type="password" name="pass1" id="pass1" title="비밀번호 확인" value="" placeholder="비밀번호를 입력해주세요." required />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													연락처
+												</th>
+												<td>
+													<input type="tel" name="utel" id="utel" title="연락처" value="010-1234-5678" readonly required />
+													<span class="text-success"><i class="xi-check-circle-o"></i> 본인인증완료</span>
+
+													<div class="mt-2">
+														<button type="button" class="btn-type-09">연락처 변경</button>
+														<p class="text-info mt-1"><i class="xi-info-o"></i> 연락처 변경은 본인인증을 통해 변경해주세요.</p>
+													</div>
+												</td>
+												<th>이메일</th>
+												<td>
+													<input type="email" name="uemail" id="uemail" title="이메일" value="" required />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- E : 회원정보 -->
+
+								<!--
+                 S : 치과정보
+                 TODO: 치과회원 가입인 경우만 노출입니다.
+                -->
+								<div class="form-box">
+									<h2 class="form-title required">치과정보</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													치과명
+												</th>
+												<td>
+													<input type="text" name="info1" id="info1" title="치과명" value="" placeholder="치과명을 입력해주세요." required />
+												</td>
+												<th>
+													<span class="text-danger">*</span>
+													치과 연락처
+												</th>
+												<td>
+													<input type="tel" name="info2" id="info2" title="치과 연락처" value="" placeholder="연락처를 입력해주세요." required />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													주소
+												</th>
+												<td colspan="3">
+													<div class="row w-55 mx-n2">
+														<div class="col-auto px-1">
+															<input type="text" name="zipcode" id="zipcode" title="우편번호" value="" placeholder="우편번호" required />
+														</div>
+														<div class="col-auto px-1">
+															<a href="" class="btn-type-09 h-100">우편번호 검색</a>
+														</div>
+														<div class="col-12 px-1 mt-2">
+															<input type="text" name="uaddr1" id="uaddr1" title="기본주소" class="w-100" value="" placeholder="기본주소를 입력해주세요." readonly required />
+														</div>
+														<div class="col-12 px-1 mt-2">
+															<input type="text" name="uaddr2" id="uaddr2" title="상세주소" class="w-100" value="" placeholder="상세주소를 입력해주세요." required />
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													스탭 연락처
+												</th>
+												<td>
+													<input type="tel" name="info3" id="info3" title="스탭 연락처" value="" placeholder="스탭 연락처를 입력해주세요." required />
+												</td>
+												<th>
+													<span class="text-danger">*</span>
+													면허번호
+												</th>
+												<td>
+													<input type="text" name="info4" id="info4" title="면허번호" value="" placeholder="면허번호를 입력해주세요." required />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- E : 치과정보 -->
+
+								<!--
+                 S : 기공소정보
+                 TODO: 기공소회원 가입인 경우만 노출입니다.
+                -->
+								<div class="form-box">
+									<h2 class="form-title required">기공소 정보</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													기공소명
+												</th>
+												<td>
+													<input type="text" name="info1" id="info1" title="기공소명" value="" placeholder="기공소명을 입력해주세요." required />
+												</td>
+												<th>
+													<span class="text-danger">*</span>
+													기공소 연락처
+												</th>
+												<td>
+													<input type="tel" name="info2" id="info2" title="기공소 연락처" value="" placeholder="연락처를 입력해주세요." required />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													주소
+												</th>
+												<td colspan="3">
+													<div class="row w-55 mx-n2">
+														<div class="col-auto px-1">
+															<input type="text" name="zipcode" id="zipcode" title="우편번호" value="" placeholder="우편번호" required />
+														</div>
+														<div class="col-auto px-1">
+															<a href="" class="btn-type-09 h-100">우편번호 검색</a>
+														</div>
+														<div class="col-12 px-1 mt-2">
+															<input type="text" name="uaddr1" id="uaddr1" title="기본주소" class="w-100" value="" placeholder="기본주소를 입력해주세요." readonly required />
+														</div>
+														<div class="col-12 px-1 mt-2">
+															<input type="text" name="uaddr2" id="uaddr2" title="상세주소" class="w-100" value="" placeholder="상세주소를 입력해주세요." required />
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- E : 기공소정보 -->
+
+								<!-- S : 수신동의 여부 -->
+								<div class="form-box">
+									<h2 class="form-title required">수신동의 여부</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													SMS 수신동의
+												</th>
+												<td>
+													<label>
+														<input type="radio" name="info6" required />
+														예
+													</label>
+													<label class="ml-4">
+														<input type="radio" name="info6" required />
+														아니오
+													</label>
+												</td>
+												<th>
+													<span class="text-danger">*</span>
+													이메일 수신동의
+												</th>
+												<td>
+													<label>
+														<input type="radio" name="info7" required />
+														예
+													</label>
+													<label class="ml-4">
+														<input type="radio" name="info7" required />
+														아니오
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- E : 수신동의 여부 -->
+
+								<div class="text-center mt-15">
+									<button type="button" class="btn-type-09 mx-1 btn-lg py-4 px-15" onclick="location.href='modify__withdrawal.html'">회원탈퇴</button>
+									<button type="submit" class="btn-type-01 mx-1 btn-lg py-4 px-15">정보수정</button>
+								</div>
+							</div>
+						</form>
+						<!-- E : 폼 끝 -->
+					</section>
+				</div>
+				<!-- E : CONTENTS -->
+			</div>
+		</main>
+
+		<? include "../include/js.html" ?>
+	</body>
+</html>

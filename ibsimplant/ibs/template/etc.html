@@ -1,0 +1,83 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+<head>
+  <?
+    $P_dp1 = '6';
+    include "../include/meta.html"
+    ?>
+</head>
+<body class="main-body">
+<main class="main" id="contents">
+  <div class="layout">
+    <!-- S : LNB -->
+    <div class="layout-nav">
+      <? include "../include/nav.html" ?>
+    </div>
+    <!-- E : LNB -->
+    
+    <!-- S : CONTENTS -->
+    <div class="layout-contents">
+      <section class="section">
+        <!-- S : 페이지 공통 타이틀 -->
+        <div class="section-title-box">
+          <h1 class="section-title">
+            <i class="nav-ico--1"></i> <?=${nav_.$P_dp1}?>
+          </h1>
+        </div>
+        <!-- E : 페이지 공통 타이틀 -->
+        
+        
+        <h2 class="text-color-1 mb-5">기타</h2>
+        
+        <div class="form-box">
+          <h2 class="form-title">검색필터</h2>
+  
+          <div class="search-filter-wrap">
+            <div class="search-filter">
+              <h2 class="search-filter__title">검색기간</h2>
+      
+              <!-- 날짜 선택 -->
+              <div class="search-filter__date">
+                <!-- 시작일 -->
+                <input type="text" name="start_date" id="start_date" class="datepicker">
+        
+                <!-- 종료일 -->
+                <input type="text" name="end_date" id="end_date" class="datepicker">
+              </div>
+      
+              <!-- 날짜 바로 선택 버튼 -->
+              <div class="search-filter__btn-group">
+                <button type="button" class="search-filter__btn on" onclick="set_date('0');">오늘</button>
+                <button type="button" class="search-filter__btn" onclick="set_date('-1m');">1개월</button>
+                <button type="button" class="search-filter__btn" onclick="set_date('-3m');">3개월</button>
+                <button type="button" class="search-filter__btn" onclick="set_date('-6m');">6개월</button>
+              </div>
+            </div>
+    
+            <div class="search-filter">
+              <h2 class="search-filter__title">조건별</h2>
+      
+              <!-- 상태선택 -->
+              <select name="field" id="field" class="search-filter__select">
+                <option value="상태선택" selected>상태선택</option>
+      
+              </select>
+      
+              <!-- 입력필드 -->
+              <input type="text" name="keyword" id="keyword" class="search-filter__input" placeholder="치과명 또는 환자명 또는 주문번호">
+      
+              <!-- 검색버튼 -->
+              <button type="submit" class="search-filter__btn bg-gray-6 text-white">검색</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- E : CONTENTS -->
+  </div>
+</main>
+
+<? include "../include/js.html" ?>
+</body>
+</html>

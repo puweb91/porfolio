@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.process-step {
+	display: flex;
+	margin-left: em(-44);
+	margin-right: em(-44);
+	
+	.item {
+		flex: 1 0 auto;
+		padding-left: em(44);
+		padding-right: em(44);
+		
+		+ .item {
+			position: relative;
+			
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+				width: em(30);
+				height: em(8);
+				background: {
+					image: url(../images/icon/proc_step_arr.png);
+					repeat: no-repeat;
+					position: center;
+					size: 100% auto;
+				}
+			}
+		}
+		
+		.text-box {
+			position: relative;
+			border-radius: 100%;
+			border: 1px solid $color-1;
+			
+			&::after {
+				content: '';
+				display: block;
+				padding-bottom: 100%;
+			}
+			
+			.inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			
+			.name {
+				font-size: em(15);
+			}
+			
+			.count {
+				font-size: em(15);
+				color: $color-1;
+				
+				.em {
+					font-weight: 600;
+					font-size: em(38, 15);
+				}
+			}
+		}
+	}
+}

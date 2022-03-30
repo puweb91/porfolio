@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+///*일반게시판*/
+.table_board_for {
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid $gray-3;
+  text-align: center;
+  word-break: break-all;
+  
+  th, td {
+    font-size: em(15);
+    padding: 16px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead {
+    tr {
+      th {
+        font-weight: 500;
+        color: #333;
+        background-color: #f2f7fc;
+      }
+    }
+  }
+}

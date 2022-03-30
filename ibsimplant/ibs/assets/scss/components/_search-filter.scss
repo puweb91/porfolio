@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+.search-filter-wrap {
+	padding: em(48);
+	background-color: #f2f7fc;
+	border-radius: 1rem;
+}
+
+.search-filter {
+	display: flex;
+	align-items: center;
+	
+	// 필터 간격
+	& + .search-filter {
+		margin-top: em(20);
+	}
+	
+	// 타이틀
+	&__title {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		color: $color-1;
+		font-size: em(16);
+		flex: 0 0 em(92);
+		width: em(92);
+		
+		&::before {
+			content: '';
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			background-color: $color-1;
+			margin-right: 6px;
+		}
+	}
+	
+	// 날짜 박스
+	&__date {
+		display: flex;
+		flex: 1 1 auto;
+		width: 1%;
+		margin-right: 8px;
+		margin-left: -8px;
+		
+		.datepicker {
+			flex: 1 1 auto;
+			width: 1%;
+			margin-left: 8px;
+		}
+	}
+	
+	// 버튼 그룹
+	&__btn-group {
+		display: flex;
+		
+		.search-filter__btn {
+			flex: 0 0 auto;
+			width: auto;
+			margin-right: 8px;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	// 버튼 스타일
+	&__btn {
+		display: inline-block;
+		font-size: em(15);
+		line-height: 1;
+		padding: em(15.5, 15) em(48, 15);
+		color: #666;
+		background-color: #eee;
+		border: 1px solid #ddd;
+		text-align: center;
+		
+		&.on {
+			background-color: #fff;
+			color: $color-1;
+			border-color: $color-1;
+		}
+	}
+	
+	&__select {
+		flex: 0 0 em(296);
+		width: em(296);
+		margin-right: 8px;
+	}
+	
+	&__input {
+		flex: 1 1 auto;
+		width: 1%;
+		margin-right: 8px;
+	}
+}

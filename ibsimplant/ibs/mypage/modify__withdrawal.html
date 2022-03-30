@@ -1,0 +1,80 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '7';
+    $P_dp2 = '3';
+    include "../include/meta.html"
+    ?>
+	</head>
+	<body class="main-body">
+		<main class="main" id="contents">
+			<div class="layout">
+				<!-- S : LNB -->
+				<div class="layout-nav">
+					<? include "../include/nav.html" ?>
+				</div>
+				<!-- E : LNB -->
+
+				<!-- S : CONTENTS -->
+				<div class="layout-contents">
+					<section class="section">
+						<!-- S : 페이지 공통 타이틀 -->
+						<div class="section-title-box">
+							<h1 class="section-title">
+								<?=${nav_.$P_dp1._.$P_dp2}?>
+							</h1>
+						</div>
+						<!-- E : 페이지 공통 타이틀 -->
+
+						<!-- S : 폼 시작 -->
+						<form action="" method="post">
+							<div class="join-wrap p-0 m-0">
+								<div class="form-box">
+									<h2 class="form-title required">회원탈퇴</h2>
+
+									<table class="table-form-01">
+										<colgroup>
+											<col width="200px" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>탈퇴 시 유의사항</th>
+												<td>
+													<div class="board-box" style="min-height: 120px">
+														유의사항이 노출됩니다. <br />
+														컨텐츠 취합 필요함.
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="text-danger">*</span>
+													비밀번호 확인
+												</th>
+												<td>
+													<input type="password" name="pass1" id="pass1" title="비밀번호 확인" value="" placeholder="비밀번호를 입력해주세요." required />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="text-center mt-15">
+									<button type="button" class="btn-type-09 mx-1 btn-lg py-4 px-15" onclick="javascript:history.go(-1);">취소하기</button>
+									<button type="submit" class="btn-type-01 mx-1 btn-lg py-4 px-15">탈퇴하기</button>
+								</div>
+							</div>
+						</form>
+						<!-- E : 폼 끝 -->
+					</section>
+				</div>
+				<!-- E : CONTENTS -->
+			</div>
+		</main>
+
+		<? include "../include/js.html" ?>
+	</body>
+</html>

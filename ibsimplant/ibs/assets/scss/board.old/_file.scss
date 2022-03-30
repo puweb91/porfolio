@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.file-box {
+	&__text {
+		background-color: $white;
+		border: 1px solid $input-border;
+		line-height: calc(#{$input-height} - 2px);
+		height: $input-height;
+		overflow: hidden;
+		padding: 0 rem(15);
+	}
+	
+	&__btn {
+	}
+	
+	input {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%; //calc($btn + 2px);
+		height: $input-height;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		cursor: pointer;
+		-webkit-appearance: none;
+		
+		&::-webkit-file-upload-button {
+			cursor: pointer;
+		}
+	}
+}
+
+.file_box {
+	position: relative;
+	max-width: 816px;
+	display: flex;
+	align-items: center;
+	
+	input[type="file"] {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	
+	p {
+		flex: 0 0 em(586, 15);
+		width: em(586, 15);
+		color: #aaa;
+		font-size: em(15);
+		line-height: 1;
+		font-weight: 300;
+		height: $input-height;
+		padding: em(15, 15) em(18, 15);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		border: 1px solid #ddd;
+	}
+	
+	.btn_type_file {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 em(130);
+		width: em(130);
+		height: $input-height;
+		font-size: em(15);
+		color: #fff;
+		background-color: #666;
+		margin-left: em(10);
+	}
+	
+	.btn_del_file {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 em(80);
+		width: em(80);
+		height: $input-height;
+		font-size: em(15);
+		color: #666;
+		border: 1px solid #666;
+		margin-left: em(10);
+		
+		&:hover {
+			background-color: $danger;
+			border-color: $danger;
+			color: #fff;
+		}
+	}
+}
+
+// file 다중선택 (커스텀)
+.file-label {
+	display: inline-block;
+	position: relative;
+	$btn: rem(120);
+	
+	input[type='file'] {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: $btn;
+		height: $input-height;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		cursor: pointer;
+		-webkit-appearance: none;
+	}
+	
+	&__btn {
+		display: block;
+		width: $btn;
+		height: $input-height;
+		line-height: $input-height;
+		text-align: center;
+		background: $gray-3;
+		color: $white;
+	}
+}
+
+#file-preview {
+	&.file-add {
+		.file-preview__txt {
+			display: none;
+		}
+	}
+}

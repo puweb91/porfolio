@@ -1,0 +1,75 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+<head>
+  <?
+    $P_dp1 = '6';
+    include "../include/meta.html"
+    ?>
+</head>
+<body class="main-body">
+<main class="main" id="contents">
+  <div class="layout">
+    <!-- S : LNB -->
+    <div class="layout-nav">
+      <? include "../include/nav.html" ?>
+    </div>
+    <!-- E : LNB -->
+    
+    <!-- S : CONTENTS -->
+    <div class="layout-contents">
+      <section class="section">
+        <!-- S : 페이지 공통 타이틀 -->
+        <div class="section-title-box">
+          <h1 class="section-title">
+            <i class="nav-ico--1"></i> <?=${nav_.$P_dp1}?>
+          </h1>
+        </div>
+        <!-- E : 페이지 공통 타이틀 -->
+        
+        
+        <h2 class="text-color-1 mb-5">Button 샘플</h2>
+        
+        <div class="form-box">
+          <h2 class="form-title">색상별 ( btn-type-01 ~ 09)</h2>
+  
+          <a href="" class="btn-type-01">btn-type-01</a>
+          <a href="" class="btn-type-02">btn-type-02</a>
+          <a href="" class="btn-type-03">btn-type-03</a>
+          <a href="" class="btn-type-04">btn-type-04</a>
+          <a href="" class="btn-type-05">btn-type-05</a>
+          <a href="" class="btn-type-06">btn-type-06</a>
+          <a href="" class="btn-type-07">btn-type-07</a>
+          <a href="" class="btn-type-08">btn-type-08</a>
+          <a href="" class="btn-type-09">btn-type-09</a>
+        </div>
+  
+        <div class="form-box">
+          <h2 class="form-title">라인 버튼 ( btn-border-01 ~ 09)</h2>
+    
+          <a href="" class="btn-border-01">btn-border-01</a>
+          <a href="" class="btn-border-02">btn-border-02</a>
+          <a href="" class="btn-border-03">btn-border-03</a>
+          <a href="" class="btn-border-04">btn-border-04</a>
+          <a href="" class="btn-border-05">btn-border-05</a>
+          <a href="" class="btn-border-06">btn-border-06</a>
+          <a href="" class="btn-border-07">btn-border-07</a>
+          <a href="" class="btn-border-08">btn-border-08</a>
+          <a href="" class="btn-border-09">btn-border-09</a>
+        </div>
+  
+        <div class="form-box">
+          <h2 class="form-title">크기별</h2>
+    
+          <a href="" class="btn-type-01">btn-border-01</a>
+          <a href="" class="btn-type-01 btn-lg">btn-border-01 btn-lg</a>
+        </div>
+      </section>
+    </div>
+    <!-- E : CONTENTS -->
+  </div>
+</main>
+
+<? include "../include/js.html" ?>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+  <head>
+    <?
+    $P_dp1 = '1';
+    include "../include/meta.html"
+    ?>
+  </head>
+  <body class="main-body">
+    <main class="main" id="contents">
+      <div class="layout">
+        <!-- S : LNB -->
+        <div class="layout-nav">
+          <? include "../include/nav.html" ?>
+        </div>
+        <!-- E : LNB -->
+        
+        <!-- S : CONTENTS -->
+        <div class="layout-contents">
+          <section class="section">
+            <!-- S : 페이지 공통 타이틀 -->
+            <div class="section-title-box">
+              <h1 class="section-title">
+                <i class="nav-ico--1"></i> <?=${nav_.$P_dp1}?>
+              </h1>
+            </div>
+            <!-- E : 페이지 공통 타이틀 -->
+            
+            
+            <!-- S : 프로세스 단계 -->
+            <div class="process-step py-12">
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">주문생성</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">접수확인</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">승인요청</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">제작</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">배송중</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-box">
+                  <div class="inner">
+                    <p class="name">최종승인</p>
+                    <p class="count">
+                      <span class="em">10</span>
+                      건
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- E : 프로세스 단계 -->
+            
+            
+            <!-- S : 검색필터 -->
+            <form action="" method="post">
+              <div class="search-filter-wrap">
+                <div class="search-filter">
+                  <h2 class="search-filter__title">검색기간</h2>
+                  
+                  <!-- 날짜 선택 -->
+                  <div class="search-filter__date">
+                    <!-- 시작일 -->
+                    <input type="text" name="start_date" id="start_date" class="datepicker">
+                    
+                    <!-- 종료일 -->
+                    <input type="text" name="end_date" id="end_date" class="datepicker">
+                  </div>
+                  
+                  <!-- 날짜 바로 선택 버튼 -->
+                  <div class="search-filter__btn-group">
+                    <button type="button" class="search-filter__btn on" onclick="set_date('0');">오늘</button>
+                    <button type="button" class="search-filter__btn" onclick="set_date('-1m');">1개월</button>
+                    <button type="button" class="search-filter__btn" onclick="set_date('-3m');">3개월</button>
+                    <button type="button" class="search-filter__btn" onclick="set_date('-6m');">6개월</button>
+                  </div>
+                </div>
+                
+                <div class="search-filter">
+                  <h2 class="search-filter__title">조건별</h2>
+  
+                  <!-- 상태선택 -->
+                  <select name="field" id="field" class="search-filter__select">
+                    <option value="상태선택" selected>상태선택</option>
+                    
+                  </select>
+                  
+                  <!-- 입력필드 -->
+                  <input type="text" name="keyword" id="keyword" class="search-filter__input" placeholder="치과명 또는 환자명 또는 주문번호">
+                  
+                  <!-- 검색버튼 -->
+                  <button type="submit" class="search-filter__btn bg-gray-6 text-white">검색</button>
+                </div>
+              </div>
+            </form>
+            <!-- E : 검색필터 -->
+  
+            
+            <!-- S : 다운로드, 주문하기 버튼 -->
+            <div class="row align-items-center justify-content-between mt-13">
+              <div class="col-auto d-flex align-items-center">
+                <a href="" class="btn-type-09">선택 엑셀 다운로드</a>
+                <a href="" class="btn-type-09 ml-4">전체 엑셀 다운로드</a>
+              </div>
+              <div class="col-auto">
+                <a href="../order/write.html" class="btn-type-01 btn-lg px-10 py-3">주문하기</a>
+              </div>
+            </div>
+            <!-- E : 다운로드, 주문하기 버튼 -->
+            
+            
+            <!-- S : 리스트 -->
+            <table class="table_board_for type_a mt-3">
+              <colgroup>
+                <col width="60px">
+                <col width="100px">
+                <col width="200px">
+                <col width="*">
+                <col width="120px">
+                <col width="*">
+                <col width="130px">
+                <col width="180px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox" name="all_chk" id="" class="chk-all">
+                  </th>
+                  <th>번호</th>
+                  <th>주문번호</th>
+                  <th>치과명</th>
+                  <th>환자명</th>
+                  <th>기공소명</th>
+                  <th>진행상태</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <?for($i=10; $i>0; $i--){?>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="chk[]" id="" class="chk">
+                  </td>
+                  <td>
+                    <?=$i?>
+                  </td>
+                  <td>
+                    <a href="../order/view.html">2022021511514276</a>
+                  </td>
+                  <td>
+                    <a href="../member/dentist-view.html">한스 미래 치과의원</a>
+                  </td>
+                  <td>
+                    김경호
+                  </td>
+                  <td>
+                    <a href="../member/lab-view.html">기공소명 1</a>
+                  </td>
+                  <td>
+                    주문생성
+                  </td>
+                  <td>
+                    <a href="../order/modify.html" class="btn-border-01 px-2">주문정보 수정</a>
+                  </td>
+                </tr>
+                <?}?>
+                
+              </tbody>
+            </table>
+            <!-- E : 리스트 -->
+            
+            
+            <!-- S : 페이징 -->
+            <div class="paging-area">
+              <ul>
+                <li><a href="javascript:;" class="prev-first"><span>맨앞으로</span></a></li>
+                <li><a href="javascript:;" class="prev"><span>이전으로</span></a></li>
+                <li><a href="javascript:;" class="active">1<span></span></a></li>
+                <li><a href="javascript:;">2<span></span></a></li>
+                <li><a href="javascript:;">3<span></span></a></li>
+                <li><a href="javascript:;" class="next"><span>다음으로</span></a></li>
+                <li><a href="javascript:;" class="next-last"><span>맨뒤로</span></a></li>
+              </ul>
+            </div>
+            <!-- E : 페이징 -->
+          </section>
+        </div>
+        <!-- E : CONTENTS -->
+      </div>
+    </main>
+    
+    <? include "../include/js.html" ?>
+  
+    <script>
+      /* Datepicker 설정 */
+      $('.datepicker').datepicker({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년'
+      });
+
+      /* Datepicker 오늘 날짜 적용 */
+      $('.datepicker').datepicker("setDate",new Date());
+
+      /* Datepicker 버튼 클릭시 활성화 */
+      $('.search-filter__btn').on('click', function(){
+        $('.search-filter__btn').removeClass('on');
+        $(this).addClass('on');
+      });
+      
+      /* Datepicker 버튼 클릭시 날짜 적용 */
+      function set_date(v) {
+        $('#start_date').datepicker("setDate", v);
+        $('#end_date').datepicker("setDate", new Date());
+      }
+      
+      /* 체크박스 전체선택 */
+      $('.chk-all').on('change', function(){
+        if ( $(this).prop('checked') ) {
+          $('.chk').prop('checked', true);
+        } else {
+          $('.chk').prop('checked', false);
+        }
+      });
+      
+      $('.chk').on('change', function(){
+        $('.chk').each(function(){
+          if ( $(this).prop('checked') ) {
+            $('.chk-all').prop('checked', true);
+          } else {
+            $('.chk-all').prop('checked', false);
+            
+            return false;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

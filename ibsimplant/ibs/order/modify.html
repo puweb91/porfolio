@@ -1,0 +1,598 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+  <head>
+    <?
+    $P_dp1 = '1';
+    include "../include/meta.html"
+    ?>
+  </head>
+  <body class="main-body">
+    <main class="main" id="contents">
+      <div class="layout">
+        <!-- S : LNB -->
+        <div class="layout-nav">
+          <? include "../include/nav.html" ?>
+        </div>
+        <!-- E : LNB -->
+        
+        <!-- S : CONTENTS -->
+        <div class="layout-contents">
+          <section class="section">
+            <!-- S : 페이지 공통 타이틀 -->
+            <div class="section-title-box">
+              <h1 class="section-title">
+                <i class="nav-ico--1"></i> 주문하기
+              </h1>
+            </div>
+            <!-- E : 페이지 공통 타이틀 -->
+            
+            
+            <!-- S : 폼 시작 -->
+            <form action="">
+              <div class="form-box">
+                <h2 class="form-title required">환자정보 (필수)</h2>
+                
+                <table class="table-form-01">
+                  <colgroup>
+                    <col width="180px">
+                    <col width="">
+                    <col width="180px">
+                    <col width="">
+                    <col width="180px">
+                    <col width="">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>이름</th>
+                      <td>
+                        <input type="text" name="" id="" placeholder="이름을 입력해주세요.">
+                      </td>
+                      <th>
+                        성별
+                      </th>
+                      <td>
+                        <label class="d-inline-flex align-items-center">
+                          <input type="radio" name="gender[]">
+                          <span class="ml-1">남자</span>
+                        </label>
+                        
+                        <label class="d-inline-flex align-items-center ml-4">
+                          <input type="radio" name="gender[]">
+                          <span class="ml-1">여자</span>
+                        </label>
+                      </td>
+                      <th>
+                        생년월일
+                      </th>
+                      <td>
+                        <input type="text" name="" id="" class="datepicker">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">치아선택 (필수)</h2>
+                
+                <div class="tooth-wrap">
+                  <div class="tooth-box">
+                    <!-- 상악 -->
+                    <div class="tooth-top">
+                      <?for($i=18; $i>10; $i--){?>
+                      <label class="tooth-label tooth-label--<?=$i?>">
+                        <input type="checkbox" name="tooth[]" value="<?=$i?>" checked required>
+                        
+                        <img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default"> <!-- 선택 전 -->
+                        <img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active"> <!-- 선택 후  -->
+                      </label>
+                      <?}?>
+                      
+                      <?for($i=21; $i<29; $i++){?>
+                      <label class="tooth-label tooth-label--<?=$i?>">
+                        <input type="checkbox" name="tooth[]" value="<?=$i?>" required>
+                        
+                        <img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default"> <!-- 선택 전 -->
+                        <img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active"> <!-- 선택 후  -->
+                      </label>
+                      <?}?>
+                    </div>
+                    
+                    <!-- 하악 -->
+                    <div class="tooth-btm">
+                      <?for($i=48; $i>40; $i--){?>
+                      <label class="tooth-label tooth-label--<?=$i?>">
+                        <input type="checkbox" name="tooth[]" value="<?=$i?>" required>
+                        
+                        <img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default"> <!-- 선택 전 -->
+                        <img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active"> <!-- 선택 후  -->
+                      </label>
+                      <?}?>
+                      
+                      <?for($i=31; $i<39; $i++){?>
+                      <label class="tooth-label tooth-label--<?=$i?>">
+                        <input type="checkbox" name="tooth[]" value="<?=$i?>" required>
+                        
+                        <img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default"> <!-- 선택 전 -->
+                        <img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active"> <!-- 선택 후  -->
+                      </label>
+                      <?}?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title required">Fixture 사양 (필수)</h2>
+                
+                <div class="p-5 bg-gray-e text-center font-weight-bold" style="color: #f00;">
+                  사양 옵션 수급 후 작업 진행
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title required">CT(*.dcm) 파일 첨부 (필수)</h2>
+  
+  
+                <a href="" class="btn-border-01" download>
+                  <i class="xi-download"></i>
+                  <span class="ml-2">ct.zip</span>
+                </a>
+                
+                <div class="file_box mt-4">
+                  <p>파일 업로드시 압축파일(.zip) 파일을 업로드합니다.</p>
+                  <span class="btn_type_file">찾아보기</span>
+                  <button type="button" class="btn_del_file" onclick="del_file1('.file1');">삭제</button>
+                  <input type="file" name="file1" class="file1" value="" required>
+                </div>
+  
+                <p class="text-danger common-text--14 mt-2"><i class="xi-info-o"></i> 새로운 파일 업로드 후 저장 시 기존 파일은 삭제됩니다.</p>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">추가 파일 첨부 (선택)</h2>
+  
+                <p class="text-gray-3 font-weight-medium mb-3">
+                  Scan Data(바이트 포함)
+                  <!--
+                  환자 석고 모형 발송(대합치 포함)
+                  3D 디자인 파일
+                  기타
+                  -->
+                </p>
+                
+                <a href="" class="btn-border-01" download>
+                  <i class="xi-download"></i>
+                  <span class="ml-2">ct.zip</span>
+                </a>
+                
+                
+                <div class="row file1-type mt-4">
+                  <div class="col-auto">
+                    <label>
+                      <input type="radio" name="file1_type" value="Scan Data(바이트 포함)">
+                      <span class="common-text--15 font-weight-light">Scan Data(바이트 포함)</span>
+                    </label>
+                  </div>
+                  <div class="col-auto">
+                    <label>
+                      <input type="radio" name="file1_type" value="환자 석고 모형 발송(대합치 포함)">
+                      <span class="common-text--15 font-weight-light">환자 석고 모형 발송(대합치 포함)</span>
+                    </label>
+                  </div>
+                  <div class="col-auto">
+                    <label>
+                      <input type="radio" name="file1_type" value="3D 디자인 파일">
+                      <span class="common-text--15 font-weight-light">3D 디자인 파일</span>
+                    </label>
+                  </div>
+                  <div class="col-auto">
+                    <label>
+                      <input type="radio" name="file1_type" value="기타">
+                      <span class="common-text--15 font-weight-light">기타</span>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="file_box mt-4 file2-box d-none">
+                  <p>파일 업로드시 압축파일(.zip) 파일을 업로드합니다.</p>
+                  <span class="btn_type_file">찾아보기</span>
+                  <button type="button" class="btn_del_file" onclick="del_file2('.file2');">삭제</button>
+                  <input type="file" name="file2" class="file2" value="" disabled="disabled">
+                </div>
+  
+                <p class="text-danger common-text--14 mt-2"><i class="xi-info-o"></i> 새로운 파일 업로드 후 저장 시 기존 파일은 삭제됩니다.</p>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title required">기공소 선택 (필수)</h2>
+                
+                <select name="" id="" class="w-30" requied>
+                  <option value="기공소1" selected>기공소1</option>
+                  <option value="기공소2">기공소2</option>
+                  <option value="기공소3">기공소3</option>
+                </select>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">
+                  주문상품 (선택)
+                  <small class="text-color-1 font-weight-light pl-4">Guide Design 만 선택 시 파일로 전송됩니다. (배송되지 않음)</small>
+                </h2>
+                
+                <div class="row">
+                  <div class="col-3">
+                    <label class="order-box">
+                      <span class="d-flex align-items-center mb-2">
+                        <input type="radio" name="prd_type_1[]" id="prd_1" checked>
+                        <span class="common-text--15 font-weight-light ml-2">Guide Template</span>
+                      </span>
+                      
+                      <span class="img">
+                        <img src="../images/board/no_img.jpg" alt="">
+                      </span>
+                      
+                      <span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <label class="order-box">
+                      <span class="d-flex align-items-center mb-2">
+                        <input type="radio" name="prd_type_1[]" id="prd_2">
+                        <span class="common-text--15 font-weight-light ml-2">Guide Design (디자인만 진행)</span>
+                      </span>
+                      
+                      <span class="img">
+                        <img src="../images/board/no_img.jpg" alt="">
+                      </span>
+                      
+                      <span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <label class="order-box">
+                      <span class="d-flex align-items-center mb-2">
+                        <input type="radio" name="prd_type_1[]" id="prd_3">
+                        <span class="common-text--15 font-weight-light ml-2">Only Printing (프린팅만 진행)</span>
+                      </span>
+                      
+                      <span class="img">
+                        <img src="../images/board/no_img.jpg" alt="">
+                      </span>
+                      
+                      <span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <label class="order-box">
+                      <span class="d-flex align-items-center mb-2">
+                        <input type="checkbox" name="prd_type_2" id="prd_4" checked>
+                        <span class="common-text--15 font-weight-light ml-2">Temporary Crown (임시치아 제작)</span>
+                      </span>
+                      
+                      <span class="img">
+                        <img src="../images/board/no_img.jpg" alt="">
+                      </span>
+                      
+                      <span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">통화 가능시간 (선택)</h2>
+                
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <select name="start_time" id="start_time">
+                      <option value="~ 부터">~ 부터</option>
+                      <option value="9:00" selected>9:00</option>
+                      <option value="10:00">10:00</option>
+                      <option value="11:00">11:00</option>
+                      <option value="12:00">12:00</option>
+                      <option value="13:00">13:00</option>
+                      <option value="14:00">14:00</option>
+                      <option value="15:00">15:00</option>
+                      <option value="16:00">16:00</option>
+                      <option value="17:00">17:00</option>
+                      <option value="18:00">18:00</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">~</div>
+                  <div class="col-2">
+                    <select name="end_time" id="end_time">
+                      <option value="~ 부터">~ 까지</option>
+                      <option value="9:00">9:00</option>
+                      <option value="10:00" selected>10:00</option>
+                      <option value="11:00">11:00</option>
+                      <option value="12:00">12:00</option>
+                      <option value="13:00">13:00</option>
+                      <option value="14:00">14:00</option>
+                      <option value="15:00">15:00</option>
+                      <option value="16:00">16:00</option>
+                      <option value="17:00">17:00</option>
+                      <option value="18:00">18:00</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">수술날짜 (선택)</h2>
+                
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <input type="text" name="surgery_date" id="surgery_date" class="datepicker" value="2022-01-01">
+                  </div>
+                  <div class="col-auto">
+                    <label>
+                      <input type="checkbox" name="surgery_date_chk" id="surgery_date_chk">
+                      <span>미정</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">요구사항 (선택)</h2>
+                
+                <textarea name="etc" id="etc" title="요구사항" rows="8" class="w-100">요구사항 내용 출력</textarea>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title required">배송 주소 (필수)</h2>
+                
+                <div class="row w-55 mx-n2">
+                  <div class="col-auto px-1">
+                    <input type="text" name="zipcode" id="zipcode" title="우편번호" placeholder="우편번호" value="0000" required>
+                  </div>
+                  <div class="col-auto px-1">
+                    <button type="button" class="btn-type-09 h-100" onclick="">우편번호 검색</button>
+                  </div>
+                  <div class="col-12 px-1 mt-2">
+                    <input type="text" name="addr1" id="addr1" title="기본주소" class="w-100" placeholder="기본주소를 입력해주세요." value="서울특별시 동교로 23길 6" readonly required>
+                  </div>
+                  <div class="col-12 px-1 mt-2">
+                    <input type="text" name="addr2" id="addr2" title="상세주소" class="w-100" placeholder="상세주소를 입력해주세요." value="1층 매스티지" required>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title required">필수 확인 사항</h2>
+                
+                <div class="guide-box">
+                  <ul class="bullet-list bullet-list--txt">
+                    <li class="item text-danger" data-bullet="-">가이드 디자인 완료 후 주문 취소 시 가이드 디자인 비용이 청구 됩니다.</li>
+                    <li class="item" data-bullet="-">주문이 확인되어 제작에 들어가면 주문을 취소하실 수 없습니다.</li>
+                    <li class="item" data-bullet="-">템플릿(Template) 제작에서 플래닝 컨펌이 반드시 되어야만 제작이 가능합니다.</li>
+                    <li class="item" data-bullet="-">제작 기간은 수술 보고서 최종 승인 후 3~4일 소요됩니다.</li>
+                    <li class="item" data-bullet="-">인상채득 및 주문서 작성 오류, 단순 변심으로 인한 재주문을 요청하실 경우 추가 비용이 발생할 수 있습니다.</li>
+                    <li class="item" data-bullet="-">CT 영상의 산란 또는 FOV 제한으로 인한 경우 Planning 진행이 불가능하오니, 업로드 시 확인 바랍니다.</li>
+                    <li class="item" data-bullet="-">주문서(업로드된 파일 포함)를 최종적으로 다시 한 번 확인하시길 바랍니다.</li>
+                    <li class="item" data-bullet="-">귀책사유로 인하여 서비스를 제공할 수 없거나 발생한 손해에 대해 회사는 그에 대한 책임을 부담하지 않습니다.</li>
+                  </ul>
+                </div>
+                
+                <label class="d-inline-block mt-2">
+                  <input type="checkbox" name="agree1" id="agree1" required>
+                  <span class="font-weight-light">이에 동의합니다. (동의하지 않을 경우 주문하실 수 없습니다.)</span>
+                </label>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">마일리지 사용</h2>
+                
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <label>
+                      <!-- 마일리지 사용금액이 있는 경우 checked 처리 -->
+                      <input type="checkbox" name="mileage_chk" id="mileage_chk" checked>
+                      <span class="font-weight-light">사용하기</span>
+                    </label>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" name="mileage_use" id="mileage_use" value="100,000" disabled>
+                    <span class="align-middle">원</span>
+                  </div>
+                  <div class="cola-auto">
+                    사용가능 마일리지 <span class="text-color-1">1,000,000M</span>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-box">
+                <h2 class="form-title">결제방법</h2>
+                
+                <div class="tab tab--box" data-tab="true" data-tab-index="0" data-tab-active="on" data-tab-mode="js">
+                  <div class="tab-header" data-tab-header>
+                    <div class="tab-item on" data-tab-item>
+                      <a href="javascript:void(0)" class="link">신용카드</a>
+                    </div>
+                    <div class="tab-item" data-tab-item>
+                      <a href="javascript:void(0)" class="link">무통장입금</a>
+                    </div>
+                  </div>
+                  <div class="tab-body pt-8" data-tab-body>
+                    <div class="tab-content on" data-tab-content>
+                      <!-- S : 결제방법 : 신용카드 -->
+                      <div class="price-wrap">
+                        <div class="price-box">
+                          <div class="price-item">
+                            <p class="name">Guide Template <span class="count">3</span>(EA)</p>
+                            <p class="price">80,000<span class="unit">원</span></p>
+                          </div>
+                          <div class="price-item">
+                            <p class="name">Guide Template <span class="count">3</span>(EA)</p>
+                            <p class="price">80,000<span class="unit">원</span></p>
+                          </div>
+                          <div class="price-item">
+                            <p class="name">사용 마일리지</p>
+                            <p class="price">10,000</p>
+                          </div>
+                          <div class="price-item price-total">
+                            <p class="name">총 결제금액</p>
+                            <p class="price">99,000<span class="unit">원 (배송비 별도)</span></p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- E : 결제방법 : 신용카드 -->
+                    </div>
+                    <div class="tab-content" data-tab-content>
+                      <!-- S : 결제방법 : 무통장입금 -->
+                      <?
+                        $bank = ['국민은행','우리은행','신한은행','하나은행','기업은행','부산은행'];
+                      ?>
+                      <div class="bank-list">
+                        <? for ($i=0; $i<6; $i++) {?>
+                        <label class="bank-item">
+                          <input type="radio" name="bank[]" value="">
+                          
+                          <span class="bank-item__box">
+                            <img src="../assets/images/order/bank_<?=$i?>.png" alt="">
+                            <span class="bank-item__text"><?=$bank[$i]?></span>
+                          </span>
+                        </label>
+                        <?}?>
+                      </div>
+                      
+                      <div class="guide-box d-flex justify-content-center mt-4">
+                        <div class="col-auto">
+                          <span class="font-weight-bold text-color-1">입금계좌 : </span>
+                          <span>국민은행 832-0648-765</span>
+                        </div>
+                        <div class="col-auto">
+                          <span class="font-weight-bold text-color-1">입금기한 : </span>
+                          <span>2022-02-25(금)</span>
+                        </div>
+                      </div>
+                      
+                      <div class="price-wrap mt-4">
+                        <div class="price-box">
+                          <div class="price-item">
+                            <p class="name">Guide Template <span class="count">3</span>(EA)</p>
+                            <p class="price">80,000<span class="unit">원</span></p>
+                          </div>
+                          <div class="price-item">
+                            <p class="name">Guide Template <span class="count">3</span>(EA)</p>
+                            <p class="price">80,000<span class="unit">원</span></p>
+                          </div>
+                          <div class="price-item">
+                            <p class="name">사용 마일리지</p>
+                            <p class="price">10,000</p>
+                          </div>
+                          <div class="price-item price-total">
+                            <p class="name">총 결제금액</p>
+                            <p class="price">99,000<span class="unit">원 (배송비 별도)</span></p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- E : 결제방법 : 무통장입금 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="text-center mt-15">
+                <button type="button" class="btn-type-09 btn-lg px-12 py-4 mx-1" onclick="">임시저장하기</button>
+                <button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">저장하기</button>
+              </div>
+            </form>
+            <!-- E : 폼 끝 -->
+          </section>
+        </div>
+        <!-- E : CONTENTS -->
+      </div>
+    </main>
+    
+    <? include "../include/js.html" ?>
+    
+    <script>
+      /* Datepicker */
+      $('.datepicker').datepicker({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년',
+        yearRange: "1920:",
+        changeYear: true,
+        changeMonth: true
+      });
+      
+      
+      /* CT 파일 첨부 삭제 버튼 */
+      function del_file1(el) {
+        var $file_box = $(el).parents('.file_box');
+        
+        $file_box.find('input[type="file"]').val(''); // input value 초기화
+        $file_box.find('p').text('파일 업로드시 압축파일(.zip) 파일을 업로드합니다.'); // 파일경로 초기화
+      }
+      
+      
+      /* 추가 파일 첨부 삭제 버튼*/
+      function del_file2(el) {
+        var $file_box = $(el).parents('.file_box');
+        
+        $file_box.find('input[type="file"]').val(''); // input value 초기화
+        $file_box.find('p').text('파일 업로드시 압축파일(.zip) 파일을 업로드합니다.'); // 파일경로 초기화
+        
+        $('.file1-type').find('input[type="radio"]').prop('checked', false); // 라디오 초기화
+        $('.file2-box').addClass('d-none'); // 파일첨부 영역 숨기기
+        $('.file2-box .file2').attr('disabled','');
+      }
+      
+      /* 추가 파일 첨부 라디오 선택 시 파일 첨부 노출 */
+      $('input[name="file1_type"]').on('change', function(){
+        $('.file2-box').removeClass('d-none'); // 파일첨부 영역 보이기
+        $('.file2-box .file2').removeAttr('disabled');
+      });
+      
+      
+      /* 수술날짜 미정 체크박스 */
+      $('#surgery_date_chk').on('change', function(){
+        if ( $(this).prop('checked') ) {
+          $('#surgery_date').attr('disabled','disabled');
+        } else {
+          $('#surgery_date').removeAttr('disabled');
+        }
+      });
+      
+      /* 마일리지 사용 체크박스 */
+      /* 페이지 접속 시 */
+      if ( $('#mileage_chk').prop('checked') ) {
+        $('#mileage_use').removeAttr('disabled');
+      }
+      
+      /* 체크박스 변경 시 */
+      $('#mileage_chk').on('change', function(){
+        if ( $(this).prop('checked') ) {
+          $('#mileage_use').removeAttr('disabled');
+        } else {
+          $('#mileage_use').attr('disabled','disabled');
+        }
+      });
+    </script>
+  </body>
+</html>

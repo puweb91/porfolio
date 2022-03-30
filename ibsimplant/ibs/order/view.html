@@ -1,0 +1,301 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '1';
+    include "../include/meta.html"
+    ?>
+		<link rel="stylesheet" href="../assets/css/main.min.css" />
+	</head>
+	<body class="main-body">
+		<main class="main" id="contents">
+			<div class="layout">
+				<!-- S : LNB -->
+				<div class="layout-nav">
+					<? include "../include/nav.html" ?>
+				</div>
+				<!-- E : LNB -->
+
+				<!-- S : CONTENTS -->
+				<div class="layout-contents">
+					<section class="section">
+						<!-- S : 페이지 공통 타이틀 -->
+						<div class="section-title-box">
+							<h1 class="section-title"><i class="nav-ico--1"></i> 주문하기</h1>
+						</div>
+						<!-- E : 페이지 공통 타이틀 -->
+
+						<!-- S : 폼 시작 -->
+						<form action="">
+							<!-- S : 환자정보 -->
+							<div class="form-box">
+								<h2 class="form-title required">환자정보</h2>
+
+								<table class="table-form-01">
+									<colgroup>
+										<col width="180px" />
+										<col width="" />
+										<col width="180px" />
+										<col width="" />
+										<col width="180px" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>이름</th>
+											<td class="text-gray-3 font-weight-medium">홍길동</td>
+											<th>성별</th>
+											<td class="text-gray-3 font-weight-medium">남자</td>
+											<th>생년월일</th>
+											<td class="text-gray-3 font-weight-medium">2022-01-01</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- E : 환자정보 -->
+
+							<!-- S : 치아선택 -->
+							<div class="form-box">
+								<h2 class="form-title">치아선택</h2>
+
+								<div class="tooth-wrap">
+									<div class="tooth-box">
+										<!-- 상악 -->
+										<div class="tooth-top">
+											<?for($i=18; $i>10; $i--){?>
+											<label class="tooth-label tooth-label--<?=$i?>">
+												<input type="checkbox" name="tooth[]" value="<?=$i?>" checked onclick="return false;" />
+
+												<img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default" />
+												<!-- 선택 전 -->
+												<img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active" />
+												<!-- 선택 후  -->
+											</label>
+											<?}?>
+
+											<?for($i=21; $i<29; $i++){?>
+											<label class="tooth-label tooth-label--<?=$i?>">
+												<input type="checkbox" name="tooth[]" value="<?=$i?>" onclick="return false;" />
+
+												<img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default" />
+												<!-- 선택 전 -->
+												<img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active" />
+												<!-- 선택 후  -->
+											</label>
+											<?}?>
+										</div>
+
+										<!-- 하악 -->
+										<div class="tooth-btm">
+											<?for($i=48; $i>40; $i--){?>
+											<label class="tooth-label tooth-label--<?=$i?>">
+												<input type="checkbox" name="tooth[]" value="<?=$i?>" onclick="return false;" />
+
+												<img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default" />
+												<!-- 선택 전 -->
+												<img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active" />
+												<!-- 선택 후  -->
+											</label>
+											<?}?>
+
+											<?for($i=31; $i<39; $i++){?>
+											<label class="tooth-label tooth-label--<?=$i?>">
+												<input type="checkbox" name="tooth[]" value="<?=$i?>" onclick="return false;" />
+
+												<img src="../assets/images/tooth/<?=$i?>.png" alt="" class="img-default" />
+												<!-- 선택 전 -->
+												<img src="../assets/images/tooth/<?=$i?>_on.png" alt="" class="img-active" />
+												<!-- 선택 후  -->
+											</label>
+											<?}?>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- E : 치아선택 -->
+
+							<!-- S : Fixture 사양 -->
+							<div class="form-box">
+								<h2 class="form-title required">Fixture 사양</h2>
+
+								<div class="p-5 bg-gray-e text-center font-weight-bold" style="color: #f00">사양 옵션 수급 후 작업 진행</div>
+							</div>
+							<!-- E : Fixture 사양 -->
+
+							<!-- S : CT 파일 첨부 -->
+							<div class="form-box">
+								<h2 class="form-title required">CT(*.dcm) 파일 첨부</h2>
+
+								<a href="" class="btn-border-01" download>
+									<i class="xi-download"></i>
+									<span class="ml-2">ct.zip</span>
+								</a>
+							</div>
+							<!-- E : CT 파일 첨부 -->
+
+							<!-- S : 추가 파일 첨부 -->
+							<div class="form-box">
+								<h2 class="form-title">추가 파일 첨부</h2>
+
+								<p class="text-gray-3 font-weight-medium mb-3">
+									Scan Data(바이트 포함)
+									<!--
+                  환자 석고 모형 발송(대합치 포함)
+                  3D 디자인 파일
+                  기타
+                  -->
+								</p>
+
+								<a href="" class="btn-border-01" download>
+									<i class="xi-download"></i>
+									<span class="ml-2">data.zip</span>
+								</a>
+							</div>
+							<!-- E : 추가 파일 첨부 -->
+
+							<!-- S : 기공소명 -->
+							<div class="form-box">
+								<h2 class="form-title required">기공소명</h2>
+
+								<p class="text-gray-3 common-text--18 font-weight-medium">기공소 1</p>
+							</div>
+							<!-- E : 기공소명 -->
+
+							<div class="form-box">
+								<h2 class="form-title">
+									주문상품
+									<small class="text-color-1 font-weight-light pl-4">Guide Design 만 선택 시 파일로 전송됩니다. (배송되지 않음)</small>
+								</h2>
+
+								<div class="row">
+									<div class="col-3">
+										<label class="order-box">
+											<span class="d-flex align-items-center mb-2">
+												<input type="radio" name="prd_type_1[]" id="prd_1" onclick="return false;" checked />
+												<span class="common-text--15 font-weight-light ml-2">Guide Template</span>
+											</span>
+
+											<span class="img">
+												<img src="../images/board/no_img.jpg" alt="" />
+											</span>
+
+											<span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+										</label>
+									</div>
+									<div class="col-3">
+										<label class="order-box">
+											<span class="d-flex align-items-center mb-2">
+												<input type="radio" name="prd_type_1[]" id="prd_2" onclick="return false;" />
+												<span class="common-text--15 font-weight-light ml-2">Guide Design (디자인만 진행)</span>
+											</span>
+
+											<span class="img">
+												<img src="../images/board/no_img.jpg" alt="" />
+											</span>
+
+											<span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+										</label>
+									</div>
+									<div class="col-3">
+										<label class="order-box">
+											<span class="d-flex align-items-center mb-2">
+												<input type="radio" name="prd_type_1[]" id="prd_3" onclick="return false;" />
+												<span class="common-text--15 font-weight-light ml-2">Only Printing (프린팅만 진행)</span>
+											</span>
+
+											<span class="img">
+												<img src="../images/board/no_img.jpg" alt="" />
+											</span>
+
+											<span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+										</label>
+									</div>
+									<div class="col-3">
+										<label class="order-box">
+											<span class="d-flex align-items-center mb-2">
+												<input type="checkbox" name="prd_type_2" id="prd_4" onclick="return false;" checked />
+												<span class="common-text--15 font-weight-light ml-2">Temporary Crown (임시치아 제작)</span>
+											</span>
+
+											<span class="img">
+												<img src="../images/board/no_img.jpg" alt="" />
+											</span>
+
+											<span class="d-block text-center text-white p-3 bg-gray-6">5만원(1EA), 추가 시 만원(1EA)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-box">
+								<h2 class="form-title">통화 가능시간</h2>
+
+								<div class="row align-items-center">
+									<div class="col-auto">
+										<span class="text-gray-3 common-text--18 font-weight-medium">9:00</span>
+									</div>
+									<div class="col-auto">~</div>
+									<div class="col-auto">
+										<span class="text-gray-3 common-text--18 font-weight-medium">13:00</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-box">
+								<h2 class="form-title">수술날짜</h2>
+
+								<span class="text-gray-3 common-text--18 font-weight-medium"> 미정 OR 2022-01-01 </span>
+							</div>
+
+							<div class="form-box">
+								<h2 class="form-title">요구사항</h2>
+
+								<div class="border p-2">입력내용 노출</div>
+							</div>
+
+							<div class="form-box">
+								<h2 class="form-title required">배송 주소</h2>
+
+								<p class="text-gray-3 common-text--18 font-weight-medium">(00000) 서울특별시 마포구 동교로23길 6</p>
+								<p class="text-gray-3 common-text--18 font-weight-medium">상세주소 내용 노출</p>
+							</div>
+
+							<div class="form-box">
+								<h2 class="form-title">마일리지 사용</h2>
+
+								<p class="text-gray-3 common-text--18 font-weight-medium">사용안함 OR 100,000원</p>
+							</div>
+
+							<div class="form-box">댓글 영역 입니다.</div>
+
+							<!-- S : 의료인인 경우 노출 버튼 -->
+							<div class="text-center mt-15">
+								<button type="button" class="btn-type-09 btn-lg px-12 py-4 mx-1" onclick="history.go(-1);">목록으로</button>
+								<button type="button" class="btn-type-07 btn-lg px-12 py-4 mx-1" onclick="confirm('주문 취소 시 주문서가 삭제됩니다.\n취소하시겠습니까?');">주문취소</button>
+								<a href="../order/modify.html" class="btn-type-02 btn-lg px-12 py-4 mx-1">주문수정</a>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">승인완료</button>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">최종승인</button>
+							</div>
+							<!-- E : 의료인인 경우 노출 버튼 -->
+
+							<!-- S : 기공소인 경우 노출 버튼 -->
+							<div class="text-center mt-15">
+								<button type="button" class="btn-type-09 btn-lg px-12 py-4 mx-1" onclick="history.go(-1);">목록으로</button>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">접수확인</button>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">승인요청</button>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">제작완료</button>
+								<button type="submit" class="btn-type-01 btn-lg px-12 py-4 mx-1">발송완료</button>
+							</div>
+							<!-- E : 기공소인 경우 노출 버튼 -->
+						</form>
+						<!-- E : 폼 끝 -->
+					</section>
+				</div>
+				<!-- E : CONTENTS -->
+			</div>
+		</main>
+
+		<? include "../include/js.html" ?>
+	</body>
+</html>
