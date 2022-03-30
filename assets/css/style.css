@@ -5637,6 +5637,9 @@ textarea.form-control-lg {
   display: -ms-flexbox;
   display: flex;
 }
+.bullet-list-item + .bullet-list-item {
+  margin-top: 8px;
+}
 .bullet-list-item::before {
   content: attr(data-bullet);
   margin-right: 4px;

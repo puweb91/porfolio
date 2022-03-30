@@ -6,6 +6,10 @@
   &-item {
     display: flex;
     
+    & + .bullet-list-item {
+      margin-top: 8px;
+    }
+    
     &::before {
       content: attr(data-bullet);
       margin-right: 4px;
