@@ -12,5 +12,5 @@
 
 ### 연락처
 
-puweb91@gmail.com
+puweb91@gmail.com<br>
 010-3478-0219
