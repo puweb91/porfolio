@@ -150,7 +150,6 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -2228,6 +2227,21 @@ progress {
 }
 .table > :not(:first-child) {
   border-top: 2px solid currentColor;
+}
+@media screen and (max-width: 576px) {
+  .table {
+    display: block;
+  }
+  .table thead,
+.table tbody,
+.table tr,
+.table th,
+.table td {
+    display: block;
+  }
+  .table colgroup {
+    display: none;
+  }
 }
 
 .caption-top {
@@ -5618,6 +5632,16 @@ textarea.form-control-lg {
   }
 }
 
+.bullet-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bullet-list-item::before {
+  content: attr(data-bullet);
+  margin-right: 4px;
+}
+
 .list-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5659,7 +5683,7 @@ textarea.form-control-lg {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem 0rem;
   color: #212529;
   text-decoration: none;
   background-color: #fff;

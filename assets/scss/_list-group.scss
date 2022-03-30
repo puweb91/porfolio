@@ -2,6 +2,17 @@
 //
 // Easily usable on <ul>, <ol>, or <div>.
 
+.bullet-list {
+  &-item {
+    display: flex;
+    
+    &::before {
+      content: attr(data-bullet);
+      margin-right: 4px;
+    }
+  }
+}
+
 .list-group {
   display: flex;
   flex-direction: column;

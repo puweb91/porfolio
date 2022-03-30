@@ -42,6 +42,22 @@
   > :not(:first-child) {
     border-top: (2 * $table-border-width) solid $table-group-separator-color;
   }
+  
+  @media screen and (max-width: 576px){
+    display: block;
+    
+    thead,
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+    }
+  
+    colgroup {
+      display: none;
+    }
+  }
 }
 
 
