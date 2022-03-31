@@ -2232,7 +2232,8 @@ progress {
   .table {
     display: block;
   }
-  .table thead,
+  .table caption,
+.table thead,
 .table tbody,
 .table tr,
 .table th,
@@ -12549,6 +12550,11 @@ html {
 
 .section {
   padding-bottom: 25em;
+}
+@media screen and (max-width: 576px) {
+  .section.work-section {
+    padding-bottom: 6.25em;
+  }
 }
 
 .section-title {

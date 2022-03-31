@@ -53,6 +53,12 @@ html {
 
 .section {
   padding-bottom: em(400);
+  
+  @media screen and (max-width: 576px) {
+    &.work-section {
+      padding-bottom: em(100);
+    }
+  }
 }
 
 .section-title {
