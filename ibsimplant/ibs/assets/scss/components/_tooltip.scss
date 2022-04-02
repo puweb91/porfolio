@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$enable-rounded:            true !default;
+$enable-rounded: true !default;
 
 // Base class
 .tooltip {
@@ -15,17 +15,17 @@ $enable-rounded:            true !default;
   // Allow breaking very long words so they don't overflow the tooltip's bounds
   word-wrap: break-word;
   opacity: 0;
-
+  
   &.show {
     opacity: $tooltip-opacity;
   }
-
+  
   .arrow {
     position: absolute;
     display: block;
     width: $tooltip-arrow-width;
     height: $tooltip-arrow-height;
-
+    
     &::before {
       position: absolute;
       content: '';
@@ -37,10 +37,10 @@ $enable-rounded:            true !default;
 
 .bs-tooltip-top {
   padding: $tooltip-arrow-height 0;
-
+  
   .arrow {
     bottom: 0;
-
+    
     &::before {
       top: 0;
       border-width: $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
@@ -51,12 +51,12 @@ $enable-rounded:            true !default;
 
 .bs-tooltip-right {
   padding: 0 $tooltip-arrow-height;
-
+  
   .arrow {
     left: 0;
     width: $tooltip-arrow-height;
     height: $tooltip-arrow-width;
-
+    
     &::before {
       right: 0;
       border-width: ($tooltip-arrow-width / 2) $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
@@ -67,10 +67,10 @@ $enable-rounded:            true !default;
 
 .bs-tooltip-bottom {
   padding: $tooltip-arrow-height 0;
-
+  
   .arrow {
     top: 0;
-
+    
     &::before {
       bottom: 0;
       border-width: 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
@@ -81,12 +81,12 @@ $enable-rounded:            true !default;
 
 .bs-tooltip-left {
   padding: 0 $tooltip-arrow-height;
-
+  
   .arrow {
     right: 0;
     width: $tooltip-arrow-height;
     height: $tooltip-arrow-width;
-
+    
     &::before {
       left: 0;
       border-width: ($tooltip-arrow-width / 2) 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
@@ -99,12 +99,15 @@ $enable-rounded:            true !default;
   &[x-placement^='top'] {
     @extend .bs-tooltip-top;
   }
+  
   &[x-placement^='right'] {
     @extend .bs-tooltip-right;
   }
+  
   &[x-placement^='bottom'] {
     @extend .bs-tooltip-bottom;
   }
+  
   &[x-placement^='left'] {
     @extend .bs-tooltip-left;
   }

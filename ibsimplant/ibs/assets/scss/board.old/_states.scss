@@ -20,26 +20,26 @@
   &._off {
     background-color: #989aa6;
   }
-
+  
   &_on,
   &._on {
     background-color: $mc;
   }
-
+  
   &_view,
   &._view {
     background-color: $mc2;
   }
-
+  
   &_ask,
   &._ask {
-    background-color: #999999;
+    background-color: #999;
     color: #fff;
   }
-
+  
   &_cancel,
   &._cancel {
-    background-color: #dddddd;
+    background-color: #ddd;
     color: #666;
   }
 }

@@ -23,25 +23,25 @@ $white: #fff !default;
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge(
-  (
-    'gray-0': $black,
-    'gray-1': $gray-1,
-    'gray-2': $gray-2,
-    'gray-3': $gray-3,
-    'gray-4': $gray-4,
-    'gray-5': $gray-5,
-    'gray-6': $gray-6,
-    'gray-7': $gray-7,
-    'gray-8': $gray-8,
-    'gray-9': $gray-9,
-    'gray-a': $gray-a,
-    'gray-b': $gray-b,
-    'gray-c': $gray-c,
-    'gray-d': $gray-d,
-    'gray-e': $gray-e,
-    'gray-f': $white,
-  ),
-  $grays
+    (
+      'gray-0': $black,
+      'gray-1': $gray-1,
+      'gray-2': $gray-2,
+      'gray-3': $gray-3,
+      'gray-4': $gray-4,
+      'gray-5': $gray-5,
+      'gray-6': $gray-6,
+      'gray-7': $gray-7,
+      'gray-8': $gray-8,
+      'gray-9': $gray-9,
+      'gray-a': $gray-a,
+      'gray-b': $gray-b,
+      'gray-c': $gray-c,
+      'gray-d': $gray-d,
+      'gray-e': $gray-e,
+      'gray-f': $white,
+    ),
+    $grays
 );
 
 $blue: #007bff !default;
@@ -58,22 +58,22 @@ $cyan: #17a2b8 !default;
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
-  (
-    'blue': $blue,
-    'indigo': $indigo,
-    'purple': $purple,
-    'pink': $pink,
-    'red': $red,
-    'orange': $orange,
-    'yellow': $yellow,
-    'green': $green,
-    'teal': $teal,
-    'cyan': $cyan,
-    'white': $white,
-    'gray': $gray-6,
-    'gray-dark': $gray-8,
-  ),
-  $colors
+    (
+      'blue': $blue,
+      'indigo': $indigo,
+      'purple': $purple,
+      'pink': $pink,
+      'red': $red,
+      'orange': $orange,
+      'yellow': $yellow,
+      'green': $green,
+      'teal': $teal,
+      'cyan': $cyan,
+      'white': $white,
+      'gray': $gray-6,
+      'gray-dark': $gray-8,
+    ),
+    $colors
 );
 
 $color-1: #0065c3;
@@ -88,18 +88,18 @@ $dark: $gray-6 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
-  (
-    'color-1': $color-1,
-    'color-2': $color-2,
-    'color-3': $color-3,
-    'success': $success,
-    'info': $info,
-    'warning': $warning,
-    'danger': $danger,
-    'light': $light,
-    'dark': $dark,
-  ),
-  $theme-colors
+    (
+      'color-1': $color-1,
+      'color-2': $color-2,
+      'color-3': $color-3,
+      'success': $success,
+      'info': $info,
+      'warning': $warning,
+      'danger': $danger,
+      'light': $light,
+      'dark': $dark,
+    ),
+    $theme-colors
 );
 
 // Spacing

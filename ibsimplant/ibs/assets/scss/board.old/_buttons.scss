@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: rem(15);
-  padding: em(6,15) em(16,15);
+  padding: em(6, 15) em(16, 15);
   vertical-align: middle;
   border-radius: 0.25em;
   line-height: 1.2;
@@ -27,7 +27,7 @@
 // 버튼 클래스 구분자 $theme-colors 맵의 인덱스 번호로 부여
 @each $name, $color in $theme-colors {
   $idx: index(($theme-colors), ($name $color)); // 인덱스 체크
-
+  
   .btn-type-0#{$idx} {
     background-color: $color;
     color: #fff;
@@ -73,7 +73,7 @@
   //   top: 40px;
   //   right: 0;
   //   z-index: 2;
-
+  
   //   @include mdq-max(lg) {
   //     position: static;
   //     margin-top: 10px;
@@ -84,28 +84,28 @@
 
 .board_view_btn_box {
   margin: 40px auto;
-
+  
   @include mdq-max(lg) {
     position: relative;
-
+    
     a {
       min-width: 70px;
       padding: 0 10px;
-
+      
       &:nth-child(2) {
         position: absolute;
         top: 0;
         left: 0;
         min-width: 35px;
       }
-
+      
       &:nth-child(3) {
         position: absolute;
         top: 0;
         left: 60px;
         min-width: 35px;
       }
-
+      
       &:nth-child(4) {
         position: absolute;
         top: 0;

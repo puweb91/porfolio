@@ -9,15 +9,15 @@
   display: inline-block;
   padding: em(4) em(12);
   font-size: em(16);
-
+  
   &.badge-sm {
     font-size: em(12);
   }
-
+  
   &.badge-lg {
     font-size: em(18);
   }
-
+  
   &.badge-pill {
     border-radius: em(8);
   }

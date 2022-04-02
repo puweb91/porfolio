@@ -546,9 +546,10 @@ fieldset {
   border: 0;
   outline: none;
 }
+
 img {
   border: 0;
-
+  
   max-width: 100%;
   vertical-align: top;
 }
@@ -564,7 +565,7 @@ select {
   user-select: none;
   text-overflow: '';
   zoom: 1;
-
+  
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) center;

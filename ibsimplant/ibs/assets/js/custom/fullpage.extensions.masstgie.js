@@ -84,7 +84,7 @@ function fullpageParallax(origin, destination, direction) {
       var $prevBg = $(destination.item).prev().find('.fp-bg');
 
       $prevBg.css({
-        'transform':'translateY(0)'
+        'transform': 'translateY(0)'
       });
     }
   }

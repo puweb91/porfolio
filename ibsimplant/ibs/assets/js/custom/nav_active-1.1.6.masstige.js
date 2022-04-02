@@ -8,22 +8,23 @@
 (function ($) {
   $.fn.navActive = function (options) {
     var settings = $.extend(
-      {
-        depth1: undefined,
-        depth2: undefined,
-        depth3: undefined,
-        activeClass: 'on', // Default : on
-        callback: function () {},
-      },
-      options
+        {
+          depth1: undefined,
+          depth2: undefined,
+          depth3: undefined,
+          activeClass: 'on', // Default : on
+          callback: function () {
+          },
+        },
+        options
     );
 
     var PATHNAME = window.location.pathname,
-      LOCATION = PATHNAME.split('/'),
-      LOCATION_DEPTH1 = depth1Check(LOCATION), // depth1 체크 함수
-      LOCATION_DEPTH2 = depth2Check(LOCATION), // depth2 체크 함수
-      LOCATION_DEPTH3 = depth3Check(LOCATION), // depth3 체크 함수
-      SEARCH = window.location.search; // search 값
+        LOCATION = PATHNAME.split('/'),
+        LOCATION_DEPTH1 = depth1Check(LOCATION), // depth1 체크 함수
+        LOCATION_DEPTH2 = depth2Check(LOCATION), // depth2 체크 함수
+        LOCATION_DEPTH3 = depth3Check(LOCATION), // depth3 체크 함수
+        SEARCH = window.location.search; // search 값
 
     var $THIS = $(this);
 
@@ -38,8 +39,8 @@
           // $DEPTH1이 문서에 존재하는지 유효성 체크
           $DEPTH1.each(function (index, elem) {
             var $THIS_LINK = $(this).children('a'),
-              THIS_HREF = $THIS_LINK.attr('href').split('/'),
-              THIS_DEPTH1 = depth1Check(THIS_HREF);
+                THIS_HREF = $THIS_LINK.attr('href').split('/'),
+                THIS_DEPTH1 = depth1Check(THIS_HREF);
 
             // LOCATION_DEPTH1, THIS_DEPTH1 비교
             if (LOCATION_DEPTH1 === THIS_DEPTH1) {
@@ -55,10 +56,10 @@
           // $DEPTH1이 문서에 존재하는지 유효성 체크
           $DEPTH2.each(function () {
             var $THIS_LINK = $(this).children('a'),
-              THIS_HREF = $THIS_LINK.attr('href').split('/'),
-              THIS_DEPTH2 = depth2Check(THIS_HREF),
-              SEARCH_VALIDATE = searchCheck(SEARCH, THIS_DEPTH2),
-              BOARD_CHECK = boardCheck(LOCATION_DEPTH2);
+                THIS_HREF = $THIS_LINK.attr('href').split('/'),
+                THIS_DEPTH2 = depth2Check(THIS_HREF),
+                SEARCH_VALIDATE = searchCheck(SEARCH, THIS_DEPTH2),
+                BOARD_CHECK = boardCheck(LOCATION_DEPTH2);
 
             // 현재 URL과 비교 대상이되는 href값 모두 search(=parameter)값이 존재하는지 체크
             if (SEARCH_VALIDATE) {
@@ -68,7 +69,7 @@
               }
             } else {
               // -view, -write를 포함하는 경우
-              if ( BOARD_CHECK[0] === true ) {
+              if (BOARD_CHECK[0] === true) {
                 LOCATION_DEPTH2 = LOCATION_DEPTH2.replace(BOARD_CHECK[1], '')
               }
 
@@ -87,9 +88,9 @@
           // $DEPTH1이 문서에 존재하는지 유효성 체크
           $DEPTH3.each(function () {
             var $THIS_LINK = $(this).children('a'),
-              THIS_HREF = $THIS_LINK.attr('href').split('/'),
-              THIS_DEPTH3 = depth3Check(THIS_HREF),
-              SEARCH_VALIDATE = searchCheck(SEARCH, THIS_DEPTH3);
+                THIS_HREF = $THIS_LINK.attr('href').split('/'),
+                THIS_DEPTH3 = depth3Check(THIS_HREF),
+                SEARCH_VALIDATE = searchCheck(SEARCH, THIS_DEPTH3);
 
             // 현재 URL과 비교 대상이되는 href값 모두 search(=parameter)값이 존재하는지 체크
             if (SEARCH_VALIDATE) {
@@ -124,7 +125,7 @@
     // depth1의 이름이 같을 수 있기 때문에 depth1도 가져옵니다.
     function depth2Check(pathname) {
       var depth1 = pathname[pathname.length - 2], // depth1 저장
-        depth2 = pathname[pathname.length - 1].replace('.html', ''); // depth2 저장
+          depth2 = pathname[pathname.length - 1].replace('.html', ''); // depth2 저장
 
       if (depth2.split('__').length > 1) {
         return depth1 + depth2.split('__')[0];
@@ -137,7 +138,7 @@
     // depth2의 이름이 같을 수 있기 때문에 depth2의 '__' 여부만 체크하고 파일명을 전체를 비교합니다.
     function depth3Check(pathname) {
       var depth1 = pathname[pathname.length - 2], // depth1 저장
-        depth2 = pathname[pathname.length - 1].replace('.html', '');
+          depth2 = pathname[pathname.length - 1].replace('.html', '');
 
       if (depth2.split('__').length > 1) {
         return depth1 + depth2.split('__')[1];
@@ -160,19 +161,19 @@
     }
   };
 
-  function boardCheck(pathname){
+  function boardCheck(pathname) {
     var locView = pathname.indexOf('-view') > 0 ? true : false;
     var locWrite = pathname.indexOf('-write') > 0 ? true : false;
     var locPw = pathname.indexOf('-pw') > 0 ? true : false;
     var locEdit = pathname.indexOf('-edit') > 0 ? true : false;
 
-    if ( locView ) {
+    if (locView) {
       return [true, '-view']
-    } else if ( locWrite ) {
+    } else if (locWrite) {
       return [true, '-write']
-    } else if ( locPw ) {
+    } else if (locPw) {
       return [true, '-pw']
-    } else if ( locEdit ) {
+    } else if (locEdit) {
       return [true, '-edit']
     } else {
       return false;

@@ -14,7 +14,7 @@
     line-height: $line-height;
     -webkit-box-orient: vertical;
     word-wrap: break-word;
-
+    
     @if ($type==max) {
       max-height: $line-height * $value + em;
     } @else {

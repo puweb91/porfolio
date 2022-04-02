@@ -11,26 +11,26 @@
 
 .clause_list {
   margin-bottom: 30px;
-
+  
   h5 {
     color: #333;
     margin-bottom: 10px;
     font-size: 1.2em;
     font-weight: 500;
   }
-
+  
   li {
     .textarea_box_border {
       border: 1px solid #dedede;
     }
-
+    
     .textarea_box {
       width: 100%;
       height: 150px;
       padding: 20px;
       overflow-y: auto;
       font-size: 13px;
-
+      
       @include mdq-max(lg) {
         font-size: 11px;
         width: 100%;

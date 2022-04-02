@@ -9,25 +9,25 @@
   border-bottom: 1px solid #ddd;
   position: relative;
   font-size: 0;
-
+  
   &.type_c {
     @include mdq-max(lg) {
       .select-type-01 {
         top: 65px;
       }
-
+      
       .select-type-01.first {
         position: static;
         width: 100%;
         margin-bottom: 5px;
       }
-
+      
       .btn-color-01 {
         top: 65px;
       }
     }
   }
-
+  
   .select-type-01,
   .input-type-01,
   .btn {
@@ -36,29 +36,29 @@
     line-height: rem(40);
     margin: 0 2px;
   }
-
+  
   .select-type-01 {
     width: 100px;
   }
-
+  
   .input-type-01 {
     width: 20%;
   }
-
+  
   .btn {
     width: 90px;
     color: #333;
     background-color: #f6f6f6;
     border: solid 1px #ddd;
   }
-
+  
   @include mdq-max(lg) {
     .select-type-01,
     .btn {
       width: 22%;
       width: calc(22% - 4px);
     }
-
+    
     .input-type-01 {
       // width: 56%;
       width: 54%;
@@ -75,19 +75,19 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-
+  
+  
   .select-type-01 {
     flex: 0 0 em(100);
     width: em(100);
   }
-
+  
   .input-type-01 {
     flex: 1 1 auto;
     width: 1%;
     margin: 0 em(12);
   }
-
+  
   .btn-color-01 {
     flex: 0 0 em(80);
     width: em(80);
@@ -96,7 +96,7 @@
     background-color: #f6f6f6;
     border: 1px solid #ddd;
   }
-
+  
   @include mdq-max(sm) {
     .select-type-01 {
       flex: 0 0 em(80);
@@ -106,7 +106,7 @@
     .input-type-01 {
       margin-right: 0;
     }
-
+    
     .btn-color-01 {
       flex: 0 0 100%;
       width: 100%;

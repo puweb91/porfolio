@@ -5,11 +5,11 @@
     &[data-aos][data-aos-duration='#{$i * 50}'] {
       transition-duration: #{$i * 50}ms;
     }
-
+    
     body[data-aos-delay='#{$i * 50}'] &,
     &[data-aos][data-aos-delay='#{$i * 50}'] {
       transition-delay: 0s;
-
+      
       &.aos-animate {
         transition-delay: #{$i * 50}ms;
       }
@@ -19,6 +19,7 @@
 
 [data-aos] {
   pointer-events: none;
+  
   &.aos-animate {
     pointer-events: auto;
   }

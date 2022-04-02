@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .sub-nav {
   z-index: 100;
+  
   &--sticky {
     &.fix {
       // @at-root body,
@@ -28,19 +29,23 @@
       height: rem(50);
     }
   }
+  
   position: relative;
   border-bottom: 1px solid #ddd;
+  
   .link {
     display: inline-flex;
     align-items: center;
     padding: 0 1rem;
     color: #333;
     font-size: rem(16);
+    
     &.on,
     &:hover {
       color: $color-1;
     }
   }
+  
   .sub-nav {
     &__wrap {
       width: 100%;
@@ -49,7 +54,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      
       @include mdq-max(xl) {
         //내부 스크롤
         text-align: center;
@@ -86,7 +91,7 @@
     height: $sub-nav-height-lg;
     border-bottom: 0;
   }
-
+  
   .sub-nav {
     &__wrap {
       margin: 0 auto;
@@ -95,7 +100,7 @@
       border-bottom: 1px solid #ddd;
       // display: flex;
       // align-items: center;
-
+      
       // 픽스되면서 너비 커질때 사용했던 소스 (아래 before)
       // &:before {
       //   content: '';
@@ -113,6 +118,7 @@
         padding: 0;
       }
     }
+    
     &__home {
       height: $sub-nav-height;
       color: $sub-nav-color;
@@ -123,9 +129,11 @@
       justify-content: center;
       text-align: center;
       position: relative;
+      
       img {
         width: 22px;
       }
+      
       @include mdq-max(lg) {
         width: $sub-nav-height-lg;
         height: $sub-nav-height-lg;
@@ -134,7 +142,7 @@
         }
       }
     }
-
+    
     &__home:before,
     &__home:after,
     &__item:after {
@@ -146,27 +154,29 @@
       height: $bar;
       margin-top: ($bar/-2);
     }
+    
     &__home:before {
       left: 0;
     }
+    
     &__home:after,
     &__item:after {
       right: 0;
     }
-
+    
     @include mdq-max(md) {
       &__home:before,
       &__item:last-child:after {
         display: none;
       }
     }
-
+    
     &__item {
       max-width: 220px;
       width: calc(50% - #{$sub-nav-height-lg} / 2);
       position: relative;
     }
-
+    
     &__button {
       @include text-truncate(1);
       width: 100%;
@@ -183,6 +193,7 @@
       padding-right: 4em;
       cursor: pointer;
       @include xi-icon('\e943');
+      
       &:before {
         position: absolute;
         right: 0;
@@ -191,12 +202,15 @@
         width: 4em;
         text-align: center;
       }
+      
       &.on {
         background-color: lighten($sub-nav-bg, 5%);
+        
         &:before {
           content: '\e946';
         }
       }
+      
       @include mdq-max(lg) {
         height: $sub-nav-height-lg;
         padding: 0 1em;
@@ -206,7 +220,7 @@
         }
       }
     }
-
+    
     &__drawer {
       background-color: rgba($sub-nav-bg, 90%);
       padding: 1em 2em;
@@ -222,21 +236,24 @@
       @include mdq-max(lg) {
         padding: 1em;
       }
+      
       li {
         margin-top: 0.8em;
+        
         &:nth-child(1) {
           margin-top: 0;
         }
       }
+      
       .link {
         color: $sub-nav-color;
         font-weight: 400;
-
+        
         &.on {
           text-decoration: underline;
           color: $color-1;
         }
-
+        
         &:hover {
           opacity: 1;
           text-decoration: underline !important;

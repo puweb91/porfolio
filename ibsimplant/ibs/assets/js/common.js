@@ -1,7 +1,7 @@
 'use strict';
 
 /* 모달팝업 */
-var startPop = function() {
+var startPop = function () {
   var winW = $(window).width();
   if (winW > 1024) {
     $('.start_pop').draggable({
@@ -12,9 +12,9 @@ var startPop = function() {
 }
 
 /* loading image */
-$(window).on('load', function(){
+$(window).on('load', function () {
   $('.loading-image').fadeOut(300);
-}); 
+});
 
 
 /* GNB */
@@ -127,10 +127,10 @@ var navMobile = {
   },
   nav_mobile_btn: function () {
     var $navBtn = $('.nav-mobile__btn'),
-      $navBg = $('.nav-mobile__bg'),
-      $nav = $('.nav-mobile');
+        $navBg = $('.nav-mobile__bg'),
+        $nav = $('.nav-mobile');
     var toggleNav = function () {
-      $navBg.fadeToggle(200,"linear");
+      $navBg.fadeToggle(200, "linear");
       $nav.toggleClass('active');
     };
     $navBtn.on('click', function () {
@@ -158,10 +158,10 @@ var navMobile = {
   },
   nav_mobile_action: function () {
     var $depth1 = $('.nav-mobile .depth-1'),
-      $depth2 = $('.nav-mobile .depth-2'),
-      $depth2_list = $('.nav-mobile .nav-list--depth2'),
-      // $depth3 = $('.nav-mobile .depth-3'),
-      $depth3_list = $('.nav-mobile .nav-list--depth3');
+        $depth2 = $('.nav-mobile .depth-2'),
+        $depth2_list = $('.nav-mobile .nav-list--depth2'),
+        // $depth3 = $('.nav-mobile .depth-3'),
+        $depth3_list = $('.nav-mobile .nav-list--depth3');
 
     $depth1.children('.link').click(function () {
       if ($(this).next().length > 0) {
@@ -248,24 +248,24 @@ var subNav = {
 
   drop_down: function () {
     var $dropDown = $('.sub-nav--dropdown .sub-nav__item'),
-      $dropDownBtn = $('.sub-nav__button'),
-      $dropDownList = $('.sub-nav__drawer');
+        $dropDownBtn = $('.sub-nav__button'),
+        $dropDownList = $('.sub-nav__drawer');
 
     $dropDown.each(function () {
       $(this)
-        .find($dropDownBtn)
-        .click(function () {
-          if ($(this).hasClass('on') == true) {
-            $(this).removeClass('on');
-            $(this).next().stop(false, true).slideUp(200);
-          } else {
-            $dropDownList.stop(false, true).hide();
-            $dropDownBtn.removeClass('on');
-            $(this).next().stop(false, true).slideDown(100);
-            $(this).addClass('on');
-          }
-          return false;
-        });
+          .find($dropDownBtn)
+          .click(function () {
+            if ($(this).hasClass('on') == true) {
+              $(this).removeClass('on');
+              $(this).next().stop(false, true).slideUp(200);
+            } else {
+              $dropDownList.stop(false, true).hide();
+              $dropDownBtn.removeClass('on');
+              $(this).next().stop(false, true).slideDown(100);
+              $(this).addClass('on');
+            }
+            return false;
+          });
     });
   },
 };
@@ -278,11 +278,11 @@ var subNavScroll = {
 
   sticky_nav: function () {
     var $subNav = $('.sub-nav--sticky'),
-      $subNavWrap = $('.sub-nav--sticky .sub-nav__wrap');
+        $subNavWrap = $('.sub-nav--sticky .sub-nav__wrap');
     if ($subNav.length > 0) {
       var subNavOffset = $subNav.offset(),
-        // subNavTop = subNavOffset.top;
-        subNavTop = subNavOffset.top - $('.header').outerHeight(); // #헤더 고정형일때
+          // subNavTop = subNavOffset.top;
+          subNavTop = subNavOffset.top - $('.header').outerHeight(); // #헤더 고정형일때
 
       if ($(window).outerWidth() > 1024) {
         if ($(window).scrollTop() > subNavTop) {
@@ -340,7 +340,7 @@ var magnificPop = {
                   $('.pop-in-pop').children().append('<div class="pop-in-close"><i class="xi-close"></i></div>');
 
                   /* 닫기 버튼 */
-                  $('.pop-in-close').on('click', function(){
+                  $('.pop-in-close').on('click', function () {
                     $('.pop-in-pop').remove();
                   });
                 }
@@ -377,8 +377,8 @@ $(document).ready(function () {
     depth3: '.depth-3',
     activeClass: 'on',
     callback: function () {
-      $('.depth-1 > .link').each(function(){
-        if ( $(this).hasClass('on') ) {
+      $('.depth-1 > .link').each(function () {
+        if ($(this).hasClass('on')) {
           $(this).parents('.depth-1').addClass('active');
 
           $(this).siblings('.nav-list--depth2').show();
@@ -386,12 +386,12 @@ $(document).ready(function () {
       });
     }
   });
-  
+
   /* LNB Dropdown */
-  $('.layout-nav .depth-1 > .link').on('click', function(e){
-    if ( $(this).parent().hasClass('has-child') ) {
+  $('.layout-nav .depth-1 > .link').on('click', function (e) {
+    if ($(this).parent().hasClass('has-child')) {
       e.preventDefault();
-      
+
       $(this).siblings('.nav-list--depth2').stop(true, true).slideToggle();
       $(this).parents('.depth-1').toggleClass('active');
     }
@@ -410,12 +410,12 @@ $(document).ready(function () {
   });
   */
 
-  
+
   $(window).scrollTrack({
-    threshold: 0, 
+    threshold: 0,
     activeClass: 'active',
   });
- 
+
 
   //gnbdrop.init();
   navMobile.init();
@@ -435,17 +435,17 @@ $(document).ready(function () {
 
     $(this).addClass('bullet-type--js');
   });
-  
+
   /*
   min-width지정 rowscroll
   */
   $('.row-scrollwrap').each(function () {
     var $rowScrollTxtWidth = $(this).data('show'),
-      $rowScrollTxt = $(this).find('.row-scrollwrap__txt');
+        $rowScrollTxt = $(this).find('.row-scrollwrap__txt');
     $(this).find('.row-scrollwrap__content').css('min-width', $rowScrollTxtWidth);
     // 가로스크롤 영역 min-width지정
     var $gutter = 40; // $container-gutter-width (_var.scss)
-    if ($(window).width() < $rowScrollTxtWidth + $gutter) { 
+    if ($(window).width() < $rowScrollTxtWidth + $gutter) {
       $rowScrollTxt.show();
       // 지정된 rowScrollTxtWidth + (gutter) 해상도에서 안내문구 노출
     }
@@ -480,7 +480,7 @@ $(document).ready(function () {
     File Upload
     이벤트 버블링 방지를 위해 on('change') 형태로 변경함.
   */
-$('.file-box').find('input[type=file]').on('change', function(){
+$('.file-box').find('input[type=file]').on('change', function () {
   var tmp = $(this).val().replace(/^.*\\/, "");
   $(this).parents('.file-box').find('.file-box__text').text(tmp);
   $(this).parents('.file-box').find('.file-box__text').addClass('on');

@@ -6,17 +6,19 @@
   color: #eee;
   font-size: rem(13);
   font-weight: 100;
-
+  
   // 푸터 텍스트 구분선 스타일 샘플
   &__txt {
     position: relative;
     overflow: hidden;
     left: -0.5em;
+    
     .txt {
       span {
         position: relative;
         display: inline-block;
         padding: 0 0.5em;
+        
         &:before {
           content: '';
           left: -1px;

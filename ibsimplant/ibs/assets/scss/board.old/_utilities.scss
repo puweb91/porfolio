@@ -4,15 +4,19 @@
   &_inblock {
     display: inline-block;
   }
+  
   &_block {
     display: block;
   }
+  
   &_inilne {
     display: inline;
   }
+  
   &_tbl {
     display: table;
   }
+  
   &_cel {
     display: table-cell;
   }
@@ -50,11 +54,11 @@ $spacing: 5, 10, 20, 30, 40;
   &_center {
     text-align: center;
   }
-
+  
   &_left {
     text-align: left;
   }
-
+  
   &_right {
     text-align: right;
   }

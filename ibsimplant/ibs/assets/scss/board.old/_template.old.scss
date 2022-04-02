@@ -49,18 +49,18 @@ $input-border-active-width: 3px;
 ///*비밀글 진입*/
 .pass-wrap {
   margin-top: 60px;
-
+  
   .tit {
     font-size: 1.2em;
     font-weight: 500;
     color: #333;
     margin-bottom: 20px;
   }
-
+  
   .mt_05 {
     margin-top: 5px;
   }
-
+  
   input {
     padding: 0 10px;
   }
@@ -74,7 +74,7 @@ $input-border-active-width: 3px;
   border-spacing: 0;
   border-top: 1px solid #000;
   word-break: break-all;
-
+  
   thead th {
     color: #222;
     padding: 8px 0;
@@ -83,12 +83,12 @@ $input-border-active-width: 3px;
     border-bottom: 0;
     background: #f8f8f8;
     font-weight: bold;
-
+    
     @include mdq-max(sm) {
       font-size: 13px;
     }
   }
-
+  
   tr {
     td,
     th {
@@ -98,7 +98,7 @@ $input-border-active-width: 3px;
           color: $red;
         }
       }
-
+      
       &:nth-child(7) {
         &,
         .date {
@@ -107,55 +107,55 @@ $input-border-active-width: 3px;
       }
     }
   }
-
+  
   tbody {
     background: #fff;
-
+    
     td {
       position: relative;
       width: 14.258%;
       font-weight: normal;
       padding: 5px 5px;
       height: 140px;
-
+      
       @include mdq-max(lg) {
         height: 14vw;
       }
-
+      
       vertical-align: top;
       border: 1px solid #ccc;
-
+      
       .date {
         display: block;
         color: #222;
         font-weight: bold;
-
+        
         &.red {
           color: $red;
         }
-
+        
         &.blue {
           color: $blue;
         }
       }
-
+      
       a:hover {
         text-decoration: underline;
       }
-
+      
       &:hover {
         // background: #edf3f7;
-
+        
         // .btn_tooltip_ajax {
         //   color: #000;
         //   text-decoration: underline !important;
         // }
       }
-
+      
       .cursor_default {
         cursor: default;
       }
-
+      
       @include mdq-max(sm) {
         .meal_list li,
         .kcal_t {

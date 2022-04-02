@@ -5,20 +5,20 @@
   position: relative;
   margin-top: 50px;
   font-size: 0;
-
+  
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
   }
-
+  
   li {
     display: inline;
     margin-left: 4px;
     padding: 0;
   }
-
+  
   a {
     font-size: 16px;
     position: relative;
@@ -33,42 +33,42 @@
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
-
+    
     span {
       display: inline-block;
       text-indent: -9999px;
     }
-
+    
     &:hover {
       color: $mc;
     }
-
+    
     &.active {
       border-color: $mc;
       text-decoration: none;
       border-color: #111;
     }
-
+    
     &.prev-first {
       background-image: url('../images/paging/prev-first.png');
     }
-
+    
     &.prev {
       background-image: url('../images/paging/prev.png');
     }
-
+    
     &.next-last {
       background-image: url('../images/paging/next-last.png');
     }
-
+    
     &.next {
       background-image: url('../images/paging/next.png');
     }
   }
-
+  
   @include mdq-max(lg) {
     margin-top: 30px;
-
+    
     a {
       font-size: 13px;
       width: 28px;

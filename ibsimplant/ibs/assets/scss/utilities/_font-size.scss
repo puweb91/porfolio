@@ -2,12 +2,12 @@
 
 $enable-font-size-breakpoint: true;
 
-@if ( $enable-font-size-breakpoint ) {
+@if ($enable-font-size-breakpoint) {
   @each $breakpoint in map-keys($grid-breakpoints) {
     html {
       @include media-breakpoint-up($breakpoint) {
         $value: map-get($font-size-breakpoints, $breakpoint);
-
+        
         font-size: $value;
       }
     }
@@ -17,9 +17,11 @@ $enable-font-size-breakpoint: true;
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
+    
     @each $size, $length in $spacers {
-      .font-size#{$infix}-#{$size} { font-size: $length !important; }
+      .font-size#{$infix}-#{$size} {
+        font-size: $length !important;
+      }
     }
   }
 }

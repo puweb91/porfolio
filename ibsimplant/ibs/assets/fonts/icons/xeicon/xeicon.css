@@ -3712,7 +3712,7 @@
     -webkit-transform: rotate(0);
     transform: rotate(0)
   }
-
+  
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg)
@@ -3724,7 +3724,7 @@
     -webkit-transform: rotate(0);
     transform: rotate(0)
   }
-
+  
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg)
@@ -3781,7 +3781,7 @@
   list-style-type: none
 }
 
-.xi-ul>li {
+.xi-ul > li {
   position: relative
 }
 

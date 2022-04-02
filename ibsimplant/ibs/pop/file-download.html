@@ -20,12 +20,9 @@ include ($_SERVER['DOCUMENT_ROOT']."/INC/tableset.php");
 		for($f=0;$f<count($row_file);$f++) {
 			if($row_file[$f]) {
 			$fileadd_size =	filesize("$ROOT_PATH/$tablefile/$row_file[$f]");
-			if($fileadd_size >
-    1048576) $fileadd_sizetext = number_format(round($fileadd_size/1048576,2),2)." Mbyte"; else if($fileadd_size > 1024) $fileadd_sizetext = number_format(round($fileadd_size/1024,0))." Kbyte"; else $fileadd_sizetext = $fileadd_size." byte"; ?>
+			if($fileadd_size >1048576) $fileadd_sizetext = number_format(round($fileadd_size/1048576,2),2)." Mbyte"; else if($fileadd_size > 1024) $fileadd_sizetext = number_format(round($fileadd_size/1024,0))." Kbyte"; else $fileadd_sizetext = $fileadd_size." byte"; ?>
     <a class="d-block link my-2" href="/<?=$tablefile?>/<?=$row_file[$f]?>" download="<?=$row_file_org[$f]?>">
-      <i class="xi-file-download text-color-1"></i>
-      <?=$row_file_org[$f]?>
-      (<?=$fileadd_sizetext?>)
+      <i class="xi-file-download text-color-1"></i><?=$row_file_org[$f]?>(<?=$fileadd_sizetext?>)
     </a>
     <?
 			}

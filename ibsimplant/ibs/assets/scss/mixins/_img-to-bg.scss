@@ -4,18 +4,18 @@
   display: block;
   position: relative;
   overflow: hidden;
-
+  
   &::after {
     content: '';
     display: block;
     padding-bottom: $value;
   }
-
+  
   @if ($value == contain) {
     $value: 100%;
     $type: contain;
   }
-
+  
   @if ($type == cover) {
     > img {
       display: block;

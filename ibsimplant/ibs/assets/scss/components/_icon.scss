@@ -2,18 +2,18 @@
 
 [class^='nav-ico--'],
 [class*=' nav-ico--'] {
-	display: block;
-	width: em(15);
-	height: em(15);
-	background: {
-		repeat: no-repeat;
-		position: center;
-		size: 100% auto;
-	}
+  display: block;
+  width: em(15);
+  height: em(15);
+  background: {
+    repeat: no-repeat;
+    position: center;
+    size: 100% auto;
+  }
 }
 
 @for $i from 1 through 7 {
-	.nav-ico--#{$i} {
-		background-image: url(../images/icon/nav_ico_#{$i}.svg);
-	}
+  .nav-ico--#{$i} {
+    background-image: url(../images/icon/nav_ico_#{$i}.svg);
+  }
 }

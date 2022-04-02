@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-@mixin bullet($sizes:(width, height, font-size, line-height), $url:none){
+@mixin bullet($sizes:(width, height, font-size, line-height), $url:none) {
   $font-size: map-get($sizes, font-size);
   $line-height: map-get($sizes, line-height);
   $width: em(map-get($sizes, width), $font-size);
   $height: em(map-get($sizes, height), $font-size);
-
+  
   > .item {
     display: flex;
-
+    
     &::before {
       content: '';
       display: block;
@@ -27,13 +27,13 @@
       };
     }
   }
-
+  
   &.bullet-list--disc {
     > .item::before {
       border-radius: 50%;
     }
   }
-
+  
   &.bullet-list--circle {
     > .item::before {
       border-radius: 100%;
@@ -41,13 +41,13 @@
       border: 1px solid #333;
     }
   }
-
+  
   &.bullet-list--decimal {
     > .item {
       &::before {
         display: none;
       }
-
+      
       .decimal-number {
         display: block;
         flex: 0 0 auto !important;
@@ -59,7 +59,7 @@
       }
     }
   }
-
+  
   &.bullet-list--image {
     > .item::before {
       background-color: transparent;

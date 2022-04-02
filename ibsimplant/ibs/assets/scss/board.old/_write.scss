@@ -2,77 +2,77 @@
 
 ///*폼게시판*/
 .table-form-01 {
-	table-layout: fixed;
-	width: 100%;
-	border-top: 1px solid #000;
-	background: #fff;
-	
-	tbody {
-		tr {
-			th, td {
-				vertical-align: middle;
-				padding: em(12) em(20);
-				border-bottom: 1px solid #e3e3e3;
-			}
-			
-			th {
-				font-weight: 500;
-				color: #333;
-				background-color: #f2f7fc;
-				padding-left: em(32);
-				padding-right: em(32);
-				text-align: left;
-			}
-		}
-	}
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid #000;
+  background: #fff;
+  
+  tbody {
+    tr {
+      th, td {
+        vertical-align: middle;
+        padding: em(12) em(20);
+        border-bottom: 1px solid #e3e3e3;
+      }
+      
+      th {
+        font-weight: 500;
+        color: #333;
+        background-color: #f2f7fc;
+        padding-left: em(32);
+        padding-right: em(32);
+        text-align: left;
+      }
+    }
+  }
 }
 
 .table-form-02 {
-	width: 100%;
-	table-layout: fixed;
-	border-collapse: collapse;
-	
-	tr {
-		th, td {
-			padding: 12px 8px;
-			border: 1px solid #eee;
-		}
-	}
-	
-	thead {
-		tr {
-			th, td {
-				font-weight: 500;
-				color: #000;
-			}
-			
-			th {
-				background-color: rgba($color-1, 0.5);
-			}
-			
-			td {
-				background-color: rgba($color-1, 0.3);
-			}
-		}
-	}
-	
-	tbody {
-		tr {
-			th {
-				font-weight: 500;
-				background-color: rgba($color-1, 0.1);
-			}
-			
-			td {
-			
-			}
-		}
-	}
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  
+  tr {
+    th, td {
+      padding: 12px 8px;
+      border: 1px solid #eee;
+    }
+  }
+  
+  thead {
+    tr {
+      th, td {
+        font-weight: 500;
+        color: #000;
+      }
+      
+      th {
+        background-color: rgba($color-1, 0.5);
+      }
+      
+      td {
+        background-color: rgba($color-1, 0.3);
+      }
+    }
+  }
+  
+  tbody {
+    tr {
+      th {
+        font-weight: 500;
+        background-color: rgba($color-1, 0.1);
+      }
+      
+      td {
+      
+      }
+    }
+  }
 }
 
 .form_wrap {
-	&.type_c {
-		max-width: 600px;
-		margin: 0 auto;
-	}
+  &.type_c {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
