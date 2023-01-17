@@ -7,7 +7,7 @@
 		
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="./assets/css/jquery.scrollbar.css">
-		<link rel="stylesheet" href="./assets/css/style.min.css?220316v2">
+		<link rel="stylesheet" href="./assets/css/style.min.css?230117v1">
 		
 		<!-- Font Awesome -->
 		<script src="//kit.fontawesome.com/9ac1132a85.js" crossorigin="anonymous"></script>
@@ -18,12 +18,12 @@
 		<header id="header" class="header">
 			<div class="container">
 				<div class="d-flex justify-content-end">
-          <a href="https://github.com/puweb91/portfolio/blob/main/%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C_%EC%A0%95%ED%83%9C%EC%88%98.pdf" target="_blank" class="fs-4 text-decoration-none fw-bold">
+          <a href="https://github.com/puweb91/portfolio/blob/main/%EA%B2%BD%EB%A0%A5%EA%B8%B0%EC%88%A0%EC%84%9C_%EC%A0%95%ED%83%9C%EC%88%98.pdf" target="_blank" class="fs-5 text-decoration-none fw-bold text-secondary">
             <i class="fa-solid fa-file-pdf"></i>
             경력기술서
           </a>
           
-					<a href="https://github.com/puweb91/portfolio" target="_blank" class="fs-4 text-decoration-none fw-bold ms-3 ms-sm-5">
+					<a href="https://github.com/puweb91/portfolio" target="_blank" class="fs-5 text-decoration-none fw-bold text-secondary ms-3 ms-sm-5">
 						<i class="fa-brands fa-github"></i>
 						Github
 					</a>
@@ -34,7 +34,7 @@
 		<main class="main">
 			<section class="section">
 				<div class="container">
-					<h1 class="section-title">Portfolio</h1>
+					<h1 class="section-title text-white">Portfolio</h1>
 					
 					<ul class="portfolio">
 						<li class="item">
@@ -45,7 +45,7 @@
 								
 								<div class="btn-group">
 									<a href="http://sjlmt.com" target="_blank" class="btn btn-primary">새 창으로 열기</a>
-									<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">프로젝트 설명</button>
+									<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">프로젝트 설명</button>
 								</div>
 							</div>
 						</li>
@@ -53,7 +53,7 @@
 							<div class="inner"></div>
 							
 							<div class="desc">
-								<h2 class="title">셀리턴 브랜드 & 스토어</h2>
+								<h2 class="title">셀리턴 브랜드 &amp; 스토어</h2>
 								
 								<div class="btn-group">
 									<a href="https://www.cellreturn.com/" target="_blank" class="btn btn-primary">새 창으로 열기</a>
@@ -160,117 +160,11 @@
 					</ul>
 				</div>
 			</section>
-			
-			
-			<!-- S : Work -->
-			<section class="section work-section">
-				<div class="container">
-					<h1 class="section-title">Work</h1>
-          
-          <table class="table table-primary table-striped table-hover">
-            <caption class="caption-top">* 프로젝트 외 업무내용입니다.</caption>
-            <colgroup>
-              <col width="200px">
-              <col>
-            </colgroup>
-            <thead>
-              <tr>
-                <th class="text-center">회사명</th>
-                <th class="text-center">업무내용</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="text-center">매스티지</th>
-                <td>
-                  <ul class="bullet-list">
-                    <li class="bullet-list-item" data-bullet="·">
-                      Bootstrap 도입 후 내부 작업 방식에 맞게 커스터마이징<br>
-                      편의성을 위해 SCSS 기반의 function 및 mixin 생성
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      Github 도입 및 프로젝트에 적용<br>
-                      Branch를 이용해 다수 인원의 작업이 용이하도록 함<br>
-                      개발 후 퍼블리싱 작업 산출물의 유지가 어렵기 때문에 저장소에 별도 push
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      Trello 를 도입해 팀 내 작업간 커뮤니케이션이 원활할 수 있도록 함
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      코드리뷰 시간을 갖고 퍼블리셔 간 산출물 공유 및 피드백을 통해 코드 개선
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      <span>
-                        Javscript 및 jQuery를 이용해 사내 플러그인 개발<br>
-                        clipboard.js : 텍스트 복사<br>
-                        fullpage.overflow.js : fullpage 플러그인의 확장 기능 일부 커스텀 구현<br>
-                        nav_active.js : URL에 따라 각 메뉴 활성<br>
-                        nav_drop : 헤더의 서브메뉴 dropdown 타입에 따라 스크립트 적용<br>
-                        resizingCheck.js : 브라우저 창 리사이징 시 크기별로 1회만 체크<br>
-                        scroll_track : scrollTop 값에 따라 각 항목 활성 ( GNB 혹은 탭메뉴 등 )<br>
-                        tab.js : data 값으로만 탭 메뉴 구성이 가능<br>
-                        wow.js : wow.js 플러그인 커스터마이징<br>
-                        <a href="https://github.com/puweb91/portfolio/tree/main/base/assets/js/custom" target="_blank" class="text-secondary">Github에서 확인 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                      </span>
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      클래스 네이밍 규칙 정립<br>
-                      HTML 작업 시 시멘틱 마크업(Semantic Markup)을 하도록 권장<br>
-                      SEO 최적화를 위해 코드 개선
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      파일 및 폴더 네이밍 규칙 정립
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      작업 시 디렉토리 구성 개선<br>
-                      퍼블리싱 관련 리소스 assets 폴더에 작업
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      <span>
-                        HTML, CSS, JS 등 작업에 필요한 코드 전반을 개선한 후 작업 전 초기 셋팅 코드 생성<br>
-                        작업 전 해당 코드 셋팅 후 미사용 코드는 제거<br>
-                        <a href="https://github.com/puweb91/portfolio/tree/main/base" target="_blank" class="text-secondary">Github에서 확인 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                      </span>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th class="text-center">팡팡</th>
-                <td>
-                  <ul class="bullet-list">
-                    <li class="bullet-list-item" data-bullet="·">
-                      작업 퍼포먼스 향상을 위해 SCSS 도입
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      사내 프로젝트 목표에 따라 Bootstrap, Semantic UI 비교 후 Bootstrap 도입
-                    </li>
-                    <li class="bullet-list-item" data-bullet="·">
-                      프로젝트 작업 전 관련 사이트 벤치마킹
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th class="text-center">케이먼트코퍼레이션</th>
-                <td>
-                  <ul class="bullet-list">
-                    <li class="bullet-list-item" data-bullet="·">
-                      고객사 문의사항 및 이슈 대응
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-				</div>
-			</section>
-			<!-- E : Work -->
 		</main>
 		
-		<footer id="footer" class="footer">
+		<footer id="footer" class="footer bg-secondary">
 			<div class="container">
-				<h1 class="section-title mb-5">Contact me</h1>
+				<h1 class="section-title text-primary mb-5">Contact me</h1>
 				
 				<div class="text-center">
 					<p>
@@ -289,7 +183,7 @@
 			</div>
 		</footer>
 		
-		<div class="modal-group">
+		<section class="modal-group">
 			<!-- 성지라미텍 -->
 			<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="" aria-hidden="true">
 				<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -312,64 +206,37 @@
 										</td>
 									</tr>
 									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
+									<tr>
 										<th>담당업무</th>
-										<td>
-											퍼블리싱
-										</td>
+										<td>퍼블리싱</td>
 									</tr>
 									<tr>
 										<th>타입</th>
-										<td>
-											반응형
-										</td>
+										<td>반응형</td>
 									</tr>
 									<tr>
 										<th>사용언어</th>
-										<td>
-											HTML, SCSS, Javascript, jQuery, PHP
-										</td>
-									</tr>
-									<tr>
-										<th>개발언어</th>
-										<td>PHP 7.0</td>
+										<td>HTML, SCSS, Javascript, jQuery</td>
 									</tr>
 									<tr>
 										<th>작업기간</th>
 										<td>약 10일</td>
 									</tr>
 									<tr>
-										<th>주요내용</th>
+										<th>주요 업무내용</th>
 										<td>
-											<ul class="list-group list-group-flush">
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">디자인트렌드 > SHOWROOM</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              '오늘의집' 벤치마크하여 이미지에 플러스(+) 아이콘 클릭 시 제품링크 연결
-                            </li>
-                          </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													'오늘의집' 벤치마크하여 이미지에 플러스(+) 아이콘 클릭 시 제품링크 연결
 												</li>
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">제품 상세페이지</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              고객사 요구사항이 플러그인으로 구현이 불가능하여 줌기능 별도 구현
-                            </li>
-                          </ul>
+												<li class="bullet-list-item" data-bullet="·">
+													상품 이미지 줌기능 스크립트 구현
 												</li>
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">고객지원 > 가상체험관</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              제품 선택 시 각 공간에 맞게 이미지 적용
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              바닥재는 랜덤으로 배열 변경하여 노출
-                            </li>
-                          </ul>
+												<li class="bullet-list-item" data-bullet="·">
+													가상체험관에서 상품 선택 시 백그라운드 이미지 25분할로 랜덤 배치
 												</li>
 											</ul>
 										</td>
@@ -383,7 +250,7 @@
 					</div>
 				</div>
 			</div>
-   
+
 			<!-- 셀리턴 -->
 			<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -402,63 +269,39 @@
 									<tr>
 										<th>URL</th>
 										<td>
-											브랜드 (
-											<a href="https://www.cellreturn.com/" target="_blank">https://www.cellreturn.com/</a>
-											)<br> 스토어 (
-											<a href="https://store.cellreturn.com/KR/" target="_blank">https://store.cellreturn.com/KR/</a>
-											)
+											브랜드 (<a href="https://www.cellreturn.com/" target="_blank">https://www.cellreturn.com/</a>)<br>
+											스토어 (<a href="https://store.cellreturn.com/KR/" target="_blank">https://store.cellreturn.com/KR/</a>)
 										</td>
+									</tr>
+									<tr>
+										<th>참여도</th>
+										<td>50%</td>
 									</tr>
 									<tr>
 										<th>담당업무</th>
-										<td>
-											PL
-										</td>
+										<td>PL, 퍼블리싱</td>
 									</tr>
 									<tr>
 										<th>타입</th>
-										<td>
-											반응형
-										</td>
+										<td>반응형</td>
 									</tr>
 									<tr>
 										<th>사용언어</th>
-										<td>
-											HTML, SCSS, Javascript, jQuery, PHP
-										</td>
-									</tr>
-									<tr>
-										<th>개발언어</th>
-										<td>PHP 7.0</td>
+										<td>HTML, SCSS, Javascript, jQuery</td>
 									</tr>
 									<tr>
 										<th>작업기간</th>
-										<td>약 60일</td>
+										<td>약 3개월</td>
 									</tr>
 									<tr>
-										<th>주요내용</th>
+										<th>주요 작업내용</th>
 										<td>
-											<ul class="list-group list-group-flush">
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">일정관리 및 작업관련 협의</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              PM과 일정 및 작업가능여부 협의
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              PM, 디자이너, 고객사의 요구사항 작업가능여부 검토 및 협의
-                            </li>
-                          </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													프로젝트 일정 및 업무 내용 협의 ( PM 및 외주 개발사 )
 												</li>
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">작업 전 조율</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              외주 개발건으로 작업 전 개발사와 퍼블리싱 범위 조율
-                            </li>
-                          </ul>
+												<li class="bullet-list-item" data-bullet="·">
+													애니메이션, 팝업, 스크롤 관련 스크립트 구현 및 플러그인 적용
 												</li>
 											</ul>
 										</td>
@@ -472,7 +315,7 @@
 					</div>
 				</div>
 			</div>
-   
+
 			<!-- 노리터 -->
 			<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="" aria-hidden="true">
 				<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -495,73 +338,40 @@
 										</td>
 									</tr>
 									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
+									<tr>
 										<th>담당업무</th>
-										<td>
-											퍼블리싱
-										</td>
+										<td>퍼블리싱</td>
 									</tr>
 									<tr>
 										<th>타입</th>
-										<td>
-											반응형
-										</td>
+										<td>반응형</td>
 									</tr>
 									<tr>
 										<th>사용언어</th>
-										<td>
-											HTML, SCSS, Javascript, jQuery, PHP
-										</td>
-									</tr>
-									<tr>
-										<th>개발언어</th>
-										<td>PHP 7.0</td>
+										<td>HTML, SCSS, Javascript, jQuery</td>
 									</tr>
 									<tr>
 										<th>작업기간</th>
 										<td>약 2개월</td>
 									</tr>
 									<tr>
-										<th>주요내용</th>
+										<th>주요 업무내용</th>
 										<td>
-											<ul class="list-group list-group-flush">
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">테스트 가능 계정</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              ID : puweb91@gmail.com
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              PW : a1234!!
-                            </li>
-                          </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													기사 작성을 위한 등록 에디터 구현
 												</li>
-												<li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">고객사 요청사항</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              게시글 작성 시 타이틀 ( h1 ~ h3 ), 본문, 이미지 슬라이드, 인용문구, 관련 게시글, 구글맵 등 특정 포맷 제공
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              구글 애드 영역 작업
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              서울 날씨 정보 제공, 환율 정보 제공
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              헤더 검색 input 영역 클릭 시 인기 태그로 검색 가능하도록 리스트 제공
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                             게시글 리스트 썸네일 북마크 버튼, 카테고리 뱃지 색상별 등록
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              유튜브 리스트 썸네일 클릭 시 사이트 내에서 팝업 재생
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              유튜브 리스트 제목 클릭 시 해당 유튜브 영상 페이지로 이동
-                            </li>
-                          </ul>
+												<li class="bullet-list-item" data-bullet="·">
+													기사 작성 시 컴포넌트 단위로 등록 및 sorting 기능 구현
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													날씨 및 환율 API 연동
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													구글 애드 연동
 												</li>
 											</ul>
 										</td>
@@ -575,7 +385,7 @@
 					</div>
 				</div>
 			</div>
-      
+
       <!-- 동거동락 -->
       <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -597,59 +407,37 @@
                       <a href="https://dgdr.co.kr">https://dgdr.co.kr</a>
                     </td>
                   </tr>
+									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
                   <tr>
                     <th>담당업무</th>
-                    <td>
-                      퍼블리싱
-                    </td>
+                    <td>퍼블리싱</td>
                   </tr>
                   <tr>
                     <th>타입</th>
-                    <td>
-                      반응형
-                    </td>
+                    <td>반응형</td>
                   </tr>
                   <tr>
                     <th>사용언어</th>
-                    <td>
-                      HTML, SCSS, Javascript, jQuery, PHP
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>개발언어</th>
-                    <td>PHP 7.0</td>
+                    <td>HTML, SCSS, Javascript, jQuery</td>
                   </tr>
                   <tr>
                     <th>작업기간</th>
                     <td>약 2주</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">메인</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              카카오맵 API 연동 ( 타입별 마커 표시 )
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                             슬라이드 Swiper 플러그인 사용하여 커스터마이징
-                            </li>
-                          </ul>
-                        </li>
-  
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">지점찾기</h5>
-  
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              필터 레이어 팝업 작업 및 가격 프로그레스 바 jQuery UI의 slider range를 활용해 작업
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													카카오맵 API 연동
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													필터 레이어 팝업 작업 및 가격 프로그레스 바 jQuery UI의 slider range를 활용해 작업
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -661,7 +449,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 오픈코드 -->
       <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -683,6 +471,10 @@
                       <a href="https://opencode.kr" target="_blank">https://opencode.kr</a>
                     </td>
                   </tr>
+									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
                   <tr>
                     <th>담당업무</th>
                     <td>
@@ -698,73 +490,27 @@
                   <tr>
                     <th>사용언어</th>
                     <td>
-                      HTML, SCSS, Javascript, jQuery, PHP
+                      HTML, SCSS, Javascript, jQuery
                     </td>
-                  </tr>
-                  <tr>
-                    <th>개발언어</th>
-                    <td>PHP 7.0</td>
                   </tr>
                   <tr>
                     <th>작업기간</th>
                     <td>약 1개월</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">테스트 가능 계정</h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              ID : puweb91@gmail.com
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              PW : a1234!!
-                            </li>
-                          </ul>
-                        </li>
-                        
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">메인</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              메인 비주얼 '넥슨' 벤치마킹 ( 프로그레스바 형태 페이지네이션 )
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              비디오 슬라이드 입체적인 형태로 커스터마이징
-                            </li>
-                          </ul>
-                        </li>
-                        
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">제품목록</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              좌측 필터 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              필터 선택시 스크롤 상단으로 이동
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              필터 선택시 선택한 항목 목록 상단에 표기
-                            </li>
-                          </ul>
-                        </li>
-  
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">제품상세</h5>
-  
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              리뷰 작성 구현
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													메인 슬라이드 프로그레스바 커스터마이징
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													메인 비디오 슬라이드 커스터마이징
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													상품 필터 및 리뷰 관련 스크립트 구현
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -776,7 +522,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 숨수면클리닉 -->
       <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -798,49 +544,36 @@
                       <a href="https://www.thesuum.com/main/main.html" target="_blank">https://www.thesuum.com/main/main.html//</a>
                     </td>
                   </tr>
+									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
                   <tr>
                     <th>담당업무</th>
-                    <td>
-                      퍼블리싱
-                    </td>
+                    <td>퍼블리싱</td>
                   </tr>
                   <tr>
                     <th>타입</th>
-                    <td>
-                      반응형
-                    </td>
+                    <td>반응형</td>
                   </tr>
                   <tr>
                     <th>사용언어</th>
                     <td>
-                      HTML, SCSS, Javascript, jQuery, PHP
+                      HTML, SCSS, Javascript, jQuery
                     </td>
-                  </tr>
-                  <tr>
-                    <th>개발언어</th>
-                    <td>PHP 7.0</td>
                   </tr>
                   <tr>
                     <th>작업기간</th>
                     <td>약 3개월</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">특이사항</h5>
-                          
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              다수의 디자인 페이지 작업
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              PC/모바일 각각 페이지 간격 및 줄바꿈 등 고객사와 검수
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													다수의 디자인 페이지 작업
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -852,7 +585,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 서울남부 지역장애인보건의료센터 -->
       <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -874,6 +607,10 @@
                       <a href="https://www.ssrhmc.org/main/main.html" target="_blank">https://www.ssrhmc.org/main/main.html</a>
                     </td>
                   </tr>
+									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
                   <tr>
                     <th>담당업무</th>
                     <td>
@@ -889,40 +626,30 @@
                   <tr>
                     <th>사용언어</th>
                     <td>
-                      HTML, SCSS, Javascript, jQuery, PHP
+                      HTML, SCSS, Javascript, jQuery
                     </td>
-                  </tr>
-                  <tr>
-                    <th>개발언어</th>
-                    <td>PHP 7.0</td>
                   </tr>
                   <tr>
                     <th>작업기간</th>
                     <td>약 2주</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">정보안내 > 장애친화의료기관</h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              전체보기 메뉴에서는 카카오맵 API 연동
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              전체보기 외 메뉴에서는 각 구별 이미지 svg로 제공
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              svg 이미지의 경우 이미지맵을 활용하여 클릭 가능하도록 영역지정
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              URL의 파라미터 값에 맞게 선택지역 활성화
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													전체보기 메뉴에서는 카카오맵 API 연동
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													전체보기 외 메뉴에서는 각 구별 이미지 svg로 제공
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													svg 이미지의 경우 이미지맵을 활용하여 클릭 가능하도록 영역지정
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													URL의 파라미터 값에 맞게 선택지역 활성화
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -934,7 +661,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 자사 SNS 공유 위젯 -->
       <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -979,50 +706,13 @@
                     <td>약 2주</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-  
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">사이트의 목적</h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              편리한 SNS 플랫폼 별 공유를 위한 위젯 제공
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">스텝별 기능</h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              STEP 1에서 선택한 플랫폼에 따라 STEP2 이후 레이아웃 변경
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              STEP 2에서 선택한 레이아웃에 따라 STEP3 샘플 변경
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold text-secondary">관리기능</h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              우측 상단의 ADMIN 버튼을 통해 진입
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              각 위젯의 설치/미설치 상태를 녹색, 적색으로 표기
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              코드 아이콘(&lt;/&gt;) 을 클릭해 팝업을 통해 복사
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              설정 아이콘을 클릭해 수정
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													UI/UX 관련 CSS(SCSS) 및 스크립트 작업
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -1034,7 +724,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 솔루션 v2 -->
       <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -1056,17 +746,17 @@
                       <a href="./pangx2/v2/monitoring/monitoring.html" target="_blank">https://puweb91.github.io/portfolio/pangx2/v2/monitoring/monitoring.html</a>
                     </td>
                   </tr>
+									<tr>
+										<th>참여도</th>
+										<td>100%</td>
+									</tr>
                   <tr>
                     <th>담당업무</th>
-                    <td>
-                      퍼블리싱
-                    </td>
+                    <td>퍼블리싱</td>
                   </tr>
                   <tr>
                     <th>타입</th>
-                    <td>
-                      반응형
-                    </td>
+                    <td>반응형</td>
                   </tr>
                   <tr>
                     <th>사용언어</th>
@@ -1079,84 +769,19 @@
                     <td>약 3개월</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v2/setting/alarm.html" target="_blank" class="text-secondary">
-                              모니터링알림설정 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              jQuery UI의 slider 를 이용해 임계치 설정 바 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              초기화 버튼 클릭시 임계치 초기화
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              알림수신자리스트에서 LC Switch 플러그인으로 스위치 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              스위치 비활성시 테이블의 tr 전체 비활성
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              X 아이콘 클릭시 삭제 레이어 팝업 출력<br>
-                              확인 버튼 클릭 시 해당 항목 삭제
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v2/service/user.html" target="_blank" class="text-secondary">
-                              서비스관리 > 사용자설정 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              트래픽, 하드 항목 프로그레스 바 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              data-min, data-max, data-current 속성 이용하여 percentage 계산 및 출력
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v2/service/modify.html" target="_blank" class="text-secondary">
-                              서비스관리 > 사용자설정 > 사용자설정번경 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              트래픽, 하드 사용량 표기 파이 차트 커스텀 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              사용량 수치에 맞게 상태표기 색상 파이 차트에 적용
-                            </li>
-                            <li>
-                              여러 페이지 적용이 용이하도록 jQuery 플러그인 형태로 작업
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v2/add_service/bizmessage.html" target="_blank" class="text-secondary">
-                              부가서비스 > 알림톡 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              상품 선택시 선택 상품 강조 영역 슬라이드
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													UI/UX 관련 CSS(SCSS) 및 스크립트 작업
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													프로그레스바 스크립트 구현
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													차트 플러그인 적용 ( amchart )
+												</li>
+											</ul>
                     </td>
                   </tr>
                 </tbody>
@@ -1168,7 +793,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 솔루션 v3 -->
       <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -1192,118 +817,35 @@
                   </tr>
                   <tr>
                     <th>담당업무</th>
-                    <td>
-                      퍼블리싱
-                    </td>
+                    <td>퍼블리싱</td>
                   </tr>
                   <tr>
                     <th>타입</th>
-                    <td>
-                      반응형
-                    </td>
+                    <td>반응형</td>
                   </tr>
                   <tr>
                     <th>사용언어</th>
-                    <td>
-                      HTML, SCSS, Javascript, jQuery
-                    </td>
+                    <td>HTML, SCSS, Javascript, jQuery</td>
                   </tr>
                   <tr>
                     <th>작업기간</th>
                     <td>약 3개월</td>
                   </tr>
                   <tr>
-                    <th>주요내용</th>
+                    <th>주요 업무내용</th>
                     <td>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v3/grid.html" target="_blank" class="text-secondary">
-                              서비스 관리 > 사용자설정 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-      
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              사용자 목록 타입 게시판 형태 제공&nbsp;<a href="/portfolio/pangx2/v3/list.html" target="_blank" class="text-secondary">( 새 창 열기 )</a>
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              디스크 현황 각 항목에 맞게 data 속성 값 계산 후 프로그레스 바 형태로 출력<br>
-                              jQuery 플러그인 형태로 작업
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              사용자별 사용량 프로그레스바 마우스 오버 시 커스텀 툴팁 출력
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              리스트 최하단으로 스크롤 시 미출력 사용자 출력
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v3/detail.html" target="_blank" class="text-secondary">
-                              서비스 관리 > 사용자설정 > 상세정보 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              트래픽, 하드 사용량 커스텀 프로그레스 바 플러그인 사용
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              톱니바퀴 아이콘 클릭하여 총 용량 수정 시 프로그레스 바에 적용
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              트래픽 초기화 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              도메인 관리에서 도메인 추가시 HTTP, HTTPS 여부에 따라 포맷 변경하여 등록
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              사용자 관리 입력(Input) 박스 연필 아이콘 클릭 후에만 수정가능하도록 구현
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              접속관리에서 IP 입력시 플러그인 사용하여 자동 칸 이동 구현<br>
-                              IP 입력은 접속설정 스위치를 해제한 뒤 접속 IP 설정 스위치 활성화 후에 입력 가능<br>
-                              n번째 항목 숫자 개수 컨트롤 가능
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              코멘트 등록 및 삭제 확인 가능하도록 기능 구현
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v3/mypage/apply.html" target="_blank" class="text-secondary">
-                              마이페이지 > 서비스 신청 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              헤더 우측의 '홍길동님' 영역 클릭 후 메뉴 선택을 통해 마이페이지 진입 가능
-                            </li>
-                            <li class="bullet-list-item" data-bullet="·">
-                              결제리스트 상품 라디오 버튼 커스터마이징<br>
-                              선택 버튼 클릭 시 해당영역 활성화
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item">
-                          <h5 class="fw-bold">
-                            <a href="/portfolio/pangx2/v3/mypage/myinfo.html" target="_blank" class="text-secondary">
-                              마이페이지 > 회원정보수정 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                          </h5>
-    
-                          <ul class="bullet-list">
-                            <li class="bullet-list-item" data-bullet="·">
-                              각 입력(Input) 박스 연필 아이콘 클릭 후에만 수정 가능
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </td>
+											<ul class="bullet-list">
+												<li class="bullet-list-item" data-bullet="·">
+													UI/UX 관련 CSS(SCSS) 및 javascript 작업
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													프로그레스바 스크립트 구현
+												</li>
+												<li class="bullet-list-item" data-bullet="·">
+													차트 플러그인 적용 ( amchart )
+												</li>
+											</ul>
+										</td>
                   </tr>
                 </tbody>
               </table>
@@ -1314,7 +856,7 @@
           </div>
         </div>
       </div>
-		</div>
+		</section>
 		
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<script src="./assets/js/jquery.scrollbar.min.js"></script>
