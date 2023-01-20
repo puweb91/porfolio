@@ -112,18 +112,10 @@ html {
       }
     }
     
-    @for $i from 1 through 10 {
-      &:nth-child(#{$i}) {
+    @for $i from 1 through 11 {
+      &--#{$i} {
         .inner {
           background-image: url(../images/prj_#{$i}.jpg);
-        }
-      }
-    }
-    
-    @for $i from 1 through 4 {
-      &:nth-child(#{$i}) {
-        .inner {
-          background-color: lighten(#000, $i*10);
         }
       }
     }
